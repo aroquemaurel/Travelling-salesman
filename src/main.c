@@ -20,7 +20,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-
 #include "parsing.h"
 #include "errors.h"
 
@@ -29,27 +28,32 @@ int main (int argc, char** argv) {
 	FILE* file = NULL;
 	Errors errors;
 	AlgoType algoType;
+	int parameter1 = 0;
+	int parameter2 = 0;
 	errors_initialize(&errors);
 
 	gVerboseMode = parsing_parseVerboseMode(argv, argc); 
 	fileName = parsing_parseFileName(argv, argc, &errors);
-	algoType = parsing_algoType(argv, argc, &errors);
+	algoType = parsing_algoType(argv, argc, &errors, &parameter1, &parameter2);
 
 	file = fopen(fileName, "r");
 	if(file == NULL) {
 		errors_setFileNotFound(&errors, fileName);
 	}
-	
 	// on peut travailler
 	if(errors.nbErrors == 0) {
 		switch(algoType) {
 			case BRUTEFORCE:
+				printf("Brute force not implemented");
 				break;
 			case LOCALSEARCH_RANDOM:
+				printf("Random local search not implemented");
 				break;
 			case LOCALSEARCH_SYSTEMATIC:
+				printf("systematic local search not implemented");
 				break;
 			case GENETIC:
+				printf("Genetic not implemented");
 				break;
 		}
 	} else {
