@@ -1,26 +1,27 @@
 /*
  * =====================================================================================
  *
- *       Filename:  main.c
+ *       Filename:  tu.h
  *
- *    Description:  Point d'entrée du programme. Aucune fonction ne doit être déclarée
- *						dans ce fichier.
+ *    Description:  
  *
  *        Version:  1.0
- *        Created:  19/11/2012 10:41:29
+ *        Created:  19/11/2012 20:20:34
  *       Revision:  none
  *       Compiler:  gcc
  *
  *         Author:  Antoine de Roquemaurel (), 
+ *        Company:  
  *
  * =====================================================================================
  */
 
-#include <stdio.h>
+#ifndef __TESTUNITAIRE
+#define __TESTUNITAIRE
 #include <stdbool.h>
-#include "util.h"
+#include <stdio.h>
+inline void displayResults(const bool pResult, const int pNumTest, char* pFctName, const int pReturnObtained, const int pReturnExpected);
 
-int main (int argc, char** argv) {
-	util_displayVerboseMode("test");		
-	return 0;
-}
+#endif
+
+

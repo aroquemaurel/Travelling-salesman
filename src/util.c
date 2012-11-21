@@ -17,14 +17,14 @@
  */
 #include "util.h"
 
-int util_searchFirstOccurenceInArray(const char** pArray, const int pSize, char* pSearch) {
-	int position;
+int util_searchFirstOccurenceInArray(char* pArray[], const int pSize, char* pSearch) {
+	int position=0;
 
-	while(pArray[position] != pSearch && position != pSize) {
+	while(position < pSize -1 && strcmp(pArray[position], pSearch) != 0 ) {
 		++position;
 	}
 
-	return (position > pSize) ? -1 : position;
+	return (position == pSize-1 && strcmp(pArray[position], pSearch) != 0) ? -1 : position;
 }
 
 inline void util_displayVerboseMode(char* pString) {
