@@ -3,15 +3,19 @@ LIB=lib
 BIN=bin
 TEST=tests
 CFLAGS= -Wall -g -I lib 
-EXE=voyageurDeCommerce
+EXE=travellingSalesman
 
 # Programme principal
-$(EXE): $(BIN)/main.o $(BIN)/util.o
-	gcc -o $(EXE) $(BIN)/main.o $(BIN)/util.o
-$(BIN)/main.o: $(SRC)/main.c 
+$(EXE): $(BIN)/main.o $(BIN)/util.o $(BIN)/parsing.o $(BIN)/errors.o unitTests
+	gcc -o $(EXE) $(BIN)/main.o $(BIN)/util.o $(BIN)/parsing.o $(BIN)/errors.o
+$(BIN)/main.o: $(SRC)/main.c $(BIN)/parsing.o 
 	gcc -o $(BIN)/main.o -c $(SRC)/main.c $(CFLAGS)
-$(BIN)/util.o: $(SRC)/util.c 
+$(BIN)/util.o: $(SRC)/util.c  $(LIB)/util.h
 	gcc -o $(BIN)/util.o -c $(SRC)/util.c $(CFLAGS)
+$(BIN)/parsing.o: $(SRC)/parsing.c  $(LIB)/parsing.h
+	gcc -o $(BIN)/parsing.o -c $(SRC)/parsing.c $(CFLAGS)
+$(BIN)/errors.o: $(SRC)/errors.c $(LIB)/errors.h
+	gcc -o $(BIN)/errors.o -c $(SRC)/errors.c $(CFLAGS)
 
 # Tests unitaires de util.c
 $(BIN)/mainUnitTests.o: $(TEST)/mainUnitTests.c
@@ -29,4 +33,4 @@ clean:
 all: $(EXE) 
 
 tarball: 
-	tar -jcvf voyageurDeCommerce.tar.bz2 ./$(BIN) ./$(TEST) ./$(EXE) ./$(LIB) ./$(SRC) makefile
+	tar -jcvf travellingSalesman.tar.bz2 ./$(BIN) ./$(TEST) ./$(EXE) ./$(LIB) ./$(SRC) makefile
