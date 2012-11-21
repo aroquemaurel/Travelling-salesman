@@ -23,9 +23,10 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-const bool gVerboseMode;
 
-int util_searchFirstOccurenceInArray(char* pArray[], const int pSize, char* pSearch);
+bool gVerboseMode;
+
+int util_searchFirstOccurenceInArray(char** pArray, const int pSize, char* pSearch);
 
 inline void util_displayVerboseMode(char* pString);
 
