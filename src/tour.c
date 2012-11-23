@@ -17,9 +17,10 @@
 #include "tour.h"
 
 bool tour_nextPermutation(int* pPermutation, const int pSize) {
-	int i;
+	int i=pSize-1;
+	int buff;
 	bool found=false;
-	int k=-1; 
+	int k=pSize-1; 
 
 	while(pPermutation[k] >= pPermutation[k+1] && k >= 0) {
 		--k;
@@ -27,13 +28,15 @@ bool tour_nextPermutation(int* pPermutation, const int pSize) {
 
 	if(k != -1) {
 		found = true;
-		while(pPermutation[k] < pPermutation[i] && i > k) {
+		while(pPermutation[k] >= pPermutation[i] && i > k+1) {
 			--i;
 		}
-		pPermutation[k] ^= pPermutation[i] ^= pPermutation[k] ^= pPermutation[i];
-		
-		util_reverseArray(pPermutation, k+1, pSize);
+		buff = pPermutation[k];
+		pPermutation[k] = pPermutation[i];
+		pPermutation[i] = buff;
+
+		util_reverseArray(pPermutation, k+1, pSize-1); 
 	}
 
-	return true;
+	return found;
 }

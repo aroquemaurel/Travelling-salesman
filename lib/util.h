@@ -33,5 +33,6 @@ inline void util_displayVerboseMode(char* pString);
 
 void util_reverseArray(int* pTab, const int pBegin, const int pEnd);
 bool util_arrayIsEqual(int* pTab1, int* pTab2, int pSize);
+void util_displayArray(const int* pTab, const int pSize);
 
 #endif

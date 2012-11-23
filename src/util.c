@@ -54,15 +54,16 @@ inline void util_displayVerboseMode(char* pString) {
 }
 
 void util_reverseArray(int* pTab, const int pBegin, const int pEnd) {
-	int i;
-	int j=0;
+	int i = pBegin;
+	int j = pEnd;
 	int buff;
-	
-	for(i=pBegin ; i < pEnd ; ++i) {
+
+	while(i < j) {
 		buff = pTab[i];
-		pTab[i] = pTab[pEnd-j];
-		pTab[pEnd-j] = buff;
-		++j;
+		pTab[i] = pTab[j];
+		pTab[j] = buff;
+		++i;
+		--j;
 	}
 }
 
@@ -77,4 +78,11 @@ bool util_arrayIsEqual(int* pTab1, int* pTab2, int pSize) {
 	}
 
 	return equals;
+}
+
+void util_displayArray(const int* pTab, const int pSize) {
+	int i;
+	for(i=0 ; i < pSize ; ++i) {
+		printf("%d ", pTab[i]);
+	}
 }

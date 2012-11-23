@@ -30,8 +30,8 @@ $(BIN)/testUtil.o: $(TEST)/testUtil.c
 	gcc -o $(BIN)/testUtil.o -c $(TEST)/testUtil.c
 $(BIN)/fctTestUnitaire.o: $(TEST)/fctTestUnitaire.c
 	gcc -o $(BIN)/fctTestUnitaire.o -c $(TEST)/fctTestUnitaire.c
-unitTests: $(BIN)/mainUnitTests.o $(BIN)/testUtil.o $(BIN)/fctTestUnitaire.o $(BIN)/util.o
-	gcc -o unitTests $(BIN)/mainUnitTests.o $(BIN)/testUtil.o $(BIN)/fctTestUnitaire.o $(BIN)/util.o
+unitTests: $(BIN)/mainUnitTests.o $(BIN)/testUtil.o $(BIN)/fctTestUnitaire.o $(BIN)/util.o $(BIN)/tour.o
+	gcc -o unitTests $(BIN)/mainUnitTests.o $(BIN)/testUtil.o $(BIN)/fctTestUnitaire.o $(BIN)/util.o $(BIN)/tour.o
 
 clean:
 	rm -rfv $(BIN)/*.o
