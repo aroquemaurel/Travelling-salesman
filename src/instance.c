@@ -15,3 +15,11 @@
  * =====================================================================================
  */
 #include "instance.h"
+
+void instance_initialize(Instance* pInstance) {
+
+}
+
+void instance_display(const Instance pInstance) {
+
+}

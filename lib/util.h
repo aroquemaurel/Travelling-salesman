@@ -28,6 +28,10 @@ bool gVerboseMode;
 
 int util_searchFirstOccurenceInArray(char** pArray, const int pSize, char* pSearch);
 
+char** util_split( char* str, char c, int* size );
 inline void util_displayVerboseMode(char* pString);
+
+void util_reverseArray(int* pTab, const int pBegin, const int pEnd);
+bool util_arrayIsEqual(int* pTab1, int* pTab2, int pSize);
 
 #endif

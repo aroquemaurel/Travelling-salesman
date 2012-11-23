@@ -22,16 +22,18 @@
 
 #include "parsing.h"
 #include "errors.h"
+#include "town.h"
 
 int main (int argc, char** argv) {
-	char* fileName;
+	int i=0;
+	char* fileName;	
+	char buffFgets[1000] = "";
 	FILE* file = NULL;
 	Errors errors;
 	AlgoType algoType;
 	int parameter1 = 0;
 	int parameter2 = 0;
 	errors_initialize(&errors);
-
 	gVerboseMode = parsing_parseVerboseMode(argv, argc); 
 	fileName = parsing_parseFileName(argv, argc, &errors);
 	algoType = parsing_algoType(argv, argc, &errors, &parameter1, &parameter2);
@@ -42,6 +44,11 @@ int main (int argc, char** argv) {
 	}
 	// on peut travailler
 	if(errors.nbErrors == 0) {
+		for( i=0 ; i <= 4 ; ++i ) {
+			fgets(buffFgets, 1000, file);
+		}
+		
+	town_initialize(buffFgets);
 		switch(algoType) {
 			case BRUTEFORCE:
 				printf("Brute force not implemented");
@@ -59,5 +66,10 @@ int main (int argc, char** argv) {
 	} else {
 		errors_displayErrorsMessage(&errors);	
 	}
+
+	if(file != NULL) {
+		fclose(file);
+	}
+
 	return 0;
 }

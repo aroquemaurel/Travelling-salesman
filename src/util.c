@@ -27,9 +27,54 @@ int util_searchFirstOccurenceInArray(char** pArray, const int pSize, char* pSear
 	return (position == pSize-1 && strcmp(pArray[position], pSearch) != 0) ? -1 : position;
 }
 
+char** util_split( char* str, char c, int* size ) {
+	static char* tmp[256] ; 
+	int current = 0;
+	tmp[current++] = str;
+
+	while(*str) {
+		if (*str == c) {
+			*str = '\0';
+			tmp[current++] = str+1; 
+		}
+		if(tmp[current] = '\0')
+			current--;
+
+		++str;
+	}
+	tmp[current] = 0;
+	*size = current;
+	return tmp;
+} 
+
 inline void util_displayVerboseMode(char* pString) {
 	if(gVerboseMode) {
 		printf("%s", pString);
 	}
+}
 
+void util_reverseArray(int* pTab, const int pBegin, const int pEnd) {
+	int i;
+	int j=0;
+	int buff;
+	
+	for(i=pBegin ; i < pEnd ; ++i) {
+		buff = pTab[i];
+		pTab[i] = pTab[pEnd-j];
+		pTab[pEnd-j] = buff;
+		++j;
+	}
+}
+
+bool util_arrayIsEqual(int* pTab1, int* pTab2, int pSize) {
+	int i = 0;
+	bool equals = true;
+	for(i=0 ; (i < pSize) ; ++i) {
+		if(pTab1[i] != pTab2[2]) {
+			equals = false;
+			break;
+		}
+	}
+
+	return equals;
 }
