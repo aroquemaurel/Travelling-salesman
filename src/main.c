@@ -7,7 +7,7 @@
  *						dans ce fichier.
  *
  *        Version:  1.0
- *        Created:  19/11/2012 10:41:29
+ *        Created:  19/11/2012 10:42:29
  *       Revision:  none
  *       Compiler:  gcc
  *
@@ -29,10 +29,12 @@ int main (int argc, char** argv) {
 	char* fileName;	
 	char buffFgets[1000] = "";
 	FILE* file = NULL;
-	Errors errors;
-	AlgoType algoType;
 	int parameter1 = 0;
 	int parameter2 = 0;
+
+	Errors errors;
+	AlgoType algoType;
+
 	errors_initialize(&errors);
 	gVerboseMode = parsing_parseVerboseMode(argv, argc); 
 	fileName = parsing_parseFileName(argv, argc, &errors);
@@ -42,13 +44,14 @@ int main (int argc, char** argv) {
 	if(file == NULL) {
 		errors_setFileNotFound(&errors, fileName);
 	}
+
 	// on peut travailler
 	if(errors.nbErrors == 0) {
 		for( i=0 ; i <= 4 ; ++i ) {
 			fgets(buffFgets, 1000, file);
 		}
-		
-	town_initialize(buffFgets);
+			
+		town_initialize(buffFgets);
 		switch(algoType) {
 			case BRUTEFORCE:
 				printf("Brute force not implemented");
@@ -64,7 +67,7 @@ int main (int argc, char** argv) {
 				break;
 		}
 	} else {
-		errors_displayErrorsMessage(&errors);	
+		errors_displayErrorsMessage(errors);	
 	}
 
 	if(file != NULL) {
@@ -73,3 +76,4 @@ int main (int argc, char** argv) {
 
 	return 0;
 }
+
