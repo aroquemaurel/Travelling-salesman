@@ -17,16 +17,21 @@
 
 #include "town.h"
 #include "string.h"
-void town_initialize(char* pString) {
+void town_initialize(Town* pTown, char* pString) {
 	char** test;
-	int i=0;
+	int i=0, j=0;
 	int size;
 	test = util_split(pString, ' ', &size);
-	while(test[i] != 0 && i < size-1) { // TODO magicNumber
+	while(i < size-1) {
 		++i;
-		if(strcmp(test[i], "\0") != 0) {
-
+		if(strcmp(test[i], "\0") != 0) { // Si ce n'est pas une chaine vide, c'est pour nous :) 
+			if(j == 0)
+				pTown->id = atoi(test[i]);
+			if(j == 1)
+				pTown->x = atoi(test[i]);
+			if(j == 2)
+				pTown->y = atoi(test[i]);
+			++j;
 		}
-	//		printf("%s|", test[i]);
 	}
 }

@@ -19,6 +19,7 @@
 #ifndef __TOWN
 #define __TOWN
 #include <stdio.h>
+#include <stdlib.h>
 #include "util.h"
 typedef struct {
 	int x;
@@ -26,7 +27,7 @@ typedef struct {
 	int id;
 } Town;
 
-void town_initialize(char* pString);
+void town_initialize(Town* pTown, char* pString);
 #endif
 
 

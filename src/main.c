@@ -22,15 +22,15 @@
 
 #include "parsing.h"
 #include "errors.h"
+#include "instance.h"
 #include "town.h"
 
 int main (int argc, char** argv) {
-	int i=0;
 	char* fileName;	
-	char buffFgets[1000] = "";
 	FILE* file = NULL;
 	int parameter1 = 0;
 	int parameter2 = 0;
+	Instance instance;
 
 	Errors errors;
 	AlgoType algoType;
@@ -44,14 +44,11 @@ int main (int argc, char** argv) {
 	if(file == NULL) {
 		errors_setFileNotFound(&errors, fileName);
 	}
-
 	// on peut travailler
 	if(errors.nbErrors == 0) {
-		for( i=0 ; i <= 4 ; ++i ) {
-			fgets(buffFgets, 1000, file);
-		}
-			
-		town_initialize(buffFgets);
+	instance_initialize(&instance, file);
+	printf("%d", instance.towns[4].id);
+
 		switch(algoType) {
 			case BRUTEFORCE:
 				printf("Brute force not implemented");
