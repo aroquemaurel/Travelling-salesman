@@ -84,3 +84,14 @@ void util_displayArray(const int* pTab, const int pSize) {
 		printf("%d ", pTab[i]);
 	}
 }
+
+int util_sum(const int pBegin, const int pEnd) {
+	int i=pBegin;
+	int ret=0;
+	while(i <= pEnd) {
+		ret += i;
+		++i;
+	}
+
+	return ret;
+}
