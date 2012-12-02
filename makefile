@@ -2,12 +2,12 @@ SRC=src
 LIB=lib
 BIN=bin
 TEST=tests
-CFLAGS= -Wall -g -I lib 
+CFLAGS=-Wall -lm -g -I lib
 EXE=travellingSalesman
 
 # Programme principal
 $(EXE): $(BIN)/main.o $(BIN)/util.o $(BIN)/parsing.o $(BIN)/errors.o $(BIN)/instance.o $(BIN)/tour.o $(BIN)/town.o $(BIN)/distance.o unitTests
-	gcc -o $(EXE) $(BIN)/main.o $(BIN)/util.o $(BIN)/parsing.o $(BIN)/errors.o $(BIN)/tour.o $(BIN)/instance.o $(BIN)/town.o $(BIN)/distance.o
+	gcc -o $(EXE) $(BIN)/main.o $(BIN)/util.o $(BIN)/parsing.o $(BIN)/errors.o $(BIN)/tour.o $(BIN)/instance.o $(BIN)/town.o $(BIN)/distance.o $(CFLAGS)
 $(BIN)/main.o: $(SRC)/main.c $(BIN)/parsing.o 
 	gcc -o $(BIN)/main.o -c $(SRC)/main.c $(CFLAGS)
 $(BIN)/util.o: $(SRC)/util.c  $(LIB)/util.h

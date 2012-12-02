@@ -69,7 +69,7 @@ void instance_initializeDistances(Instance* pInstance) {
 	int i, j, k = 0;
 	Distance buffDistance;
 
-	for(i = 0 ; i < pInstance->nbTown; ++i) {
+	for(i = 0 ; i <= pInstance->nbTown; ++i) {
 		for(j = 0 ; j < i ; ++j) {
 			distance_new(&buffDistance, &(pInstance->towns[i-1]), &(pInstance->towns[j]));
 			pInstance->distances[k] = buffDistance;
@@ -78,15 +78,39 @@ void instance_initializeDistances(Instance* pInstance) {
 	}
 
 	/*  Display vecteur */
-	for(i = 0 ; i < util_sum(0, pInstance->nbTown-1); ++i) {
-		printf("%d%d ", pInstance->distances[i].firstTown.id, pInstance->distances[i].secondTown.id);  // TODO Remplacer i/j par distances
+	for(i = 0 ; i < util_sum(0, pInstance->nbTown); ++i) {
+		printf("%d%d(%.2f) ", pInstance->distances[i].firstTown.id, pInstance->distances[i].secondTown.id, pInstance->distances[i].distance);  // TODO Remplacer i/j par distances
 	}
+	printf("\n\n");
 
-	/* Display matrix */
-	for(i = 0 ; i < pInstance->nbTown ; ++i) {
-		for(j = 0 ; j < pInstance->nbTown ; ++j) {
-			printf("%d%d ", i,j); // TODO Remplacer i/j par distances
+	int previous = pInstance->distances[0].firstTown.id; 
+	k = 0;
+	for(i = 0 ; i < util_sum(0, pInstance->nbTown); ++i) {
+		if(previous != pInstance->distances[i].firstTown.id) {
+			for(j = 0; j < pInstance->nbTown - k -1 ; ++j) {
+				distance = distance(pInstance->distances, k, j);
+		if(pInstance->distances[i].distance < 10) {
+			printf("   ");
+		} else if(pInstance->distances[i].distance < 100) {
+			printf("  ");
+		} else if(pInstance->distances[i].distance < 1000) {
+			printf(" ");
 		}
-		printf("\n");
+//				printf("00 ", pInstance->distances[10].firstTown.id);  
+//				TODO symétrie
+				printf("%.2f ", distance);
+			}
+			++k;
+			printf("\n");
+			previous = pInstance->distances[i].firstTown.id; 
+		}
+		if(pInstance->distances[i].distance < 10) {
+			printf("   ");
+		} else if(pInstance->distances[i].distance < 100) {
+			printf("  ");
+		} else if(pInstance->distances[i].distance < 1000) {
+			printf(" ");
+		}
+		printf("%.2f ", pInstance->distances[i].distance);  // TODO Remplacer i/j par distances
 	}
 }

@@ -19,8 +19,9 @@
 #ifndef __DISTANCE
 #define __DISTANCE
 
+#include <math.h>
+#include "util.h"
 #include "town.h"
-
 typedef struct {
 	Town firstTown;
 	Town secondTown;
@@ -28,8 +29,8 @@ typedef struct {
 } Distance;
 
 void distance_new(Distance* pDistance, Town* pFirstTown, Town* pSecondTown);
-void distance_calculDistance(Distance* pDistance);
-
+double distance_calculDistance(const Town pTown1, const Town pTown2);
+double distance(Distance* pDistances, int i, int j);
 #endif
 
 

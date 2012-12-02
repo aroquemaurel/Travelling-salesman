@@ -19,11 +19,34 @@
 void distance_new(Distance* pDistance, Town* pFirstTown, Town* pSecondTown) {
 	pDistance->firstTown = *pFirstTown;
 	pDistance->secondTown = *pSecondTown;
-	pDistance->distance = -1;
+	pDistance->distance = distance_calculDistance(*pFirstTown, *pSecondTown);
 }
 
-void distance_calculDistance(Distance* pDistance) {
-	// TODO
+double distance_calculDistance(const Town pTown1, const Town pTown2) {
+	double x1=pTown1.x, x2=pTown2.x;
+	double y1=pTown1.y, y2=pTown2.y;
+	return (sqrt(pow((x1 > x2) ? x1 - x2 : x2 - x1, 2) + 
+				 pow((y1 > y2) ? y1 - y2 : y2 - y1, 2)
+			)); //Pythagore
 }
+Distance distance_searchDistance(Distance* pDistances, const int pFirst, const int pSecond) {
+	int i = util_sum(0,pFirst);
+	int search = 0;
 
+	while(search != pSecond) {
+		search = pDistances[i++].secondTown.id;	
+	}
 
+	return (pDistances[i]);
+}
+double distance(Distance* pDistances, int i, int j) {
+	Distance distance;
+	if(j > i) {
+		util_swap(&i, &j);
+	} else if(j == i) {
+		return 0;
+	}
+	distance = distance_searchDistance(pDistances, i, j);
+
+	return (distance.distance);
+}
