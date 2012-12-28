@@ -56,7 +56,7 @@ int main (int argc, char** argv) {
 //				distance_betweenTowns(instance.distances, 2,1);
 				tour = bruteForce_bestPath(instance);
 				printf("La meilleure tournée est la tournée : ");
-				tour_display(tour);
+				tour_display(tour, true);
 				break;
 			case LOCALSEARCH_RANDOM:
 				printf("Random local search not implemented");

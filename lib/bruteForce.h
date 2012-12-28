@@ -20,6 +20,7 @@
 #define __BRUTEFORCE
 #include "instance.h"
 #include "tour.h"
+#include "util.h"
 
 Tour bruteForce_bestPath(Instance pInstance);
 

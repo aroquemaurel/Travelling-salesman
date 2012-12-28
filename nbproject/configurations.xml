@@ -17,15 +17,23 @@
                    displayName="Resource Files"
                    projectFiles="true">
       <logicalFolder name="inputFile" displayName="inputFile" projectFiles="true">
-        <itemPath>inputFile/bayg29.txt</itemPath>
-        <itemPath>inputFile/burma14.txt</itemPath>
-        <itemPath>inputFile/eil51.tsp</itemPath>
-        <itemPath>inputFile/essai8.txt</itemPath>
-        <itemPath>inputFile/pr124.txt</itemPath>
-        <itemPath>inputFile/ts225.tsp</itemPath>
-        <itemPath>inputFile/u574.txt</itemPath>
-        <itemPath>inputFile/ulysses16.txt</itemPath>
+        <itemPath>resources/inputFile/bayg29.txt</itemPath>
+        <itemPath>resources/inputFile/burma14.txt</itemPath>
+        <itemPath>resources/inputFile/eil51.tsp</itemPath>
+        <itemPath>resources/inputFile/essai8.txt</itemPath>
+        <itemPath>resources/inputFile/pr124.txt</itemPath>
+        <itemPath>resources/inputFile/ts225.tsp</itemPath>
+        <itemPath>resources/inputFile/u574.txt</itemPath>
+        <itemPath>resources/inputFile/ulysses16.txt</itemPath>
       </logicalFolder>
+      <logicalFolder name="solutions" displayName="solutions" projectFiles="true">
+        <itemPath>resources/solutions/bayg29.opt.txt</itemPath>
+        <itemPath>resources/solutions/eil51.opt.tour.gz</itemPath>
+        <itemPath>resources/solutions/essai8.res</itemPath>
+        <itemPath>resources/solutions/tsp225.opt.tour.gz</itemPath>
+        <itemPath>resources/solutions/ulysses16.opt.txt</itemPath>
+      </logicalFolder>
+      <itemPath>resources/sujet.pdf</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -87,6 +95,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>inputFile</Elem>
+    <Elem>resources</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

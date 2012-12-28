@@ -11,6 +11,7 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>inputFile</sourceRootElem>
+                <sourceRootElem>resources</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

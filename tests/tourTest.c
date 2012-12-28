@@ -13,11 +13,11 @@
  * Simple C Test Suite
  */
 
-void tour_display(Tour pTour);
+void tour_toString(Tour pTour);
 
 void testTour_display() {
 	Tour pTour;
-	tour_display(pTour);
+	tour_toString(pTour);
 	if (1 /*check result*/) {
 		printf("%%TEST_FAILED%% time=0 testname=testTour_display (tourTest) message=error message sample\n");
 	}

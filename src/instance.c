@@ -79,8 +79,6 @@ void instance_initializeDistances(Instance* pInstance) {
 			++k;
 		}
 	}
-//	instance_displayLinearVector(*pInstance);
-//	instance_displayMatrix(*pInstance);
 }
 void instance_displayLinearVector(Instance pInstance) {
 	int i;
