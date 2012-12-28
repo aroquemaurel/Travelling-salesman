@@ -12,8 +12,8 @@ CND_DISTDIR=dist
 CND_BUILDDIR=build
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=./voyageurdecommerce
-OUTPUT_BASENAME=voyageurdecommerce
+OUTPUT_PATH=./voyagecommerce
+OUTPUT_BASENAME=voyagecommerce
 PACKAGE_TOP_DIR=voyagecommerce/
 
 # Functions
@@ -53,7 +53,7 @@ function copyFileToTmpDir
 
 # Setup
 cd "${TOP}"
-mkdir -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package
+mkdir -p .
 rm -rf ${NBTMPDIR}
 mkdir -p ${NBTMPDIR}
 
@@ -65,9 +65,9 @@ copyFileToTmpDir "${OUTPUT_PATH}" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BA
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/voyagecommerce.tar
+rm -f ./voyagecommerce.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/voyagecommerce.tar *
+tar -vcf ../../../.././voyagecommerce.tar *
 checkReturnCode
 
 # Cleanup

@@ -9,11 +9,11 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=.
-CND_ARTIFACT_NAME_Debug=voyageurdecommerce
-CND_ARTIFACT_PATH_Debug=./voyageurdecommerce
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
+CND_ARTIFACT_NAME_Debug=voyagecommerce
+CND_ARTIFACT_PATH_Debug=./voyagecommerce
+CND_PACKAGE_DIR_Debug=.
 CND_PACKAGE_NAME_Debug=voyagecommerce.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/voyagecommerce.tar
+CND_PACKAGE_PATH_Debug=./voyagecommerce.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
