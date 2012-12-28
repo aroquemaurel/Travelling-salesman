@@ -23,7 +23,8 @@ void tour_initialize(Tour* pTour, Instance pInstance) {
 	for(i=0; i < pInstance.nbTowns; ++i) {
 		pTour->towns[i] = pInstance.towns[i];
 	}
-	tour_calculLength(pTour, pInstance.distances);
+    pTour->distances = pInstance.distances;
+	tour_calculLength(pTour);
 }
 bool tour_nextPermutation(Tour* pPermutation) {
 	int i=pPermutation->nbTowns-1;
@@ -47,15 +48,15 @@ bool tour_nextPermutation(Tour* pPermutation) {
 	return found;
 }
 
-void tour_calculLength(Tour* pTour, Distance* pDistance) {
+void tour_calculLength(Tour* pTour) {
 	int i;
 	double length=0;
 
 	for (i = 0; i < pTour->nbTowns ; ++i) { 
 		if(i+1 != pTour->nbTowns) {
-			length += distance_betweenTowns(pDistance, pTour->towns[i].id, pTour->towns[i+1].id);
+			length += distance_betweenTowns(pTour->distances, pTour->towns[i].id, pTour->towns[i+1].id);
 		} else {
-			length += distance_betweenTowns(pDistance, pTour->towns[i].id, pTour->towns[0].id);
+			length += distance_betweenTowns(pTour->distances, pTour->towns[i].id, pTour->towns[0].id);
 		}
 	}
 	pTour->length = length;	
@@ -88,4 +89,10 @@ Tour tour_randomWalk(Instance pInstance) {
 		ret.towns[j]=temp;
 	}
     return ret;
+}
+
+void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
+    // TODO pFirst > pSecond; pFirst == pSecond; pSecond > pTour->nbTowns{ on boucle } 
+    util_reverseArray(pTour->towns, pFirst, pSecond-1);     
+    tour_calculLength(pTour);
 }
