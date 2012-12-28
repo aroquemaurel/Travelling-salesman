@@ -33,7 +33,7 @@ void testTour_nextPermutation() {
 	}
 }
 
-void tour_calculLength(Tour* pTour, Distance* pDistance);
+void tour_calculLength(Tour* pTour);
 
 void testTour_calculLength() {
 	Tour* pTour;

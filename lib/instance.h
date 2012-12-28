@@ -27,6 +27,9 @@
 #include "distance.h"
 
 #define N 512
+
+/**
+ */
 typedef struct {
 	Town towns[N];
 	Distance distances[N];
@@ -35,11 +38,42 @@ typedef struct {
 	char* type;
 } Instance;
 
+/**
+ * 
+ * @param pInstance
+ */
 void instance_display(const Instance pInstance);
+
+/**
+ * 
+ * @param pInstance
+ * @param pFile
+ */
 void instance_initialize(Instance* pInstance, FILE* pFile);
+
+/**
+ * 
+ * @param pInstance
+ * @param pTown
+ */
 void instance_push(Instance* pInstance, const Town pTown);
+
+/**
+ * 
+ * @param pInstance
+ */
 void instance_initializeDistances(Instance* pInstance);
+
+/**
+ * 
+ * @param pInstance
+ */
 void instance_displayLinearVector(Instance pInstance);
+
+/**
+ * 
+ * @param pInstance
+ */
 void instance_displayMatrix(Instance pInstance);
 #endif
 

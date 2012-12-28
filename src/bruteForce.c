@@ -22,7 +22,7 @@ Tour bruteForce_bestPath(Instance pInstance) {
 	tour_initialize(&buffTour, pInstance);
 	bestTour = buffTour;
 	while(tour_nextPermutation(&buffTour)) {
-		tour_calculLength(&buffTour, pInstance.distances);
+		tour_calculLength(&buffTour);
 		if(buffTour.length < bestTour.length) {
 			bestTour = buffTour;
 		}

@@ -22,6 +22,11 @@
 #include "tour.h"
 #include "util.h"
 
+/**
+ * 
+ * @param pInstance
+ * @return 
+ */
 Tour bruteForce_bestPath(Instance pInstance);
 
 #endif

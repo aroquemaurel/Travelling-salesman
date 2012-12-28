@@ -22,6 +22,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ */
 typedef struct {
 	char* errorNbArguments;
 	char* errorTagFNotFound;
@@ -31,12 +33,47 @@ typedef struct {
 	int nbErrors;
 } Errors;
 
+/**
+ * 
+ * @param pErrors
+ */
 void errors_initialize(Errors* pErrors);
+
+/**
+ * 
+ * @param pErrors
+ */
 void errors_displayErrorsMessage(const Errors pErrors);
+
+/**
+ * 
+ * @param pErrors
+ */
 void errors_setNbArguments(Errors* pErrors);
+
+/**
+ * 
+ * @param pErrors
+ */
 void errors_setTagFNotFound(Errors* pErrors);
+
+/**
+ * 
+ * @param pErrors
+ * @param fileName
+ */
 void errors_setFileNotFound(Errors* pErrors, char* fileName);
+
+/**
+ * 
+ * @param pErrors
+ */
 void errors_setNoAlgoSpecified(Errors* pErrors);
+
+/**
+ * 
+ * @param pErrors
+ */
 void errors_setLsrNotValidParameter(Errors* pErrors);
 #endif
 

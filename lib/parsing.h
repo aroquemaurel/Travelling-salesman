@@ -23,6 +23,8 @@
 #include "util.h"
 #include "errors.h"
 
+/**
+ */
 typedef enum { 
 	BRUTEFORCE, 
 	LOCALSEARCH_RANDOM, 
@@ -30,8 +32,32 @@ typedef enum {
 	GENETIC
 } AlgoType;
 
+/**
+ * 
+ * @param pTab
+ * @param pSize
+ * @return 
+ */
 bool parsing_parseVerboseMode(char** pTab, const int pSize);
+
+/**
+ * 
+ * @param pTab
+ * @param pSize
+ * @param pErrors
+ * @return 
+ */
 char* parsing_parseFileName(char** pTab, const int pSize, Errors* pErrors);
+
+/**
+ * 
+ * @param pTab
+ * @param pSize
+ * @param pErrors
+ * @param param1AlgoType
+ * @param param2AlgoType
+ * @return 
+ */
 AlgoType parsing_algoType(char** pTab, const int pSize, Errors* pErrors, int* param1AlgoType, int* param2AlgoType);
 
 #endif

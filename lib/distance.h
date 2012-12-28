@@ -21,14 +21,37 @@
 
 #include <math.h>
 #include "town.h"
+
+/**
+ */
 typedef struct {
 	Town firstTown;
 	Town secondTown;
 	double distance;
 }Distance;
 
+/**
+ * 
+ * @param pDistance
+ * @param pFirstTown
+ * @param pSecondTown
+ */
 void distance_new(Distance* pDistance, Town* pFirstTown, Town* pSecondTown);
+/**
+ * 
+ * @param pTown1
+ * @param pTown2
+ * @return 
+ */
 double distance_calculDistance(const Town pTown1, const Town pTown2);
+
+/**
+ * 
+ * @param pDistances
+ * @param i
+ * @param j
+ * @return 
+ */
 double distance_betweenTowns(Distance* pDistances, int i, int j);
 
 #endif
