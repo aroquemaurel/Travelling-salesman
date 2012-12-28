@@ -19,6 +19,7 @@
 #ifndef __PARSING
 #define __PARSING
 
+#include <stdbool.h>
 #include "util.h"
 #include "errors.h"
 
@@ -34,5 +35,4 @@ char* parsing_parseFileName(char** pTab, const int pSize, Errors* pErrors);
 AlgoType parsing_algoType(char** pTab, const int pSize, Errors* pErrors, int* param1AlgoType, int* param2AlgoType);
 
 #endif
-
 

@@ -19,7 +19,7 @@
 #define __TOWN
 #include <stdio.h>
 #include <stdlib.h>
-//#include "util.h"
+
 typedef struct {
 	int x;
 	int y;
@@ -28,5 +28,4 @@ typedef struct {
 
 void town_initialize(Town* pTown, const int pId, const int pX, const int pY);
 #endif
-
 

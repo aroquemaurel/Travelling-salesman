@@ -18,6 +18,7 @@
 
 void instance_initialize(Instance* pInstance, FILE* pFile) {
 	int dimension, buffId=0;
+	int buff;
 	bool displayData = false;
 	char buffTag[255] = "";
 	char buffValue[255] = "";
@@ -25,12 +26,8 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 	float buffX, buffY;
 	Town townBuff;
 	
-	pInstance->nbTown = 0;
+	pInstance->nbTowns = 0;
 	pInstance->name = "";
-	townBuff.x = 0;
-	townBuff.y = 0;
-	townBuff.id = 0;
-	instance_push(pInstance, townBuff);
 
 	while(!feof(pFile)) {
 		if(!displayData) {
@@ -43,7 +40,10 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 				displayData = true;
 			}
 		} else {
-			fscanf(pFile, " %f %f", &buffX, &buffY);
+			if(buffId == 0) {
+				fseek(pFile, -1, SEEK_CUR);
+			}
+			fscanf(pFile, " %d %f %f", &buff, &buffX, &buffY);
 			town_initialize(&townBuff, ++buffId, buffX, buffY);
 			instance_push(pInstance, townBuff);
 			if(buffId >= dimension) {
@@ -61,56 +61,49 @@ void instance_display(const Instance pInstance) {
 
 }
 
-void instance_push(Instance* pInstance, const Town pTown) { // TODO exception nbTown != 500. TODO Defines ou dynamique
-	pInstance->towns[pInstance->nbTown++] = pTown;
+void instance_push(Instance* pInstance, const Town pTown) { // TODO exception nbTowns != 500. TODO Defines ou dynamique
+	pInstance->towns[pInstance->nbTowns++] = pTown;
 }
 
 void instance_initializeDistances(Instance* pInstance) {
 	int i, j, k = 0;
 	Distance buffDistance;
-
-	for(i = 0 ; i <= pInstance->nbTown; ++i) {
+	for(i = 0 ; i <= pInstance->nbTowns; ++i) {
 		for(j = 0 ; j < i ; ++j) {
 			distance_new(&buffDistance, &(pInstance->towns[i-1]), &(pInstance->towns[j]));
 			pInstance->distances[k] = buffDistance;
 			++k;
 		}
 	}
-
-	/*  Display vecteur */
-	for(i = 0 ; i < util_sum(0, pInstance->nbTown); ++i) {
-		printf("%d%d(%.2f) ", pInstance->distances[i].firstTown.id, pInstance->distances[i].secondTown.id, pInstance->distances[i].distance);  // TODO Remplacer i/j par distances
+//	instance_displayLinearVector(*pInstance);
+//	instance_displayMatrix(*pInstance);
+}
+void instance_displayLinearVector(Instance pInstance) {
+	int i;
+	for(i = 0 ; i < util_sum(0, pInstance.nbTowns); ++i) {
+		printf("%d%d(%.2f) ", pInstance.distances[i].firstTown.id, pInstance.distances[i].secondTown.id, pInstance.distances[i].distance);  
 	}
-	printf("\n\n");
+	printf("\n");
+}
 
-	int previous = pInstance->distances[0].firstTown.id; 
-	k = 0;
-	for(i = 0 ; i < util_sum(0, pInstance->nbTown); ++i) {
-		if(previous != pInstance->distances[i].firstTown.id) {
-			for(j = 0; j < pInstance->nbTown - k -1 ; ++j) {
-				distance = distance(pInstance->distances, k, j);
-		if(pInstance->distances[i].distance < 10) {
-			printf("   ");
-		} else if(pInstance->distances[i].distance < 100) {
-			printf("  ");
-		} else if(pInstance->distances[i].distance < 1000) {
-			printf(" ");
-		}
-//				printf("00 ", pInstance->distances[10].firstTown.id);  
-//				TODO symétrie
-				printf("%.2f ", distance);
-			}
+void instance_displayMatrix(Instance pInstance) { 
+	int previous = pInstance.distances[0].firstTown.id; 
+	int i, k;
+
+	for(i = 0, k = 0 ; i < util_sum(0, pInstance.nbTowns); ++i) {
+		if(previous != pInstance.distances[i].firstTown.id) {
 			++k;
 			printf("\n");
-			previous = pInstance->distances[i].firstTown.id; 
+			previous = pInstance.distances[i].firstTown.id; 
 		}
-		if(pInstance->distances[i].distance < 10) {
+		if(pInstance.distances[i].distance < 10) {
 			printf("   ");
-		} else if(pInstance->distances[i].distance < 100) {
+		} else if(pInstance.distances[i].distance < 100) {
 			printf("  ");
-		} else if(pInstance->distances[i].distance < 1000) {
+		} else if(pInstance.distances[i].distance < 1000) {
 			printf(" ");
 		}
-		printf("%.2f ", pInstance->distances[i].distance);  // TODO Remplacer i/j par distances
+		printf("%.2f ", pInstance.distances[i].distance);  // TODO Remplacer i/j par distances
 	}
+	printf("\n");
 }

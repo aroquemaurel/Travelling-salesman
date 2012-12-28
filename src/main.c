@@ -1,6 +1,5 @@
 /*
- * =====================================================================================
- *
+ * ===================================================================================== *
  *       Filename:  main.c
  *
  *    Description:  Point d'entrée du programme. Aucune fonction ne doit être déclarée
@@ -15,15 +14,13 @@
  *
  * =====================================================================================
  */
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "parsing.h"
 #include "errors.h"
-#include "instance.h"
-#include "town.h"
+#include "parsing.h"
+#include "bruteForce.h"
 
 int main (int argc, char** argv) {
 	char* fileName;	
@@ -34,6 +31,7 @@ int main (int argc, char** argv) {
 	Errors errors;
 	AlgoType algoType;
 	Town test1, test2;
+	Tour tour;
 	test1.id = 3;
 	test2.id = 1;
 	Distance test;
@@ -52,11 +50,13 @@ int main (int argc, char** argv) {
 	// on peut travailler
 	if(errors.nbErrors == 0) {
 	instance_initialize(&instance, file);
-//	printf("%d", instance.towns[4].id);
 
 		switch(algoType) {
 			case BRUTEFORCE:
-				printf("\nBrute force not implemented\n");
+//				distance_betweenTowns(instance.distances, 2,1);
+				tour = bruteForce_bestPath(instance);
+				printf("La meilleure tournée est la tournée : ");
+				tour_display(tour);
 				break;
 			case LOCALSEARCH_RANDOM:
 				printf("Random local search not implemented");
@@ -79,4 +79,3 @@ int main (int argc, char** argv) {
 
 	return EXIT_SUCCESS;
 }
-
