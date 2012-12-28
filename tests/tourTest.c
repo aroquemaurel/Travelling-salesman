@@ -12,17 +12,6 @@
 /*
  * Simple C Test Suite
  */
-
-void tour_toString(Tour pTour);
-
-void testTour_display() {
-	Tour pTour;
-	tour_toString(pTour);
-	if (1 /*check result*/) {
-		printf("%%TEST_FAILED%% time=0 testname=testTour_display (tourTest) message=error message sample\n");
-	}
-}
-
 void tour_initialize(Tour* pTour, Instance pInstance);
 
 void testTour_initialize() {
@@ -55,13 +44,23 @@ void testTour_calculLength() {
 	}
 }
 
+Tour tour_randomWalk(Instance pInstance);
+
+void testTour_randomWalk() {
+	Instance instance;
+    Tour tour;
+    FILE* file = fopen("resources/inputFile/essai8.txt", "r");
+    instance_initialize(&instance, file);
+	tour = tour_randomWalk(instance);
+    tour_display(tour, true);
+	if (1 /*check result*/) {
+		printf("%%TEST_FAILED%% time=0 testname=testTour_calculLength (tourTest) message=error message sample\n");
+	}
+}
+
 int main(int argc, char** argv) {
 	printf("%%SUITE_STARTING%% tourTest\n");
 	printf("%%SUITE_STARTED%%\n");
-
-	printf("%%TEST_STARTED%%  testTour_display (tourTest)\n");
-	testTour_display();
-	printf("%%TEST_FINISHED%% time=0 testTour_display (tourTest)\n");
 
 	printf("%%TEST_STARTED%%  testTour_initialize (tourTest)\n");
 	testTour_initialize();
@@ -75,6 +74,8 @@ int main(int argc, char** argv) {
 	testTour_calculLength();
 	printf("%%TEST_FINISHED%% time=0 testTour_calculLength (tourTest)\n");
 
+    testTour_randomWalk();
+    
 	printf("%%SUITE_FINISHED%% time=0\n");
 
 	return (EXIT_SUCCESS);

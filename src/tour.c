@@ -70,3 +70,22 @@ void tour_display(Tour pTour, bool pDisplay) {
         printf("\nLa longueur de ce tour est %f", pTour.length);
     }
 }
+
+Tour tour_randomWalk(Instance pInstance) {
+    Tour ret;
+    tour_initialize(&ret, pInstance);
+	int i=0;
+	int j=0;
+	Town temp;
+	srand(time(NULL));
+    
+	for(i = 0; i< ret.nbTowns;i++){
+        srand(time(NULL));
+		j = i + rand() % (ret.nbTowns-i);
+
+		temp = ret.towns[i];
+		ret.towns[i] = ret.towns[j];
+		ret.towns[j]=temp;
+	}
+    return ret;
+}

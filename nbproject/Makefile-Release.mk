@@ -55,7 +55,6 @@ TESTFILES= \
 	${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce \
 	${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce \
 	${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce \
-	${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce \
 	${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce
 
 # C Compiler Flags
@@ -132,10 +131,6 @@ ${OBJECTDIR}/src/errors.o: src/errors.c
 
 # Build Test Targets
 .build-tests-conf: .build-conf ${TESTFILES}
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce: ${TESTDIR}/tests/bruteForceTest.o ${OBJECTFILES:%.o=%_nomain.o}
-	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c}   -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce $^ ${LDLIBSOPTIONS} 
-
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce: ${TESTDIR}/tests/distanceTest.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c}   -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce $^ ${LDLIBSOPTIONS} 
@@ -159,12 +154,6 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce: ${TESTDIR}/tests/town
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce: ${TESTDIR}/tests/utilTest.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c}   -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce $^ ${LDLIBSOPTIONS} 
-
-
-${TESTDIR}/tests/bruteForceTest.o: tests/bruteForceTest.c 
-	${MKDIR} -p ${TESTDIR}/tests
-	${RM} $@.d
-	$(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/bruteForceTest.o tests/bruteForceTest.c
 
 
 ${TESTDIR}/tests/distanceTest.o: tests/distanceTest.c 
@@ -324,7 +313,6 @@ ${OBJECTDIR}/src/errors_nomain.o: ${OBJECTDIR}/src/errors.o src/errors.c
 .test-conf:
 	@if [ "${TEST}" = "" ]; \
 	then  \
-	    ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce || true; \
 	    ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce || true; \
 	    ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce || true; \
 	    ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/voyagecommerce || true; \

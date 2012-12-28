@@ -87,3 +87,9 @@ void util_swap(int* a, int* b) {
 	*a = *b;
 	*b = buff;
 }
+
+int util_rand(const int pMin, const int pMax) {
+    srand(time(NULL));
+    
+    return ((rand() % (pMax - pMin + 1)) + pMin);
+}

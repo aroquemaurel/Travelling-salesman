@@ -1,4 +1,4 @@
-build/*
+*.o
+build/Debug/GNU-Linux-x86/src/*
 *.swp
 *.swo
-*.o

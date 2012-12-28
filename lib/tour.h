@@ -25,6 +25,7 @@
 #include "town.h"
 #include "instance.h"
 #include "distance.h"
+
 typedef struct {
 	Town towns[N];
 	int nbTowns;
@@ -34,6 +35,7 @@ typedef struct {
 void tour_initialize(Tour* pTour, Instance pInstance);
 bool tour_nextPermutation(Tour* pPermutation);
 void tour_calculLength(Tour* pTour, Distance* pDistance);
-void tour_display(Tour pTour);
+void tour_display(Tour pTour, bool pDisplay);
+Tour tour_randomWalk(Instance pInstance);
 #endif
 

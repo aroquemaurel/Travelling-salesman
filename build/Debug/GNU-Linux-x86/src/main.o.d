@@ -1,28 +1,21 @@
-build/Debug/GNU-Linux-x86/src/main.o: src/main.c \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/errors.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/parsing.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/util.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/town.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/errors.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/bruteForce.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/instance.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/distance.h \
- /development/cours/L2/algo3/TP/voyageurDeCommerce/lib/tour.h
+build/Debug/GNU-Linux-x86/src/main.o: src/main.c lib/errors.h \
+ lib/parsing.h lib/util.h lib/town.h lib/errors.h lib/bruteForce.h \
+ lib/instance.h lib/distance.h lib/tour.h
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/errors.h:
+lib/errors.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/parsing.h:
+lib/parsing.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/util.h:
+lib/util.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/town.h:
+lib/town.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/errors.h:
+lib/errors.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/bruteForce.h:
+lib/bruteForce.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/instance.h:
+lib/instance.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/distance.h:
+lib/distance.h:
 
-/development/cours/L2/algo3/TP/voyageurDeCommerce/lib/tour.h:
+lib/tour.h:

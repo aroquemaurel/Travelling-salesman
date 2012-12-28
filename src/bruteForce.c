@@ -15,7 +15,7 @@
  * =====================================================================================
  */
 #include "bruteForce.h"
-#include "lib/util.h"
+#include "util.h"
 
 Tour bruteForce_bestPath(Instance pInstance) {
 	Tour buffTour, bestTour;
