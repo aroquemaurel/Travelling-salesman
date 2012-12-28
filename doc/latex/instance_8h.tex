@@ -1,0 +1,131 @@
+\hypertarget{instance_8h}{
+\section{Référence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/instance.h}
+\label{instance_8h}\index{/development/cours/L2/algo3/TP/voyageCommerce/lib/instance.h@{/development/cours/L2/algo3/TP/voyageCommerce/lib/instance.h}}
+}
+
+
+Programme de tests.  
+
+
+{\ttfamily \#include $<$stdbool.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}util.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}town.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}distance.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structInstance}{Instance}
+\begin{DoxyCompactList}\small\item\em Objet des instances. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{instance_8h_a0240ac851181b84ac374872dc5434ee4}{
+\#define {\bfseries N}~512}
+\label{instance_8h_a0240ac851181b84ac374872dc5434ee4}
+
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{instance_8h_a1058dfaf55684061f53d50b1f9f7821c}{instance\_\-display} (const \hyperlink{structInstance}{Instance} pInstance)
+\item 
+void \hyperlink{instance_8h_a006533de14842a6b1c18e9e5d154466b}{instance\_\-initialize} (\hyperlink{structInstance}{Instance} $\ast$pInstance, FILE $\ast$pFile)
+\item 
+void \hyperlink{instance_8h_ac04153fd35ba82c91bdf29e938fdc2bc}{instance\_\-push} (\hyperlink{structInstance}{Instance} $\ast$pInstance, const \hyperlink{structTown}{Town} pTown)
+\item 
+void \hyperlink{instance_8h_a75cdc10b8787d2cd6cce149b9318b93b}{instance\_\-initializeDistances} (\hyperlink{structInstance}{Instance} $\ast$pInstance)
+\item 
+void \hyperlink{instance_8h_a5aab04532a16d1df8a705abec79169d4}{instance\_\-displayLinearVector} (\hyperlink{structInstance}{Instance} pInstance)
+\item 
+void \hyperlink{instance_8h_abdf1b6f1323491c529e337e6ae585f27}{instance\_\-displayMatrix} (\hyperlink{structInstance}{Instance} pInstance)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Programme de tests. \begin{DoxyAuthor}{Auteur}
+Antoine de Roquemaurel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+21/11/2012 22:03:34
+\end{DoxyDate}
+Programme de test pour l'objet de gestion des chaînes de caractères Str\_\-t. 
+
+\subsection{Documentation des fonctions}
+\hypertarget{instance_8h_a1058dfaf55684061f53d50b1f9f7821c}{
+\index{instance.h@{instance.h}!instance\_\-display@{instance\_\-display}}
+\index{instance\_\-display@{instance\_\-display}!instance.h@{instance.h}}
+\subsubsection[{instance\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}void instance\_\-display (
+\begin{DoxyParamCaption}
+\item[{const {\bf Instance}}]{ pInstance}
+\end{DoxyParamCaption}
+)}}
+\label{instance_8h_a1058dfaf55684061f53d50b1f9f7821c}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pInstance}]\end{DoxyParams}
+\hypertarget{instance_8h_a5aab04532a16d1df8a705abec79169d4}{
+\index{instance.h@{instance.h}!instance\_\-displayLinearVector@{instance\_\-displayLinearVector}}
+\index{instance\_\-displayLinearVector@{instance\_\-displayLinearVector}!instance.h@{instance.h}}
+\subsubsection[{instance\_\-displayLinearVector}]{\setlength{\rightskip}{0pt plus 5cm}void instance\_\-displayLinearVector (
+\begin{DoxyParamCaption}
+\item[{{\bf Instance}}]{ pInstance}
+\end{DoxyParamCaption}
+)}}
+\label{instance_8h_a5aab04532a16d1df8a705abec79169d4}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pInstance}]\end{DoxyParams}
+\hypertarget{instance_8h_abdf1b6f1323491c529e337e6ae585f27}{
+\index{instance.h@{instance.h}!instance\_\-displayMatrix@{instance\_\-displayMatrix}}
+\index{instance\_\-displayMatrix@{instance\_\-displayMatrix}!instance.h@{instance.h}}
+\subsubsection[{instance\_\-displayMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void instance\_\-displayMatrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Instance}}]{ pInstance}
+\end{DoxyParamCaption}
+)}}
+\label{instance_8h_abdf1b6f1323491c529e337e6ae585f27}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pInstance}]\end{DoxyParams}
+\hypertarget{instance_8h_a006533de14842a6b1c18e9e5d154466b}{
+\index{instance.h@{instance.h}!instance\_\-initialize@{instance\_\-initialize}}
+\index{instance\_\-initialize@{instance\_\-initialize}!instance.h@{instance.h}}
+\subsubsection[{instance\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}void instance\_\-initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Instance} $\ast$}]{ pInstance, }
+\item[{FILE $\ast$}]{ pFile}
+\end{DoxyParamCaption}
+)}}
+\label{instance_8h_a006533de14842a6b1c18e9e5d154466b}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pInstance}]\item[{\em pFile}]\end{DoxyParams}
+\hypertarget{instance_8h_a75cdc10b8787d2cd6cce149b9318b93b}{
+\index{instance.h@{instance.h}!instance\_\-initializeDistances@{instance\_\-initializeDistances}}
+\index{instance\_\-initializeDistances@{instance\_\-initializeDistances}!instance.h@{instance.h}}
+\subsubsection[{instance\_\-initializeDistances}]{\setlength{\rightskip}{0pt plus 5cm}void instance\_\-initializeDistances (
+\begin{DoxyParamCaption}
+\item[{{\bf Instance} $\ast$}]{ pInstance}
+\end{DoxyParamCaption}
+)}}
+\label{instance_8h_a75cdc10b8787d2cd6cce149b9318b93b}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pInstance}]\end{DoxyParams}
+\hypertarget{instance_8h_ac04153fd35ba82c91bdf29e938fdc2bc}{
+\index{instance.h@{instance.h}!instance\_\-push@{instance\_\-push}}
+\index{instance\_\-push@{instance\_\-push}!instance.h@{instance.h}}
+\subsubsection[{instance\_\-push}]{\setlength{\rightskip}{0pt plus 5cm}void instance\_\-push (
+\begin{DoxyParamCaption}
+\item[{{\bf Instance} $\ast$}]{ pInstance, }
+\item[{const {\bf Town}}]{ pTown}
+\end{DoxyParamCaption}
+)}}
+\label{instance_8h_ac04153fd35ba82c91bdf29e938fdc2bc}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pInstance}]\item[{\em pTown}]\end{DoxyParams}

@@ -1,19 +1,12 @@
-/*
- * =====================================================================================
+/**
+ * \file bruteForce.h
+ * \brief Programme de tests.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 27/12/2012 17:58:36
  *
- *       Filename:  bruteForce.h
+ * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  27/12/2012 17:58:36
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *        Company:  
- *
- * =====================================================================================
  */
 
 #ifndef __BRUTEFORCE

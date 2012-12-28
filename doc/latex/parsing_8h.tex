@@ -1,0 +1,119 @@
+\hypertarget{parsing_8h}{
+\section{Référence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/parsing.h}
+\label{parsing_8h}\index{/development/cours/L2/algo3/TP/voyageCommerce/lib/parsing.h@{/development/cours/L2/algo3/TP/voyageCommerce/lib/parsing.h}}
+}
+
+
+Programme de tests.  
+
+
+{\ttfamily \#include $<$stdbool.h$>$}\par
+{\ttfamily \#include \char`\"{}util.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}errors.h\char`\"{}}\par
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{parsing_8h_aebdeb51354d2ee712846a9e02786cd74}{AlgoType} \{ {\bfseries BRUTEFORCE}, 
+{\bfseries LOCALSEARCH\_\-RANDOM}, 
+{\bfseries LOCALSEARCH\_\-SYSTEMATIC}, 
+{\bfseries GENETIC}
+ \}
+\begin{DoxyCompactList}\small\item\em \hyperlink{parsing_8h}{parsing.h} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{parsing_8h_a017908431f5412fb0a5d3441b4200415}{parsing\_\-parseVerboseMode} (char $\ast$$\ast$pTab, const int pSize)
+\item 
+char $\ast$ \hyperlink{parsing_8h_a8b91b593ba82d06c6ffbeeaf6e0825aa}{parsing\_\-parseFileName} (char $\ast$$\ast$pTab, const int pSize, \hyperlink{structErrors}{Errors} $\ast$pErrors)
+\item 
+\hyperlink{parsing_8h_aebdeb51354d2ee712846a9e02786cd74}{AlgoType} \hyperlink{parsing_8h_a33b71f5b28c034fb83e724b8be057862}{parsing\_\-algoType} (char $\ast$$\ast$pTab, const int pSize, \hyperlink{structErrors}{Errors} $\ast$pErrors, int $\ast$param1AlgoType, int $\ast$param2AlgoType)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Programme de tests. \begin{DoxyAuthor}{Auteur}
+Antoine de Roquemaurel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+21/11/2012 17:17:24
+\end{DoxyDate}
+Programme de test pour l'objet de gestion des chaînes de caractères Str\_\-t. 
+
+\subsection{Documentation du type de l'énumération}
+\hypertarget{parsing_8h_aebdeb51354d2ee712846a9e02786cd74}{
+\index{parsing.h@{parsing.h}!AlgoType@{AlgoType}}
+\index{AlgoType@{AlgoType}!parsing.h@{parsing.h}}
+\subsubsection[{AlgoType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf AlgoType}}}
+\label{parsing_8h_aebdeb51354d2ee712846a9e02786cd74}
+
+
+\hyperlink{parsing_8h}{parsing.h} 
+
+Enumération des types d'algorithmes \hyperlink{structTown}{Town} bla bla bla est un petit objet de gestion de chaînes de caractères. La chaîne se termine obligatoirement par un zéro de fin et l'objet connait la taille de chaîne contient ! 
+
+\subsection{Documentation des fonctions}
+\hypertarget{parsing_8h_a33b71f5b28c034fb83e724b8be057862}{
+\index{parsing.h@{parsing.h}!parsing\_\-algoType@{parsing\_\-algoType}}
+\index{parsing\_\-algoType@{parsing\_\-algoType}!parsing.h@{parsing.h}}
+\subsubsection[{parsing\_\-algoType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AlgoType} parsing\_\-algoType (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ pTab, }
+\item[{const int}]{ pSize, }
+\item[{{\bf Errors} $\ast$}]{ pErrors, }
+\item[{int $\ast$}]{ param1AlgoType, }
+\item[{int $\ast$}]{ param2AlgoType}
+\end{DoxyParamCaption}
+)}}
+\label{parsing_8h_a33b71f5b28c034fb83e724b8be057862}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTab}]\item[{\em pSize}]\item[{\em pErrors}]\item[{\em param1AlgoType}]\item[{\em param2AlgoType}]\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+TODO Erreur paramètre après -\/lsr non entier ou = 0
+
+TODO Erreur paramètre après -\/lsnr non entier ou = 0
+
+TODO Erreur paramètre après -\/lsnr non entier ou = 0
+
+TODO Erreur paramètre après -\/lsnr non entier ou = 0 
+
+\hypertarget{parsing_8h_a8b91b593ba82d06c6ffbeeaf6e0825aa}{
+\index{parsing.h@{parsing.h}!parsing\_\-parseFileName@{parsing\_\-parseFileName}}
+\index{parsing\_\-parseFileName@{parsing\_\-parseFileName}!parsing.h@{parsing.h}}
+\subsubsection[{parsing\_\-parseFileName}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ parsing\_\-parseFileName (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ pTab, }
+\item[{const int}]{ pSize, }
+\item[{{\bf Errors} $\ast$}]{ pErrors}
+\end{DoxyParamCaption}
+)}}
+\label{parsing_8h_a8b91b593ba82d06c6ffbeeaf6e0825aa}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTab}]\item[{\em pSize}]\item[{\em pErrors}]\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\hypertarget{parsing_8h_a017908431f5412fb0a5d3441b4200415}{
+\index{parsing.h@{parsing.h}!parsing\_\-parseVerboseMode@{parsing\_\-parseVerboseMode}}
+\index{parsing\_\-parseVerboseMode@{parsing\_\-parseVerboseMode}!parsing.h@{parsing.h}}
+\subsubsection[{parsing\_\-parseVerboseMode}]{\setlength{\rightskip}{0pt plus 5cm}bool parsing\_\-parseVerboseMode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ pTab, }
+\item[{const int}]{ pSize}
+\end{DoxyParamCaption}
+)}}
+\label{parsing_8h_a017908431f5412fb0a5d3441b4200415}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTab}]\item[{\em pSize}]\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}

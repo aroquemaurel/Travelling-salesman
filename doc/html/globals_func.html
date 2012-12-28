@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>voyageurDeCommerce: Membres de classe</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Généré par Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+--></script>
+<script type="text/javascript">
+function hasClass(ele,cls) {
+  return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+function addClass(ele,cls) {
+  if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+}
+
+function removeClass(ele,cls) {
+  if (hasClass(ele,cls)) {
+    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    ele.className=ele.className.replace(reg,' ');
+  }
+}
+
+function toggleVisibility(linkObj) {
+ var base = linkObj.getAttribute('id');
+ var summary = document.getElementById(base + '-summary');
+ var content = document.getElementById(base + '-content');
+ var trigger = document.getElementById(base + '-trigger');
+ if ( hasClass(linkObj,'closed') ) {
+   summary.style.display = 'none';
+   content.style.display = 'block';
+   trigger.src = 'open.png';
+   removeClass(linkObj,'closed');
+   addClass(linkObj,'opened');
+ } else if ( hasClass(linkObj,'opened') ) {
+   summary.style.display = 'block';
+   content.style.display = 'none';
+   trigger.src = 'closed.png';
+   removeClass(linkObj,'opened');
+   addClass(linkObj,'closed');
+ }
+ return false;
+}
+</script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li class="current"><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="globals.html"><span>Tout</span></a></li>
+      <li class="current"><a href="globals_func.html"><span>Fonctions</span></a></li>
+      <li><a href="globals_enum.html"><span>Énumérations</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+&nbsp;<ul>
+<li>bruteForce_bestPath()
+: <a class="el" href="bruteForce_8h.html#aa893fd74b7ec74e51d7be37ea24a940f">bruteForce.h</a>
+, <a class="el" href="bruteForce_8c.html#aa893fd74b7ec74e51d7be37ea24a940f">bruteForce.c</a>
+</li>
+<li>distance_betweenTowns()
+: <a class="el" href="distance_8h.html#a3181d7b4c6f5044b216c1a96a5a89854">distance.h</a>
+</li>
+<li>distance_calculDistance()
+: <a class="el" href="distance_8h.html#a3c0a5cae2a774b648d20447b23d81d84">distance.h</a>
+</li>
+<li>distance_new()
+: <a class="el" href="distance_8h.html#a5caccb8b6e23c4fb6b72740b9283d2cc">distance.h</a>
+</li>
+<li>errors_displayErrorsMessage()
+: <a class="el" href="errors_8h.html#a9432e8a46dc6939f08895669f3678ccf">errors.h</a>
+</li>
+<li>errors_initialize()
+: <a class="el" href="errors_8h.html#a7b18bd56b2f03b4ac10845421e915853">errors.h</a>
+</li>
+<li>errors_setFileNotFound()
+: <a class="el" href="errors_8h.html#a7393147938b78a391b74930ceb07fc88">errors.h</a>
+</li>
+<li>errors_setLsrNotValidParameter()
+: <a class="el" href="errors_8h.html#acf068a008ed0089d91fd4c53f445374d">errors.h</a>
+</li>
+<li>errors_setNbArguments()
+: <a class="el" href="errors_8h.html#a0578fb7fcec18f8016a960fe51ddc7bc">errors.h</a>
+</li>
+<li>errors_setNoAlgoSpecified()
+: <a class="el" href="errors_8h.html#a4b02c122b53eeefe092ae99b42eb7111">errors.h</a>
+</li>
+<li>errors_setTagFNotFound()
+: <a class="el" href="errors_8h.html#a87df0338b6a2197054a47514070433c3">errors.h</a>
+</li>
+<li>instance_display()
+: <a class="el" href="instance_8h.html#a1058dfaf55684061f53d50b1f9f7821c">instance.h</a>
+</li>
+<li>instance_displayLinearVector()
+: <a class="el" href="instance_8h.html#a5aab04532a16d1df8a705abec79169d4">instance.h</a>
+</li>
+<li>instance_displayMatrix()
+: <a class="el" href="instance_8h.html#abdf1b6f1323491c529e337e6ae585f27">instance.h</a>
+</li>
+<li>instance_initialize()
+: <a class="el" href="instance_8h.html#a006533de14842a6b1c18e9e5d154466b">instance.h</a>
+</li>
+<li>instance_initializeDistances()
+: <a class="el" href="instance_8h.html#a75cdc10b8787d2cd6cce149b9318b93b">instance.h</a>
+</li>
+<li>instance_push()
+: <a class="el" href="instance_8h.html#ac04153fd35ba82c91bdf29e938fdc2bc">instance.h</a>
+</li>
+<li>parsing_algoType()
+: <a class="el" href="parsing_8h.html#a33b71f5b28c034fb83e724b8be057862">parsing.h</a>
+</li>
+<li>parsing_parseFileName()
+: <a class="el" href="parsing_8h.html#a8b91b593ba82d06c6ffbeeaf6e0825aa">parsing.h</a>
+</li>
+<li>parsing_parseVerboseMode()
+: <a class="el" href="parsing_8h.html#a017908431f5412fb0a5d3441b4200415">parsing.h</a>
+</li>
+<li>tour_2opt()
+: <a class="el" href="tour_8h.html#a6e0808318993beda445cc1b7138b1c0c">tour.h</a>
+</li>
+<li>tour_calculLength()
+: <a class="el" href="tour_8h.html#a64a4d80ac01c7f79ce9a848bab526591">tour.h</a>
+</li>
+<li>tour_display()
+: <a class="el" href="tour_8h.html#a3317bfe1a2e6c3e83f511bf7af8943fb">tour.h</a>
+</li>
+<li>tour_initialize()
+: <a class="el" href="tour_8h.html#a8ab1bcd4b0eba8cff94a0a738466c218">tour.h</a>
+</li>
+<li>tour_nextPermutation()
+: <a class="el" href="tour_8h.html#a14eee1524a119e2590e9ba3995a90082">tour.h</a>
+</li>
+<li>tour_randomWalk()
+: <a class="el" href="tour_8h.html#aa7ed7da19b87745e4a223998e76b58e0">tour.h</a>
+</li>
+<li>town_initialize()
+: <a class="el" href="town_8h.html#a2a25215b53c1e310557e06b9d3104f6b">town.h</a>
+</li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Généré le Fri Dec 28 2012 21:21:21 pour voyageurDeCommerce par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

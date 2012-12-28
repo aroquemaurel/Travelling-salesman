@@ -1,0 +1,71 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Index des classes}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Liste des classes}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Index des fichiers}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Liste des fichiers}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Documentation des classes}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}R\IeC {\'e}f\IeC {\'e}rence de la structure Distance}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Description d\IeC {\'e}taill\IeC {\'e}e}{5}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}R\IeC {\'e}f\IeC {\'e}rence de la structure Errors}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Description d\IeC {\'e}taill\IeC {\'e}e}{6}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}R\IeC {\'e}f\IeC {\'e}rence de la structure Instance}{6}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Description d\IeC {\'e}taill\IeC {\'e}e}{6}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}R\IeC {\'e}f\IeC {\'e}rence de la structure Tour}{6}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Description d\IeC {\'e}taill\IeC {\'e}e}{6}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}R\IeC {\'e}f\IeC {\'e}rence de la structure Town}{7}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Description d\IeC {\'e}taill\IeC {\'e}e}{7}{subsection.3.5.1}
+\contentsline {chapter}{\numberline {4}Documentation des fichiers}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/bruteForce.h}{9}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Description d\IeC {\'e}taill\IeC {\'e}e}{9}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Documentation des fonctions}{9}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}bruteForce\_\discretionary {-}{}{}bestPath}{9}{subsubsection.4.1.2.1}
+\contentsline {section}{\numberline {4.2}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/distance.h}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Description d\IeC {\'e}taill\IeC {\'e}e}{10}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Documentation des fonctions}{10}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}distance\_\discretionary {-}{}{}betweenTowns}{10}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}distance\_\discretionary {-}{}{}calculDistance}{11}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}distance\_\discretionary {-}{}{}new}{11}{subsubsection.4.2.2.3}
+\contentsline {section}{\numberline {4.3}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/errors.h}{11}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Description d\IeC {\'e}taill\IeC {\'e}e}{11}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Documentation des fonctions}{12}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}errors\_\discretionary {-}{}{}displayErrorsMessage}{12}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}errors\_\discretionary {-}{}{}initialize}{12}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}errors\_\discretionary {-}{}{}setFileNotFound}{12}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.4}errors\_\discretionary {-}{}{}setLsrNotValidParameter}{12}{subsubsection.4.3.2.4}
+\contentsline {subsubsection}{\numberline {4.3.2.5}errors\_\discretionary {-}{}{}setNbArguments}{12}{subsubsection.4.3.2.5}
+\contentsline {subsubsection}{\numberline {4.3.2.6}errors\_\discretionary {-}{}{}setNoAlgoSpecified}{12}{subsubsection.4.3.2.6}
+\contentsline {subsubsection}{\numberline {4.3.2.7}errors\_\discretionary {-}{}{}setTagFNotFound}{12}{subsubsection.4.3.2.7}
+\contentsline {section}{\numberline {4.4}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/instance.h}{13}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Description d\IeC {\'e}taill\IeC {\'e}e}{13}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Documentation des fonctions}{13}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}instance\_\discretionary {-}{}{}display}{13}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}instance\_\discretionary {-}{}{}displayLinearVector}{14}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}instance\_\discretionary {-}{}{}displayMatrix}{14}{subsubsection.4.4.2.3}
+\contentsline {subsubsection}{\numberline {4.4.2.4}instance\_\discretionary {-}{}{}initialize}{14}{subsubsection.4.4.2.4}
+\contentsline {subsubsection}{\numberline {4.4.2.5}instance\_\discretionary {-}{}{}initializeDistances}{14}{subsubsection.4.4.2.5}
+\contentsline {subsubsection}{\numberline {4.4.2.6}instance\_\discretionary {-}{}{}push}{14}{subsubsection.4.4.2.6}
+\contentsline {section}{\numberline {4.5}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/parsing.h}{14}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Description d\IeC {\'e}taill\IeC {\'e}e}{15}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Documentation du type de l'\IeC {\'e}num\IeC {\'e}ration}{15}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}AlgoType}{15}{subsubsection.4.5.2.1}
+\contentsline {subsection}{\numberline {4.5.3}Documentation des fonctions}{15}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}parsing\_\discretionary {-}{}{}algoType}{15}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}parsing\_\discretionary {-}{}{}parseFileName}{16}{subsubsection.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.3.3}parsing\_\discretionary {-}{}{}parseVerboseMode}{16}{subsubsection.4.5.3.3}
+\contentsline {section}{\numberline {4.6}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h}{16}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Description d\IeC {\'e}taill\IeC {\'e}e}{17}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Documentation des fonctions}{17}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}tour\_\discretionary {-}{}{}2opt}{17}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}tour\_\discretionary {-}{}{}calculLength}{17}{subsubsection.4.6.2.2}
+\contentsline {subsubsection}{\numberline {4.6.2.3}tour\_\discretionary {-}{}{}display}{17}{subsubsection.4.6.2.3}
+\contentsline {subsubsection}{\numberline {4.6.2.4}tour\_\discretionary {-}{}{}initialize}{17}{subsubsection.4.6.2.4}
+\contentsline {subsubsection}{\numberline {4.6.2.5}tour\_\discretionary {-}{}{}nextPermutation}{17}{subsubsection.4.6.2.5}
+\contentsline {subsubsection}{\numberline {4.6.2.6}tour\_\discretionary {-}{}{}randomWalk}{18}{subsubsection.4.6.2.6}
+\contentsline {section}{\numberline {4.7}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/town.h}{18}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Description d\IeC {\'e}taill\IeC {\'e}e}{18}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Documentation des fonctions}{18}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}town\_\discretionary {-}{}{}initialize}{18}{subsubsection.4.7.2.1}
+\contentsline {section}{\numberline {4.8}R\IeC {\'e}f\IeC {\'e}rence du fichier /development/cours/L2/algo3/TP/voyageCommerce/src/bruteForce.c}{19}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Description d\IeC {\'e}taill\IeC {\'e}e}{19}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Documentation des fonctions}{21}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}bruteForce\_\discretionary {-}{}{}bestPath}{21}{subsubsection.4.8.2.1}

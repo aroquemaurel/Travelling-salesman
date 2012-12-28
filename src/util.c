@@ -1,19 +1,15 @@
-
-/*
- * =====================================================================================
- * *       Filename:  util.c *
- *    Description: Implémentations des fonctions pouvant être utiles dans tout le projet.
- *					Ce sont des fonctions simples, qui doivent être indépendantes du projet.
+/**
+ * \file bruteForce.c
+ * \brief Fonctions utiles.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 19/11/2012 16:27:39
  *
- *        Version:  1.0
- *        Created:  19/11/2012 16:27:54
- *       Revision:  none
- *       Compiler:  gcc
+ * Entêtes des fonctions pouvant être utiles dans tout le projet. 
+ * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
- *         Author:  Antoine de Roquemaurel (), 
- *
- * =====================================================================================
  */
+
 #include "util.h"
 
 int util_searchFirstOccurenceInArray(char** pArray, const int pSize, char* pSearch) {

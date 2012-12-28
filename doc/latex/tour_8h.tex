@@ -1,0 +1,132 @@
+\hypertarget{tour_8h}{
+\section{Référence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h}
+\label{tour_8h}\index{/development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h@{/development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h}}
+}
+
+
+Programme de tests.  
+
+
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdbool.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include \char`\"{}town.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}instance.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}distance.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structTour}{Tour}
+\begin{DoxyCompactList}\small\item\em Objet d'une tournée. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{tour_8h_a8ab1bcd4b0eba8cff94a0a738466c218}{tour\_\-initialize} (\hyperlink{structTour}{Tour} $\ast$pTour, \hyperlink{structInstance}{Instance} pInstance)
+\item 
+bool \hyperlink{tour_8h_a14eee1524a119e2590e9ba3995a90082}{tour\_\-nextPermutation} (\hyperlink{structTour}{Tour} $\ast$pPermutation)
+\item 
+void \hyperlink{tour_8h_a64a4d80ac01c7f79ce9a848bab526591}{tour\_\-calculLength} (\hyperlink{structTour}{Tour} $\ast$pTour)
+\item 
+void \hyperlink{tour_8h_a3317bfe1a2e6c3e83f511bf7af8943fb}{tour\_\-display} (\hyperlink{structTour}{Tour} pTour, bool pDisplay)
+\item 
+\hyperlink{structTour}{Tour} \hyperlink{tour_8h_aa7ed7da19b87745e4a223998e76b58e0}{tour\_\-randomWalk} (\hyperlink{structInstance}{Instance} pInstance)
+\item 
+void \hyperlink{tour_8h_a6e0808318993beda445cc1b7138b1c0c}{tour\_\-2opt} (\hyperlink{structTour}{Tour} $\ast$pTour, int pFirst, int pSecond)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Programme de tests. \begin{DoxyAuthor}{Auteur}
+Antoine de Roquemaurel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+21/11/2012 22:04:13
+\end{DoxyDate}
+Programme de test pour l'objet de gestion des chaînes de caractères Str\_\-t. 
+
+\subsection{Documentation des fonctions}
+\hypertarget{tour_8h_a6e0808318993beda445cc1b7138b1c0c}{
+\index{tour.h@{tour.h}!tour\_\-2opt@{tour\_\-2opt}}
+\index{tour\_\-2opt@{tour\_\-2opt}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-2opt}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-2opt (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour} $\ast$}]{ pTour, }
+\item[{int}]{ pFirst, }
+\item[{int}]{ pSecond}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_a6e0808318993beda445cc1b7138b1c0c}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTour}]\item[{\em pFirst}]\item[{\em pSecond}]\end{DoxyParams}
+\hypertarget{tour_8h_a64a4d80ac01c7f79ce9a848bab526591}{
+\index{tour.h@{tour.h}!tour\_\-calculLength@{tour\_\-calculLength}}
+\index{tour\_\-calculLength@{tour\_\-calculLength}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-calculLength}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-calculLength (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour} $\ast$}]{ pTour}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_a64a4d80ac01c7f79ce9a848bab526591}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTour}]\end{DoxyParams}
+\hypertarget{tour_8h_a3317bfe1a2e6c3e83f511bf7af8943fb}{
+\index{tour.h@{tour.h}!tour\_\-display@{tour\_\-display}}
+\index{tour\_\-display@{tour\_\-display}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-display (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour}}]{ pTour, }
+\item[{bool}]{ pDisplay}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_a3317bfe1a2e6c3e83f511bf7af8943fb}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTour}]\item[{\em pDisplay}]\end{DoxyParams}
+\hypertarget{tour_8h_a8ab1bcd4b0eba8cff94a0a738466c218}{
+\index{tour.h@{tour.h}!tour\_\-initialize@{tour\_\-initialize}}
+\index{tour\_\-initialize@{tour\_\-initialize}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour} $\ast$}]{ pTour, }
+\item[{{\bf Instance}}]{ pInstance}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_a8ab1bcd4b0eba8cff94a0a738466c218}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTour}]\item[{\em pInstance}]\end{DoxyParams}
+\hypertarget{tour_8h_a14eee1524a119e2590e9ba3995a90082}{
+\index{tour.h@{tour.h}!tour\_\-nextPermutation@{tour\_\-nextPermutation}}
+\index{tour\_\-nextPermutation@{tour\_\-nextPermutation}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-nextPermutation}]{\setlength{\rightskip}{0pt plus 5cm}bool tour\_\-nextPermutation (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour} $\ast$}]{ pPermutation}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_a14eee1524a119e2590e9ba3995a90082}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pPermutation}]\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\hypertarget{tour_8h_aa7ed7da19b87745e4a223998e76b58e0}{
+\index{tour.h@{tour.h}!tour\_\-randomWalk@{tour\_\-randomWalk}}
+\index{tour\_\-randomWalk@{tour\_\-randomWalk}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-randomWalk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tour} tour\_\-randomWalk (
+\begin{DoxyParamCaption}
+\item[{{\bf Instance}}]{ pInstance}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_aa7ed7da19b87745e4a223998e76b58e0}
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pInstance}]\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}

@@ -75,56 +75,56 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ./voyagecommerce
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${TESTDIR}/TestFiles/f1
 
-./voyagecommerce: ${OBJECTFILES}
-	${MKDIR} -p .
-	${LINK.c} -o ./voyagecommerce ${OBJECTFILES} ${LDLIBSOPTIONS} 
+${TESTDIR}/TestFiles/f1: ${OBJECTFILES}
+	${MKDIR} -p ${TESTDIR}/TestFiles
+	${LINK.c} -o ${TESTDIR}/TestFiles/f1 ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
 ${OBJECTDIR}/src/main.o: nbproject/Makefile-${CND_CONF}.mk src/main.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main.o src/main.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main.o src/main.c
 
 ${OBJECTDIR}/src/distance.o: nbproject/Makefile-${CND_CONF}.mk src/distance.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/distance.o src/distance.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/distance.o src/distance.c
 
 ${OBJECTDIR}/src/tour.o: nbproject/Makefile-${CND_CONF}.mk src/tour.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/tour.o src/tour.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/tour.o src/tour.c
 
 ${OBJECTDIR}/src/town.o: nbproject/Makefile-${CND_CONF}.mk src/town.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/town.o src/town.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/town.o src/town.c
 
 ${OBJECTDIR}/src/util.o: nbproject/Makefile-${CND_CONF}.mk src/util.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util.o src/util.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util.o src/util.c
 
 ${OBJECTDIR}/src/parsing.o: nbproject/Makefile-${CND_CONF}.mk src/parsing.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/parsing.o src/parsing.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/parsing.o src/parsing.c
 
 ${OBJECTDIR}/src/bruteForce.o: nbproject/Makefile-${CND_CONF}.mk src/bruteForce.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/bruteForce.o src/bruteForce.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/bruteForce.o src/bruteForce.c
 
 ${OBJECTDIR}/src/instance.o: nbproject/Makefile-${CND_CONF}.mk src/instance.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/instance.o src/instance.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/instance.o src/instance.c
 
 ${OBJECTDIR}/src/errors.o: nbproject/Makefile-${CND_CONF}.mk src/errors.c 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/errors.o src/errors.c
+	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/errors.o src/errors.c
 
 # Subprojects
 .build-subprojects:
@@ -159,37 +159,37 @@ ${TESTDIR}/TestFiles/f7: ${TESTDIR}/tests/utilTest.o ${OBJECTFILES:%.o=%_nomain.
 ${TESTDIR}/tests/distanceTest.o: tests/distanceTest.c 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/distanceTest.o tests/distanceTest.c
+	$(COMPILE.c) -g -Wall -I. -I. -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/distanceTest.o tests/distanceTest.c
 
 
 ${TESTDIR}/tests/instanceTest.o: tests/instanceTest.c 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/instanceTest.o tests/instanceTest.c
+	$(COMPILE.c) -g -Wall -I. -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/instanceTest.o tests/instanceTest.c
 
 
 ${TESTDIR}/tests/parsingTest.o: tests/parsingTest.c 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/parsingTest.o tests/parsingTest.c
+	$(COMPILE.c) -g -Wall -I. -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/parsingTest.o tests/parsingTest.c
 
 
 ${TESTDIR}/tests/tourTest.o: tests/tourTest.c 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -I. -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/tourTest.o tests/tourTest.c
+	$(COMPILE.c) -g -Wall -I. -I. -I. -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/tourTest.o tests/tourTest.c
 
 
 ${TESTDIR}/tests/townTest.o: tests/townTest.c 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/townTest.o tests/townTest.c
+	$(COMPILE.c) -g -Wall -I. -I. -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/townTest.o tests/townTest.c
 
 
 ${TESTDIR}/tests/utilTest.o: tests/utilTest.c 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} $@.d
-	$(COMPILE.c) -g -Wall -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/utilTest.o tests/utilTest.c
+	$(COMPILE.c) -g -Wall -I. -I. -I. -I. -std=c99 -MMD -MP -MF $@.d -o ${TESTDIR}/tests/utilTest.o tests/utilTest.c
 
 
 ${OBJECTDIR}/src/main_nomain.o: ${OBJECTDIR}/src/main.o src/main.c 
@@ -200,7 +200,7 @@ ${OBJECTDIR}/src/main_nomain.o: ${OBJECTDIR}/src/main.o src/main.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main_nomain.o src/main.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main_nomain.o src/main.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/main.o ${OBJECTDIR}/src/main_nomain.o;\
 	fi
@@ -213,7 +213,7 @@ ${OBJECTDIR}/src/distance_nomain.o: ${OBJECTDIR}/src/distance.o src/distance.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/distance_nomain.o src/distance.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/distance_nomain.o src/distance.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/distance.o ${OBJECTDIR}/src/distance_nomain.o;\
 	fi
@@ -226,7 +226,7 @@ ${OBJECTDIR}/src/tour_nomain.o: ${OBJECTDIR}/src/tour.o src/tour.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/tour_nomain.o src/tour.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/tour_nomain.o src/tour.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/tour.o ${OBJECTDIR}/src/tour_nomain.o;\
 	fi
@@ -239,7 +239,7 @@ ${OBJECTDIR}/src/town_nomain.o: ${OBJECTDIR}/src/town.o src/town.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/town_nomain.o src/town.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/town_nomain.o src/town.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/town.o ${OBJECTDIR}/src/town_nomain.o;\
 	fi
@@ -252,7 +252,7 @@ ${OBJECTDIR}/src/util_nomain.o: ${OBJECTDIR}/src/util.o src/util.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util_nomain.o src/util.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util_nomain.o src/util.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/util.o ${OBJECTDIR}/src/util_nomain.o;\
 	fi
@@ -265,7 +265,7 @@ ${OBJECTDIR}/src/parsing_nomain.o: ${OBJECTDIR}/src/parsing.o src/parsing.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/parsing_nomain.o src/parsing.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/parsing_nomain.o src/parsing.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/parsing.o ${OBJECTDIR}/src/parsing_nomain.o;\
 	fi
@@ -278,7 +278,7 @@ ${OBJECTDIR}/src/bruteForce_nomain.o: ${OBJECTDIR}/src/bruteForce.o src/bruteFor
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/bruteForce_nomain.o src/bruteForce.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/bruteForce_nomain.o src/bruteForce.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/bruteForce.o ${OBJECTDIR}/src/bruteForce_nomain.o;\
 	fi
@@ -291,7 +291,7 @@ ${OBJECTDIR}/src/instance_nomain.o: ${OBJECTDIR}/src/instance.o src/instance.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/instance_nomain.o src/instance.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/instance_nomain.o src/instance.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/instance.o ${OBJECTDIR}/src/instance_nomain.o;\
 	fi
@@ -304,7 +304,7 @@ ${OBJECTDIR}/src/errors_nomain.o: ${OBJECTDIR}/src/errors.o src/errors.c
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} $@.d;\
-	    $(COMPILE.c) -g -Wall -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/errors_nomain.o src/errors.c;\
+	    $(COMPILE.c) -g -Wall -I. -I. -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/errors_nomain.o src/errors.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/errors.o ${OBJECTDIR}/src/errors_nomain.o;\
 	fi
@@ -326,7 +326,7 @@ ${OBJECTDIR}/src/errors_nomain.o: ${OBJECTDIR}/src/errors.o src/errors.c
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ./voyagecommerce
+	${RM} ${TESTDIR}/TestFiles/f1
 
 # Subprojects
 .clean-subprojects:

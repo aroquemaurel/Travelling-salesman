@@ -1,19 +1,12 @@
-/*
- * =====================================================================================
+/**
+ * \file errors.h
+ * \brief Programme de tests.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 21/11/2012 17:42:37
  *
- *       Filename:  errors.h
+ * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  21/11/2012 17:42:37
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *        Company:  
- *
- * =====================================================================================
  */
 
 #ifndef __ERRORS
@@ -23,6 +16,12 @@
 #include <stdlib.h>
 
 /**
+ * \struct Errors errors.h
+ * \brief Objet des erreurs
+ *
+ * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
+ * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
+ * connait la taille de chaîne contient !
  */
 typedef struct {
 	char* errorNbArguments;

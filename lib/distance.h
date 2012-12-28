@@ -1,19 +1,12 @@
-/*
- * =====================================================================================
+/**
+ * \file distance.h
+ * \brief Programme de tests.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 01/12/2012 20:33:44
  *
- *       Filename:  distance.h
+ * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  01/12/2012 20:33:44
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *        Company:  
- *
- * =====================================================================================
  */
 
 #ifndef __DISTANCE
@@ -23,6 +16,12 @@
 #include "town.h"
 
 /**
+ * \struct Distance distance.h
+ * \brief Objet des distances
+ *
+ * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
+ * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
+ * connait la taille de chaîne contient !
  */
 typedef struct {
 	Town firstTown;

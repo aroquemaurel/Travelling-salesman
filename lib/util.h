@@ -1,20 +1,13 @@
-/*
- * =====================================================================================
+/**
+ * \file bruteForce.c
+ * \brief Fonctions utiles.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 19/11/2012 16:27:39
  *
- *       Filename:  util.h
+ * Entêtes des fonctions pouvant être utiles dans tout le projet. 
+ * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
- *    Description: Entêtes des fonctions pouvant être utiles dans tout le projet.
- *					Ce sont des fonctions simples, qui doivent être indépendantes du projet.
- *
- *        Version:  1.0
- *        Created:  19/11/2012 16:27:39
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *        Company:  
- *
- * =====================================================================================
  */
 
 #ifndef __UTIL

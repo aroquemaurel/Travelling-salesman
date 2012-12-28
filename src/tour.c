@@ -1,19 +1,15 @@
-/*
- * =====================================================================================
+/**
+ * \file bruteForce.c
+ * \brief Fonctions utiles.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 21/11/2012 22:04:08
  *
- *       Filename:  tour.c
+ * Entêtes des fonctions pouvant être utiles dans tout le projet. 
+ * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  21/11/2012 22:04:08
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *
- * =====================================================================================
  */
+
 #include "tour.h"
 
 void tour_initialize(Tour* pTour, Instance pInstance) {
@@ -91,8 +87,25 @@ Tour tour_randomWalk(Instance pInstance) {
     return ret;
 }
 
+/**
+ * 
+ * @param pTour
+ * @param pFirst
+ * @param pSecond
+ */
 void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
-    // TODO pFirst > pSecond; pFirst == pSecond; pSecond > pTour->nbTowns{ on boucle } 
-    util_reverseArray(pTour->towns, pFirst, pSecond-1);     
+    int buff = pSecond-1;
+    
+    if(pFirst > pSecond) {
+        util_swap(&pFirst, &pSecond);
+    } 
+    if(pSecond > pTour->nbTowns) {
+        pSecond = 1;
+    }
+    if(buff < 1) {
+        buff = pTour->nbTowns;
+    }
+
+    util_reverseArray(pTour->towns, pFirst, buff);     
     tour_calculLength(pTour);
 }

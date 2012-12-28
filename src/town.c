@@ -1,18 +1,13 @@
-/*
- * =====================================================================================
+/**
+ * \file bruteForce.c
+ * \brief Fonctions utiles.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 21/11/2012 22:35:14
  *
- *       Filename:  town.c
+ * Entêtes des fonctions pouvant être utiles dans tout le projet. 
+ * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  21/11/2012 22:35:14
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *
- * =====================================================================================
  */
 
 #include "town.h"

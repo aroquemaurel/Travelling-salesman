@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>voyageurDeCommerce:  Fichier source de /development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Généré par Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+--></script>
+<script type="text/javascript">
+function hasClass(ele,cls) {
+  return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+function addClass(ele,cls) {
+  if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+}
+
+function removeClass(ele,cls) {
+  if (hasClass(ele,cls)) {
+    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    ele.className=ele.className.replace(reg,' ');
+  }
+}
+
+function toggleVisibility(linkObj) {
+ var base = linkObj.getAttribute('id');
+ var summary = document.getElementById(base + '-summary');
+ var content = document.getElementById(base + '-content');
+ var trigger = document.getElementById(base + '-trigger');
+ if ( hasClass(linkObj,'closed') ) {
+   summary.style.display = 'none';
+   content.style.display = 'block';
+   trigger.src = 'open.png';
+   removeClass(linkObj,'closed');
+   addClass(linkObj,'opened');
+ } else if ( hasClass(linkObj,'opened') ) {
+   summary.style.display = 'block';
+   content.style.display = 'none';
+   trigger.src = 'closed.png';
+   removeClass(linkObj,'opened');
+   addClass(linkObj,'closed');
+ }
+ return false;
+}
+</script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>/development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="tour_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __TOUR</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __TOUR</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;stdbool.h&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;time.h&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="town_8h.html" title="Programme de tests.">town.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="instance_8h.html" title="Programme de tests.">instance.h</a>&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="distance_8h.html" title="Programme de tests.">distance.h</a>&quot;</span>
+<a name="l00022"></a>00022 
+<a name="l00031"></a><a class="code" href="structTour.html">00031</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00032"></a>00032     <a class="code" href="structTown.html" title="Objet des ville.">Town</a> towns[N];
+<a name="l00033"></a>00033     <span class="keywordtype">int</span> nbTowns;
+<a name="l00034"></a>00034     <span class="keywordtype">double</span> length;
+<a name="l00035"></a>00035     <a class="code" href="structDistance.html" title="Objet des distances.">Distance</a>* distances;
+<a name="l00036"></a>00036 }<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>;
+<a name="l00037"></a>00037 
+<a name="l00043"></a>00043 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a8ab1bcd4b0eba8cff94a0a738466c218">tour_initialize</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour, <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00044"></a>00044 
+<a name="l00050"></a>00050 <span class="keywordtype">bool</span> <a class="code" href="tour_8h.html#a14eee1524a119e2590e9ba3995a90082">tour_nextPermutation</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pPermutation);
+<a name="l00051"></a>00051 
+<a name="l00056"></a>00056 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a64a4d80ac01c7f79ce9a848bab526591">tour_calculLength</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour);
+<a name="l00057"></a>00057 
+<a name="l00063"></a>00063 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a3317bfe1a2e6c3e83f511bf7af8943fb">tour_display</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> pTour, <span class="keywordtype">bool</span> pDisplay);
+<a name="l00064"></a>00064 
+<a name="l00070"></a>00070 <a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> <a class="code" href="tour_8h.html#aa7ed7da19b87745e4a223998e76b58e0">tour_randomWalk</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00071"></a>00071 
+<a name="l00078"></a>00078 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a6e0808318993beda445cc1b7138b1c0c">tour_2opt</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour, <span class="keywordtype">int</span> pFirst, <span class="keywordtype">int</span> pSecond);
+<a name="l00079"></a>00079 <span class="preprocessor">#endif</span>
+<a name="l00080"></a>00080 <span class="preprocessor"></span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Généré le Fri Dec 28 2012 21:21:21 pour voyageurDeCommerce par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

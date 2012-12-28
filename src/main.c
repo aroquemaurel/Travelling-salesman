@@ -1,19 +1,15 @@
-/*
- * ===================================================================================== *
- *       Filename:  main.c
+/**
+ * \file bruteForce.c
+ * \brief Fonction main.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 19/11/2012 10:42:29
  *
- *    Description:  Point d'entrée du programme. Aucune fonction ne doit être déclarée
- *						dans ce fichier.
+ *  Point d'entrée du programme. Aucune fonction ne doit être déclarée
+ * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
- *        Version:  1.0
- *        Created:  19/11/2012 10:42:29
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *
- * =====================================================================================
  */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>

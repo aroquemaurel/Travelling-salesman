@@ -1,21 +1,13 @@
-/*
- * =====================================================================================
+/**
+ * \file instance.h
+ * \brief Programme de tests.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 21/11/2012 22:03:34
  *
- *       Filename:  instance.h
+ * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  21/11/2012 22:03:34
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *        Company:  
- *
- * =====================================================================================
  */
-
 #ifndef __INSTANCE
 #define __INSTANCE
 
@@ -29,6 +21,12 @@
 #define N 512
 
 /**
+ * \struct Instance instance.h
+ * \brief Objet des instances
+ *
+ * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
+ * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
+ * connait la taille de chaîne contient !
  */
 typedef struct {
 	Town towns[N];

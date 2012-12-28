@@ -1,19 +1,12 @@
-/*
- * =====================================================================================
+/**
+ * \file tour.h
+ * \brief Programme de tests.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 21/11/2012 22:04:13
  *
- *       Filename:  tour.h
+ * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  21/11/2012 22:04:13
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *        Company:  
- *
- * =====================================================================================
  */
 
 #ifndef __TOUR
@@ -21,12 +14,19 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
+#include <time.h>
 
 #include "town.h"
 #include "instance.h"
 #include "distance.h"
 
 /**
+ * \struct Tour tour.h
+ * \brief Objet d'une tournée
+ *
+ * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
+ * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
+ * connait la taille de chaîne contient !
  */
 typedef struct {
 	Town towns[N];

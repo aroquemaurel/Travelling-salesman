@@ -1,19 +1,15 @@
-/*
- * =====================================================================================
+/**
+ * \file bruteForce.c
+ * \brief Fonctions utiles.
+ * \author Antoine de Roquemaurel
+ * \version 0.1
+ * \date 01/12/2012 20:33:39
  *
- *       Filename:  distance.c
+ * Entêtes des fonctions pouvant être utiles dans tout le projet. 
+ * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  01/12/2012 20:33:39
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Antoine de Roquemaurel (), 
- *
- * =====================================================================================
  */
+
 #include "distance.h"
 #include "util.h"
 void distance_new(Distance* pDistance, Town* pFirstTown, Town* pSecondTown) {
