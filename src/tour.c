@@ -87,12 +87,7 @@ Tour tour_randomWalk(Instance pInstance) {
     return ret;
 }
 
-/**
- * 
- * @param pTour
- * @param pFirst
- * @param pSecond
- */
+
 void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
     int buff = pSecond-1;
     

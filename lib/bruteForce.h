@@ -5,7 +5,8 @@
  * \version 0.1
  * \date 27/12/2012 17:58:36
  *
- * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
+ *  Implémentation des fonctions servant à la force brute.
+ * Ces fonctions ne sont appelés que depuis le main
  *
  */
 
