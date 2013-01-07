@@ -38,11 +38,24 @@ void errors_displayErrorsMessage(const Errors pErrors) {
 	
 	if(pErrors.errorLsrNotValidParameter != NULL)
 		printf("%s", pErrors.errorLsrNotValidParameter);
-}
+    
+    if(pErrors.errorMissingParameterLsr != NULL)
+		printf("%s", pErrors.errorMissingParameterLsr);
+        
+    if(pErrors.errorMissingParameterLsnr != NULL)
+		printf("%s", pErrors.errorMissingParameterLsnr);
+        
+    if(pErrors.errorMissingParameterGa != NULL)
+		printf("%s", pErrors.errorMissingParameterGa);        
+    
+    if(pErrors.errorNoValidParameterLsr != NULL)
+		printf("%s", pErrors.errorNoValidParameterLsr);        
+    
+    if(pErrors.errorNoValidParameterLsnr != NULL)
+		printf("%s", pErrors.errorNoValidParameterLsnr);        
 
-void errors_setNbArguments(Errors* pErrors) {
-	++pErrors->nbErrors;
-	pErrors->errorNbArguments = "ERREUR: TDO\n"; //TODELETE
+    if(pErrors.errorNoValidParameterGa != NULL)
+		printf("%s", pErrors.errorNoValidParameterGa);        
 }
 
 void errors_setTagFNotFound(Errors* pErrors) {
@@ -60,8 +73,32 @@ void errors_setNoAlgoSpecified(Errors* pErrors) {
 	pErrors->errorNoAlgoSpecified = "ERREUR: Algorithme non spécifié\n";
 }
 
-void errors_setLsrNotValidParameter(Errors* pErrors) {
-	++pErrors->nbErrors;
-	pErrors->errorLsrNotValidParameter = "ERREUR: Paramètre lsr non valid\n";
+void errors_setMissingParameterLsr(Errors* pErrors) {
+    ++pErrors->nbErrors;
+    pErrors->errorMissingParameterLsr = "ERREUR: Paramètre manquant après -lsr\n";
 }
 
+void errors_setMissingParameterLsnr(Errors* pErrors) {
+    ++pErrors->nbErrors;
+    pErrors->errorMissingParameterLsnr = "ERREUR: Paramètre manquant après -lsnr\n";
+}
+
+void errors_setMissingParameterGa(Errors* pErrors) {
+    ++pErrors->nbErrors;
+    pErrors->errorMissingParameterGa = "ERREUR: Paramètre manquant après -ga\n";
+}
+
+void errors_setNoValidParameterLsr(Errors* pErrors) {
+    ++pErrors->nbErrors;
+    pErrors->errorNoValidParameterLsr = "ERREUR: Paramètre non valide après -lsr\n";
+}
+
+void errors_setNoValidParameterLsnr(Errors* pErrors) {
+    ++pErrors->nbErrors;
+    pErrors->errorNoValidParameterLsnr = "ERREUR: Paramètre non valide après -lsnr\n";
+}
+
+void errors_setNoValidParameterGa(Errors* pErrors) {
+    ++pErrors->nbErrors;
+    pErrors->errorNoValidParameterGa = "ERREUR: Paramètre non valide après -ga\n";
+}

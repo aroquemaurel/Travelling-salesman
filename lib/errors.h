@@ -29,6 +29,12 @@ typedef struct {
 	char* errorFileNotFound;
 	char* errorNoAlgoSpecified;
 	char* errorLsrNotValidParameter;
+    char* errorMissingParameterLsr;
+    char* errorMissingParameterLsnr;
+    char* errorMissingParameterGa;
+    char* errorNoValidParameterLsr;
+    char* errorNoValidParameterLsnr;
+    char* errorNoValidParameterGa;
 	int nbErrors;
 } Errors;
 
@@ -74,5 +80,11 @@ void errors_setNoAlgoSpecified(Errors* pErrors);
  * @param pErrors
  */
 void errors_setLsrNotValidParameter(Errors* pErrors);
+void errors_setNoValidParameterLsnr(Errors* pErrors);
+void errors_setNoValidParameterLsr(Errors* pErrors);
+void errors_setMissingParameterGa(Errors* pErrors);
+void errors_setMissingParameterLsnr(Errors* pErrors);
+void errors_setMissingParameterLsr(Errors* pErrors);
+
 #endif
 
