@@ -26,48 +26,66 @@ char* parsing_parseFileName(char** pTab, const int pSize, Errors* pErrors) {
 	return (pTab[posTiretF+1]);
 }
 
-AlgoType parsing_algoType(char** pTab, const int pSize, Errors* pErrors, int* param1AlgoType, int* param2AlgoType) {
-	AlgoType returnAlgoType;
+void parsing_algoType(char** pTab, const int pSize, Errors* pErrors, Algo* algos) {
 	int positionTag;
+    int numberAlgo = 0;
 	if(util_searchFirstOccurenceInArray(pTab, pSize, "-bf") != -1) {
-		returnAlgoType = BRUTEFORCE;	
-	} else if((positionTag = util_searchFirstOccurenceInArray(pTab, pSize, "-lsr")) != -1) {
+		algos[numberAlgo].type = BRUTEFORCE;	
+        algos[numberAlgo].firstParameter = algos[numberAlgo].secondParameter = -1;
+        numberAlgo++;
+	} 
+    
+    if((positionTag = util_searchFirstOccurenceInArray(pTab, pSize, "-lsr")) != -1) {
 		if(pTab[positionTag+1] == NULL) {
+            errors_setMissingParameterLsr(pErrors);
 				//TODO Paramètre manquant 
 		} else if(atoi(pTab[positionTag+1]) == 0) {
+            errors_setNoValidParameterLsr(pErrors);
 			/// TODO Erreur paramètre après -lsr non entier ou = 0	
 		} else {
-			*param1AlgoType = atoi(pTab[positionTag+1]);
-			returnAlgoType =LOCALSEARCH_RANDOM ;	
+			algos[numberAlgo].type = LOCALSEARCH_RANDOM ;	
+            algos[numberAlgo].firstParameter = atoi(pTab[positionTag+1]);
+            numberAlgo++;
 		}
-	} else if((positionTag = util_searchFirstOccurenceInArray(pTab, pSize, "-lsnr")) != -1) {
+	} 
+    
+    if((positionTag = util_searchFirstOccurenceInArray(pTab, pSize, "-lsnr")) != -1) {
+		if(pTab[positionTag+1] == NULL) {
+            errors_setMissingParameterLsnr(pErrors);
+				//TODO Paramètre manquant 
+		} else if(atoi(pTab[positionTag+1]) == 0) {
+            errors_setNoValidParameterLsnr(pErrors);
+			/// TODO Erreur paramètre après -lsnr non entier ou = 0	
+		} else {
+			algos[numberAlgo].type =LOCALSEARCH_SYSTEMATIC;	
+            algos[numberAlgo].firstParameter = atoi(pTab[positionTag+1]);
+            numberAlgo++;
+		}
+        
+	} 
+    
+    if((positionTag = util_searchFirstOccurenceInArray(pTab, pSize, "-ga")) != -1) {
 		if(pTab[positionTag+1] == NULL) {
 				//TODO Paramètre manquant 
 		} else if(atoi(pTab[positionTag+1]) == 0) {
 			/// TODO Erreur paramètre après -lsnr non entier ou = 0	
 		} else {
-			*param1AlgoType = atoi(pTab[positionTag+1]);
-			returnAlgoType =LOCALSEARCH_SYSTEMATIC;	
-		}
-	} else if((positionTag = util_searchFirstOccurenceInArray(pTab, pSize, "-ga")) != -1) {
-		if(pTab[positionTag+1] == NULL) {
-				//TODO Paramètre manquant 
-		} else if(atoi(pTab[positionTag+1]) == 0) {
-			/// TODO Erreur paramètre après -lsnr non entier ou = 0	
-		} else {
-			*param1AlgoType = atoi(pTab[positionTag+1]);
+            algos[numberAlgo].firstParameter =  atoi(pTab[positionTag+1]);
 			if(pTab[positionTag+2] == NULL) {
 				//TODO Paramètre manquant 
 			} else if(atoi(pTab[positionTag+2]) == 0) {
-				/// TODO Erreur paramètre après -lsnr non entier ou = 0	
+				// TODO Erreur paramètre après -lsnr non entier ou = 0	
 			} else {
-				*param2AlgoType = atoi(pTab[positionTag+2]);
-				returnAlgoType = GENETIC;
+				algos[numberAlgo].secondParameter = atoi(pTab[positionTag+2]);
+				algos[numberAlgo].type = GENETIC;
+                numberAlgo++;
 			}
 		}
-	} else {
+	} 
+    
+    if(numberAlgo == 0) {
 		errors_setNoAlgoSpecified(pErrors);
 	}
-
-	return returnAlgoType;
+    
+    algos[numberAlgo].type = END; //Flag de fin
 }

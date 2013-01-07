@@ -17,59 +17,55 @@
 #include "errors.h"
 #include "parsing.h"
 #include "bruteForce.h"
+#include "localSearch.h"
 
 int main (int argc, char** argv) {
+    int i=0;
 	char* fileName;	
 	FILE* file = NULL;
-	int parameter1 = 0;
-	int parameter2 = 0;
 	Instance instance;
 	Errors errors;
-	AlgoType algoType;
-	Town test1, test2;
+	Algo algos[3];
 	Tour tour;
-	test1.id = 3;
-	test2.id = 1;
-	Distance test;
-	distance_new(&test, &test1, &test2);
+    srand(time(NULL));
 
 	errors_initialize(&errors);
 	gVerboseMode = parsing_parseVerboseMode(argv, argc); 
 	fileName = parsing_parseFileName(argv, argc, &errors);
-	algoType = parsing_algoType(argv, argc, &errors, &parameter1, &parameter2);
+	parsing_algoType(argv, argc, &errors, algos);
 
 	file = fopen(fileName, "r");
 	if(file == NULL) {
 		errors_setFileNotFound(&errors, fileName);
 	}
-
 	// on peut travailler
 	if(errors.nbErrors == 0) {
 	instance_initialize(&instance, file);
-
-		switch(algoType) {
-			case BRUTEFORCE:
-				tour = bruteForce_bestPath(instance);
-				printf("La meilleure tournée est la tournée : ");
-				tour_display(tour, true);
-                
-                tour_initialize(&tour, instance);
-                printf("\n\n");
-                tour_display(tour, true);
-                tour_2opt(&tour, 2,6);
-                printf("\n\n");
-                tour_display(tour, true);
-				break;
-			case LOCALSEARCH_RANDOM:
-				printf("Random local search not implemented");
-				break;
-			case LOCALSEARCH_SYSTEMATIC:
-				printf("systematic local search not implemented");
-				break;
-			case GENETIC:
-				printf("Genetic not implemented");
-				break;
-		}
+        while(algos[i].type != END) {
+           switch(algos[i].type) {
+                case BRUTEFORCE:
+                    printf("=== Brute force ===\n");
+                    instance_initializeDistancesMatrix(&instance);
+                    tour = bruteForce_bestPath(instance);
+                    break;
+                case LOCALSEARCH_RANDOM:
+                    printf("=== Recherche locale aléatoire ===\n");
+                    tour = localSearch_randomBestPath(instance, algos[i].firstParameter); 
+                    break;
+                case LOCALSEARCH_SYSTEMATIC:
+                    printf("=== Recherche locale systématique ===\n");
+                    tour = localSearch_systematicBestPath(instance, algos[i].firstParameter);
+                    break;
+                case GENETIC:
+                    printf("=== Génétique ===\n");
+                    printf("Genetic not implemented");
+                    break;
+           }
+            printf("MEILLEUR TOURNÉE \n");
+            tour_display(tour, true);
+            ++i;
+            printf("\n\n");
+        }
 	} else {
 		errors_displayErrorsMessage(errors);	
 		return EXIT_FAILURE;

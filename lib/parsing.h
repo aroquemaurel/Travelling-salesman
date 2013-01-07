@@ -27,9 +27,15 @@ typedef enum {
 	BRUTEFORCE, 
 	LOCALSEARCH_RANDOM, 
 	LOCALSEARCH_SYSTEMATIC, 
-	GENETIC
+	GENETIC, 
+    END
 } AlgoType;
 
+typedef struct {
+    AlgoType type;
+    int firstParameter;
+    int secondParameter;
+} Algo;
 /**
  * 
  * @param pTab
@@ -56,7 +62,6 @@ char* parsing_parseFileName(char** pTab, const int pSize, Errors* pErrors);
  * @param param2AlgoType
  * @return 
  */
-AlgoType parsing_algoType(char** pTab, const int pSize, Errors* pErrors, int* param1AlgoType, int* param2AlgoType);
-
+void parsing_algoType(char** pTab, const int pSize, Errors* pErrors, Algo* algos);
 #endif
 
