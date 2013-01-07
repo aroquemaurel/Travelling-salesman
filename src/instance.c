@@ -28,9 +28,13 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 	while(!feof(pFile)) {
 		if(!displayData) {
 			fscanf(pFile, " %s %s", buffTag, buffValue);
-			if(strcmp(buffTag, "NAME:") == 0) {
+            
+            if(strcmp(buffValue, ":") == 0) {
+                fscanf(pFile, " %s", buffValue);
+            }
+			if(strcmp(buffTag, "NAME:") == 0 || strcmp(buffTag, "NAME") == 0) {
 				strcpy(name, buffValue);
-			} else if(strcmp(buffTag, "DIMENSION:") == 0) {
+			} else if(strcmp(buffTag, "DIMENSION:") == 0  || strcmp(buffTag, "DIMENSION") == 0) {
 				dimension = atoi(buffValue);
             } else if(  strcmp(buffTag, "DISPLAY_DATA_SECTION") == 0 || 
 		    			strcmp(buffTag, "NODE_COORD_SECTION") == 0) {
@@ -43,6 +47,7 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 				fseek(pFile, -1, SEEK_CUR);
 			}
 			fscanf(pFile, " %d %f %f", &buff, &buffX, &buffY);
+            
 			town_initialize(&townBuff, ++buffId, buffX, buffY);
 			instance_push(pInstance, townBuff);
 			if(buffId >= dimension) {
@@ -54,7 +59,6 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 	}
     pInstance->nbTowns = dimension;
 	pInstance->name = name;
-	instance_initializeDistances(pInstance);
 }
 
 void instance_display(const Instance pInstance) {
@@ -65,7 +69,7 @@ void instance_push(Instance* pInstance, const Town pTown) { // TODO exception nb
 	pInstance->towns[pInstance->nbTowns++] = pTown;
 }
 
-void instance_initializeDistances(Instance* pInstance) {
+void instance_initializeDistancesMatrix(Instance* pInstance) {
 	int i, j, k = 0;
 	Distance buffDistance;
 	for(i = 0 ; i <= pInstance->nbTowns; ++i) {

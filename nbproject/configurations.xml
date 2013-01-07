@@ -8,6 +8,7 @@
       <itemPath>lib/distance.h</itemPath>
       <itemPath>lib/errors.h</itemPath>
       <itemPath>lib/instance.h</itemPath>
+      <itemPath>lib/localSearch.h</itemPath>
       <itemPath>lib/parsing.h</itemPath>
       <itemPath>lib/tour.h</itemPath>
       <itemPath>lib/town.h</itemPath>
@@ -42,6 +43,7 @@
       <itemPath>src/distance.c</itemPath>
       <itemPath>src/errors.c</itemPath>
       <itemPath>src/instance.c</itemPath>
+      <itemPath>src/localSearch.c</itemPath>
       <itemPath>src/main.c</itemPath>
       <itemPath>src/parsing.c</itemPath>
       <itemPath>src/tour.c</itemPath>
@@ -90,6 +92,8 @@
   <sourceRootList>
     <Elem>inputFile</Elem>
     <Elem>resources</Elem>
+    <Elem>src</Elem>
+    <Elem>lib</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -102,24 +106,19 @@
       <compileType>
         <cTool>
           <standard>3</standard>
+          <incDir>
+            <pElem>lib</pElem>
+          </incDir>
           <commandLine>-lm -I lib/</commandLine>
           <warningLevel>2</warningLevel>
         </cTool>
         <ccTool>
           <incDir>
             <pElem>.</pElem>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
           </incDir>
         </ccTool>
         <linkerTool>
-          <output>./voyagecommerce</output>
+          <output>./voyageurDeCommerce</output>
         </linkerTool>
       </compileType>
       <packaging>
@@ -134,23 +133,6 @@
                             group="bin"/>
         </packFileList>
       </packaging>
-      <folder path="TestFiles/f1">
-        <cTool>
-          <incDir>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-          </incDir>
-        </cTool>
-        <ccTool>
-          <incDir>
-            <pElem>.</pElem>
-            <pElem>.</pElem>
-          </incDir>
-        </ccTool>
-        <linkerTool>
-          <output>${TESTDIR}/TestFiles/f1</output>
-        </linkerTool>
-      </folder>
       <folder path="TestFiles/f2">
         <cTool>
           <incDir>

@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/src/main.o \
+	${OBJECTDIR}/src/localSearch.o \
 	${OBJECTDIR}/src/distance.o \
 	${OBJECTDIR}/src/tour.o \
 	${OBJECTDIR}/src/town.o \
@@ -85,6 +86,11 @@ ${OBJECTDIR}/src/main.o: src/main.c
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
 	$(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main.o src/main.c
+
+${OBJECTDIR}/src/localSearch.o: src/localSearch.c 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/localSearch.o src/localSearch.c
 
 ${OBJECTDIR}/src/distance.o: src/distance.c 
 	${MKDIR} -p ${OBJECTDIR}/src
@@ -203,6 +209,19 @@ ${OBJECTDIR}/src/main_nomain.o: ${OBJECTDIR}/src/main.o src/main.c
 	    $(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main_nomain.o src/main.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/main.o ${OBJECTDIR}/src/main_nomain.o;\
+	fi
+
+${OBJECTDIR}/src/localSearch_nomain.o: ${OBJECTDIR}/src/localSearch.o src/localSearch.c 
+	${MKDIR} -p ${OBJECTDIR}/src
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/src/localSearch.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} $@.d;\
+	    $(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/localSearch_nomain.o src/localSearch.c;\
+	else  \
+	    ${CP} ${OBJECTDIR}/src/localSearch.o ${OBJECTDIR}/src/localSearch_nomain.o;\
 	fi
 
 ${OBJECTDIR}/src/distance_nomain.o: ${OBJECTDIR}/src/distance.o src/distance.c 

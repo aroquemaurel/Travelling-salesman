@@ -18,7 +18,7 @@
 #include "town.h"
 #include "distance.h"
 
-#define N 512
+#define N 1024
 
 /**
  * \struct Instance instance.h
@@ -60,7 +60,7 @@ void instance_push(Instance* pInstance, const Town pTown);
  * 
  * @param pInstance
  */
-void instance_initializeDistances(Instance* pInstance);
+void instance_initializeDistancesMatrix(Instance* pInstance);
 
 /**
  * 

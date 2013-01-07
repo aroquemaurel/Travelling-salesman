@@ -76,4 +76,5 @@ int util_sum(const int pBegin, const int pEnd);
  */
 void util_swap(int* a, int* b);
 
+int util_rand(const int pMin, const int pMax);
 #endif

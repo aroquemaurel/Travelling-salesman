@@ -32,7 +32,6 @@ void util_reverseArray(Town* pTab, const int pBegin, const int pEnd) {
 	int i = pBegin;
 	int j = pEnd;
 	Town buff;
-
 	while(i < j) {
 		buff = pTab[i];
 		pTab[i] = pTab[j];
@@ -85,7 +84,5 @@ void util_swap(int* a, int* b) {
 }
 
 int util_rand(const int pMin, const int pMax) {
-    srand(time(NULL));
-    
     return ((rand() % (pMax - pMin + 1)) + pMin);
 }

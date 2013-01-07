@@ -50,9 +50,9 @@ void tour_calculLength(Tour* pTour) {
 
 	for (i = 0; i < pTour->nbTowns ; ++i) { 
 		if(i+1 != pTour->nbTowns) {
-			length += distance_betweenTowns(pTour->distances, pTour->towns[i].id, pTour->towns[i+1].id);
+			length += distance_calculDistance(pTour->towns[i], pTour->towns[i+1]);
 		} else {
-			length += distance_betweenTowns(pTour->distances, pTour->towns[i].id, pTour->towns[0].id);
+			length += distance_calculDistance(pTour->towns[i], pTour->towns[0]);
 		}
 	}
 	pTour->length = length;	
@@ -74,22 +74,20 @@ Tour tour_randomWalk(Instance pInstance) {
 	int i=0;
 	int j=0;
 	Town temp;
-	srand(time(NULL));
-    
-	for(i = 0; i< ret.nbTowns;i++){
-        srand(time(NULL));
-		j = i + rand() % (ret.nbTowns-i);
 
+	for(i = 0; i< ret.nbTowns;i++){
+		j=util_rand(0,ret.nbTowns-1);
 		temp = ret.towns[i];
 		ret.towns[i] = ret.towns[j];
-		ret.towns[j]=temp;
+		ret.towns[j] = temp;
 	}
+    tour_calculLength(&ret);
     return ret;
 }
 
 
 void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
-    int buff = pSecond-1;
+    pSecond--;
     
     if(pFirst > pSecond) {
         util_swap(&pFirst, &pSecond);
@@ -97,10 +95,9 @@ void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
     if(pSecond > pTour->nbTowns) {
         pSecond = 1;
     }
-    if(buff < 1) {
-        buff = pTour->nbTowns;
+    if(pSecond < 1) {
+        pSecond = pTour->nbTowns;
     }
-
-    util_reverseArray(pTour->towns, pFirst, buff);     
+    util_reverseArray(pTour->towns, pFirst, pSecond);     
     tour_calculLength(pTour);
 }

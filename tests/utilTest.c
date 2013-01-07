@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "util.h"
 /*
  * Simple C Test Suite
  */
