@@ -13,6 +13,9 @@
 
 #ifndef __LOCALSEARCH
 #define	__LOCALSEARCH
-
+#include "tour.h"
+#include <time.h>
+#include <stdlib.h>
+Tour localSearch_randomBestPath(Instance pInstance, int pTryNb);
+Tour localSearch_systematicBestPath(Instance pInstance, int pTryNb);
 #endif	
-
