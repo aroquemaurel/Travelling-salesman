@@ -1,10 +1,10 @@
 \hypertarget{tour_8h}{
-\section{Référence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h}
-\label{tour_8h}\index{/development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h@{/development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h}}
+\section{Référence du fichier lib/tour.h}
+\label{tour_8h}\index{lib/tour.h@{lib/tour.h}}
 }
 
 
-Programme de tests.  
+Fonctions des tournées.  
 
 
 {\ttfamily \#include $<$stdlib.h$>$}\par
@@ -21,31 +21,28 @@ struct \hyperlink{structTour}{Tour}
 \subsection*{Fonctions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{tour_8h_a8ab1bcd4b0eba8cff94a0a738466c218}{tour\_\-initialize} (\hyperlink{structTour}{Tour} $\ast$pTour, \hyperlink{structInstance}{Instance} pInstance)
-\item 
+\hyperlink{structTour}{Tour} \hyperlink{tour_8h_a8c2060b7e3fca06c336a66a84f7f122f}{tour\_\-new} (\hyperlink{structInstance}{Instance} pInstance)
+\begin{DoxyCompactList}\small\item\em Créer une nouvelle tournée initialisée avec les données d'une instance. \item\end{DoxyCompactList}\item 
 bool \hyperlink{tour_8h_a14eee1524a119e2590e9ba3995a90082}{tour\_\-nextPermutation} (\hyperlink{structTour}{Tour} $\ast$pPermutation)
-\item 
+\begin{DoxyCompactList}\small\item\em Génère la permutation de ville suivante d'une tournée. \item\end{DoxyCompactList}\item 
 void \hyperlink{tour_8h_a64a4d80ac01c7f79ce9a848bab526591}{tour\_\-calculLength} (\hyperlink{structTour}{Tour} $\ast$pTour)
-\item 
-void \hyperlink{tour_8h_a3317bfe1a2e6c3e83f511bf7af8943fb}{tour\_\-display} (\hyperlink{structTour}{Tour} pTour, bool pDisplay)
-\item 
-\hyperlink{structTour}{Tour} \hyperlink{tour_8h_aa7ed7da19b87745e4a223998e76b58e0}{tour\_\-randomWalk} (\hyperlink{structInstance}{Instance} pInstance)
-\item 
+\begin{DoxyCompactList}\small\item\em Calcul la longueur d'une tournée. \item\end{DoxyCompactList}\item 
+void \hyperlink{tour_8h_af35a3d1a665069d93f813c1f9a964cb4}{tour\_\-display} (const \hyperlink{structTour}{Tour} pTour)
+\begin{DoxyCompactList}\small\item\em Affiche une tournée. \item\end{DoxyCompactList}\item 
+\hyperlink{structTour}{Tour} \hyperlink{tour_8h_a92eb68608de57ebe513f9855df6c32d1}{tour\_\-randomWalk} (const \hyperlink{structInstance}{Instance} pInstance)
+\begin{DoxyCompactList}\small\item\em Génère une tournée aléatoire. \item\end{DoxyCompactList}\item 
 void \hyperlink{tour_8h_a6e0808318993beda445cc1b7138b1c0c}{tour\_\-2opt} (\hyperlink{structTour}{Tour} $\ast$pTour, int pFirst, int pSecond)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fait une 2opt. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
-Programme de tests. \begin{DoxyAuthor}{Auteur}
+Fonctions des tournées. \begin{DoxyAuthor}{Auteur}
 Antoine de Roquemaurel 
 \end{DoxyAuthor}
-\begin{DoxyVersion}{Version}
-0.1 
-\end{DoxyVersion}
 \begin{DoxyDate}{Date}
 21/11/2012 22:04:13
 \end{DoxyDate}
-Programme de test pour l'objet de gestion des chaînes de caractères Str\_\-t. 
+Entêtes des fonctions se rapportant à une tournée. $\ast$ 
 
 \subsection{Documentation des fonctions}
 \hypertarget{tour_8h_a6e0808318993beda445cc1b7138b1c0c}{
@@ -60,8 +57,12 @@ Programme de test pour l'objet de gestion des chaînes de caractères Str\_\-t.
 )}}
 \label{tour_8h_a6e0808318993beda445cc1b7138b1c0c}
 
+
+Fait une 2opt. 
+
+
 \begin{DoxyParams}{Paramètres}
-\item[{\em pTour}]\item[{\em pFirst}]\item[{\em pSecond}]\end{DoxyParams}
+\item[{\em pTour}]Le tour pourlaquelle on veut faire une 2opt \item[{\em pFirst}]L'id du début du premier trajet \item[{\em pSecond}]L'id du début du second trajet \end{DoxyParams}
 \hypertarget{tour_8h_a64a4d80ac01c7f79ce9a848bab526591}{
 \index{tour.h@{tour.h}!tour\_\-calculLength@{tour\_\-calculLength}}
 \index{tour\_\-calculLength@{tour\_\-calculLength}!tour.h@{tour.h}}
@@ -72,34 +73,47 @@ Programme de test pour l'objet de gestion des chaînes de caractères Str\_\-t.
 )}}
 \label{tour_8h_a64a4d80ac01c7f79ce9a848bab526591}
 
+
+Calcul la longueur d'une tournée. 
+
+
 \begin{DoxyParams}{Paramètres}
-\item[{\em pTour}]\end{DoxyParams}
-\hypertarget{tour_8h_a3317bfe1a2e6c3e83f511bf7af8943fb}{
+\item[{\em pTour}]La tournée pourlaquelle on veut calculer la longueur \end{DoxyParams}
+\hypertarget{tour_8h_af35a3d1a665069d93f813c1f9a964cb4}{
 \index{tour.h@{tour.h}!tour\_\-display@{tour\_\-display}}
 \index{tour\_\-display@{tour\_\-display}!tour.h@{tour.h}}
 \subsubsection[{tour\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-display (
 \begin{DoxyParamCaption}
-\item[{{\bf Tour}}]{ pTour, }
-\item[{bool}]{ pDisplay}
+\item[{const {\bf Tour}}]{ pTour}
 \end{DoxyParamCaption}
 )}}
-\label{tour_8h_a3317bfe1a2e6c3e83f511bf7af8943fb}
+\label{tour_8h_af35a3d1a665069d93f813c1f9a964cb4}
+
+
+Affiche une tournée. 
+
 
 \begin{DoxyParams}{Paramètres}
-\item[{\em pTour}]\item[{\em pDisplay}]\end{DoxyParams}
-\hypertarget{tour_8h_a8ab1bcd4b0eba8cff94a0a738466c218}{
-\index{tour.h@{tour.h}!tour\_\-initialize@{tour\_\-initialize}}
-\index{tour\_\-initialize@{tour\_\-initialize}!tour.h@{tour.h}}
-\subsubsection[{tour\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-initialize (
+\item[{\em pTour}]La tournée à afficher \end{DoxyParams}
+\hypertarget{tour_8h_a8c2060b7e3fca06c336a66a84f7f122f}{
+\index{tour.h@{tour.h}!tour\_\-new@{tour\_\-new}}
+\index{tour\_\-new@{tour\_\-new}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tour} tour\_\-new (
 \begin{DoxyParamCaption}
-\item[{{\bf Tour} $\ast$}]{ pTour, }
 \item[{{\bf Instance}}]{ pInstance}
 \end{DoxyParamCaption}
 )}}
-\label{tour_8h_a8ab1bcd4b0eba8cff94a0a738466c218}
+\label{tour_8h_a8c2060b7e3fca06c336a66a84f7f122f}
+
+
+Créer une nouvelle tournée initialisée avec les données d'une instance. 
+
 
 \begin{DoxyParams}{Paramètres}
-\item[{\em pTour}]\item[{\em pInstance}]\end{DoxyParams}
+\item[{\em pInstance}]\hyperlink{structInstance}{Instance} servant à initialisée la tournée \end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la nouvelle tournée 
+\end{DoxyReturn}
 \hypertarget{tour_8h_a14eee1524a119e2590e9ba3995a90082}{
 \index{tour.h@{tour.h}!tour\_\-nextPermutation@{tour\_\-nextPermutation}}
 \index{tour\_\-nextPermutation@{tour\_\-nextPermutation}!tour.h@{tour.h}}
@@ -110,23 +124,31 @@ Programme de test pour l'objet de gestion des chaînes de caractères Str\_\-t.
 )}}
 \label{tour_8h_a14eee1524a119e2590e9ba3995a90082}
 
-\begin{DoxyParams}{Paramètres}
-\item[{\em pPermutation}]\end{DoxyParams}
-\begin{DoxyReturn}{Renvoie}
 
+Génère la permutation de ville suivante d'une tournée. 
+
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pPermutation}]La tournée pour laquelle la permutation doit être générée \end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Vrai si une permutation à été généré faux s'il ne reste plus de permutation. 
 \end{DoxyReturn}
-\hypertarget{tour_8h_aa7ed7da19b87745e4a223998e76b58e0}{
+\hypertarget{tour_8h_a92eb68608de57ebe513f9855df6c32d1}{
 \index{tour.h@{tour.h}!tour\_\-randomWalk@{tour\_\-randomWalk}}
 \index{tour\_\-randomWalk@{tour\_\-randomWalk}!tour.h@{tour.h}}
 \subsubsection[{tour\_\-randomWalk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tour} tour\_\-randomWalk (
 \begin{DoxyParamCaption}
-\item[{{\bf Instance}}]{ pInstance}
+\item[{const {\bf Instance}}]{ pInstance}
 \end{DoxyParamCaption}
 )}}
-\label{tour_8h_aa7ed7da19b87745e4a223998e76b58e0}
+\label{tour_8h_a92eb68608de57ebe513f9855df6c32d1}
+
+
+Génère une tournée aléatoire. 
+
 
 \begin{DoxyParams}{Paramètres}
-\item[{\em pInstance}]\end{DoxyParams}
+\item[{\em pInstance}]L'instance pour laquelle générer un random walk\end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-
+La tournée aléatoire 
 \end{DoxyReturn}

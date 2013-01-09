@@ -41,6 +41,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/tour.o \
 	${OBJECTDIR}/src/town.o \
 	${OBJECTDIR}/src/util.o \
+	${OBJECTDIR}/src/genetic.o \
 	${OBJECTDIR}/src/parsing.o \
 	${OBJECTDIR}/src/bruteForce.o \
 	${OBJECTDIR}/src/instance.o \
@@ -111,6 +112,11 @@ ${OBJECTDIR}/src/util.o: src/util.c
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
 	$(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util.o src/util.c
+
+${OBJECTDIR}/src/genetic.o: src/genetic.c 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/genetic.o src/genetic.c
 
 ${OBJECTDIR}/src/parsing.o: src/parsing.c 
 	${MKDIR} -p ${OBJECTDIR}/src
@@ -274,6 +280,19 @@ ${OBJECTDIR}/src/util_nomain.o: ${OBJECTDIR}/src/util.o src/util.c
 	    $(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/util_nomain.o src/util.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/util.o ${OBJECTDIR}/src/util_nomain.o;\
+	fi
+
+${OBJECTDIR}/src/genetic_nomain.o: ${OBJECTDIR}/src/genetic.o src/genetic.c 
+	${MKDIR} -p ${OBJECTDIR}/src
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/src/genetic.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} $@.d;\
+	    $(COMPILE.c) -O2 -I/development/cours/L2/algo3/TP/voyageurDeCommerce/lib -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/genetic_nomain.o src/genetic.c;\
+	else  \
+	    ${CP} ${OBJECTDIR}/src/genetic.o ${OBJECTDIR}/src/genetic_nomain.o;\
 	fi
 
 ${OBJECTDIR}/src/parsing_nomain.o: ${OBJECTDIR}/src/parsing.o src/parsing.c 

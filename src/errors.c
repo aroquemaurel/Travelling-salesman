@@ -1,23 +1,30 @@
 /**
  * \file bruteForce.c
- * \brief Fonctions utiles.
+ * \brief Fonctions sur les erreurs.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 21/11/2012 17:42:31
  *
- * Entêtes des fonctions pouvant être utiles dans tout le projet. 
- * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
- *
+ * Implémentation des fonctions concernant les erreurs du programme.  
+  *
  */
 
 #include "errors.h"
-void errors_initialize(Errors* pErrors) {
-	pErrors->errorNbArguments = NULL;
-	pErrors->errorTagFNotFound = NULL;
-	pErrors->errorFileNotFound = NULL;
-	pErrors->errorNoAlgoSpecified = NULL;
-	pErrors->errorLsrNotValidParameter = NULL;
-	pErrors->nbErrors = 0;
+
+Errors errors_new() {
+    Errors ret;
+	ret.errorNbArguments = NULL;
+	ret.errorTagFNotFound = NULL;
+	ret.errorFileNotFound = NULL;
+	ret.errorNoAlgoSpecified = NULL;
+    ret.errorMissingParameterGa = NULL;
+    ret.errorMissingParameterLsnr = NULL;
+    ret.errorMissingParameterLsr = NULL;
+    ret.errorNoValidParameterGa = NULL;
+    ret.errorNoValidParameterLsnr = NULL;
+    ret.errorNoValidParameterLsr = NULL;
+	ret.nbErrors = 0;
+    
+    return ret;
 }
 void errors_displayErrorsMessage(const Errors pErrors) {
 	printf("%d erreur%s lors de la saisie de la commande\n",
@@ -36,9 +43,6 @@ void errors_displayErrorsMessage(const Errors pErrors) {
 	if(pErrors.errorNoAlgoSpecified != NULL)
 		printf("%s", pErrors.errorNoAlgoSpecified);
 	
-	if(pErrors.errorLsrNotValidParameter != NULL)
-		printf("%s", pErrors.errorLsrNotValidParameter);
-    
     if(pErrors.errorMissingParameterLsr != NULL)
 		printf("%s", pErrors.errorMissingParameterLsr);
         

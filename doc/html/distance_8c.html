@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Levoyageurdecommerce: Référence du fichier src/distance.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Généré par Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+--></script>
+<script type="text/javascript">
+function hasClass(ele,cls) {
+  return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+function addClass(ele,cls) {
+  if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+}
+
+function removeClass(ele,cls) {
+  if (hasClass(ele,cls)) {
+    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    ele.className=ele.className.replace(reg,' ');
+  }
+}
+
+function toggleVisibility(linkObj) {
+ var base = linkObj.getAttribute('id');
+ var summary = document.getElementById(base + '-summary');
+ var content = document.getElementById(base + '-content');
+ var trigger = document.getElementById(base + '-trigger');
+ if ( hasClass(linkObj,'closed') ) {
+   summary.style.display = 'none';
+   content.style.display = 'block';
+   trigger.src = 'open.png';
+   removeClass(linkObj,'closed');
+   addClass(linkObj,'opened');
+ } else if ( hasClass(linkObj,'opened') ) {
+   summary.style.display = 'block';
+   content.style.display = 'none';
+   trigger.src = 'closed.png';
+   removeClass(linkObj,'opened');
+   addClass(linkObj,'closed');
+ }
+ return false;
+}
+</script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier src/distance.c</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Fonctions des distances.  
+<a href="#_details">Plus de détails...</a></p>
+<code>#include &quot;<a class="el" href="distance_8h_source.html">distance.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDistance.html">Distance</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a08362321c07b0ee1f72bb9a20bf5b1db">distance_new</a> (<a class="el" href="structTown.html">Town</a> *pFirstTown, <a class="el" href="structTown.html">Town</a> *pSecondTown)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Créer une nouvelle distance.  <a href="#a08362321c07b0ee1f72bb9a20bf5b1db"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a3c0a5cae2a774b648d20447b23d81d84">distance_calculDistance</a> (const <a class="el" href="structTown.html">Town</a> pTown1, const <a class="el" href="structTown.html">Town</a> pTown2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul la distance entre deux villes.  <a href="#a3c0a5cae2a774b648d20447b23d81d84"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDistance.html">Distance</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a1168dcc0722a41c0d43e627741d8d0b5">distance_searchDistance</a> (<a class="el" href="structDistance.html">Distance</a> *pDistances, const int pFirst, const int pSecond)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Recherche la distance entre deux villes dans le tableau de distance.  <a href="#a1168dcc0722a41c0d43e627741d8d0b5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a3181d7b4c6f5044b216c1a96a5a89854">distance_betweenTowns</a> (<a class="el" href="structDistance.html">Distance</a> *pDistances, int i, int j)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul la distance entre deux ID de villes.  <a href="#a3181d7b4c6f5044b216c1a96a5a89854"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Fonctions des distances. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Antoine de Roquemaurel </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>01/12/2012 20:33:39</dd></dl>
+<p>Entêtes des fonctions se rapportant aux distances </p>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a3181d7b4c6f5044b216c1a96a5a89854"></a><!-- doxytag: member="distance.c::distance_betweenTowns" ref="a3181d7b4c6f5044b216c1a96a5a89854" args="(Distance *pDistances, int i, int j)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double distance_betweenTowns </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDistance.html">Distance</a> *&nbsp;</td>
+          <td class="paramname"> <em>pDistances</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>j</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcul la distance entre deux ID de villes. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pDistances</em>&nbsp;</td><td>La matrice de distances </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i</em>&nbsp;</td><td>La première ville </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>j</em>&nbsp;</td><td>La seconde ville </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3c0a5cae2a774b648d20447b23d81d84"></a><!-- doxytag: member="distance.c::distance_calculDistance" ref="a3c0a5cae2a774b648d20447b23d81d84" args="(const Town pTown1, const Town pTown2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double distance_calculDistance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTown.html">Town</a>&nbsp;</td>
+          <td class="paramname"> <em>pTown1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structTown.html">Town</a>&nbsp;</td>
+          <td class="paramname"> <em>pTown2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcul la distance entre deux villes. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pTown1</em>&nbsp;</td><td>Première ville </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pTown2</em>&nbsp;</td><td>Seconde ville </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a08362321c07b0ee1f72bb9a20bf5b1db"></a><!-- doxytag: member="distance.c::distance_new" ref="a08362321c07b0ee1f72bb9a20bf5b1db" args="(Town *pFirstTown, Town *pSecondTown)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDistance.html">Distance</a> distance_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTown.html">Town</a> *&nbsp;</td>
+          <td class="paramname"> <em>pFirstTown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structTown.html">Town</a> *&nbsp;</td>
+          <td class="paramname"> <em>pSecondTown</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Créer une nouvelle distance. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pFirstTown</em>&nbsp;</td><td>Première ville </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pSecondTown</em>&nbsp;</td><td>Seconde ville </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd><a class="el" href="structDistance.html" title="Objet des distances.">Distance</a> entre les deux villes </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1168dcc0722a41c0d43e627741d8d0b5"></a><!-- doxytag: member="distance.c::distance_searchDistance" ref="a1168dcc0722a41c0d43e627741d8d0b5" args="(Distance *pDistances, const int pFirst, const int pSecond)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDistance.html">Distance</a> distance_searchDistance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDistance.html">Distance</a> *&nbsp;</td>
+          <td class="paramname"> <em>pDistances</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>pFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>pSecond</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Recherche la distance entre deux villes dans le tableau de distance. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pDistances</em>&nbsp;</td><td>La matrice de distance </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pFirst</em>&nbsp;</td><td>La première ville </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pSecond</em>&nbsp;</td><td>la seconde ville</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance </dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Généré le Wed Jan 9 2013 21:13:44 pour Levoyageurdecommerce par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

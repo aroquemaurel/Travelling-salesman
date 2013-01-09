@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>voyageurDeCommerce:  Fichier source de /development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h</title>
+<title>Levoyageurdecommerce:  Fichier source de lib/tour.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -82,41 +82,41 @@ function toggleVisibility(linkObj) {
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>/development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h</h1>  </div>
+<h1>lib/tour.h</h1>  </div>
 </div>
 <div class="contents">
 <a href="tour_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __TOUR</span>
-<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __TOUR</span>
-<a name="l00014"></a>00014 <span class="preprocessor"></span>
-<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
-<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;stdbool.h&gt;</span>
-<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;time.h&gt;</span>
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="town_8h.html" title="Programme de tests.">town.h</a>&quot;</span>
-<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="instance_8h.html" title="Programme de tests.">instance.h</a>&quot;</span>
-<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="distance_8h.html" title="Programme de tests.">distance.h</a>&quot;</span>
-<a name="l00022"></a>00022 
-<a name="l00031"></a><a class="code" href="structTour.html">00031</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
-<a name="l00032"></a>00032     <a class="code" href="structTown.html" title="Objet des ville.">Town</a> towns[N];
-<a name="l00033"></a>00033     <span class="keywordtype">int</span> nbTowns;
-<a name="l00034"></a>00034     <span class="keywordtype">double</span> length;
-<a name="l00035"></a>00035     <a class="code" href="structDistance.html" title="Objet des distances.">Distance</a>* distances;
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __TOUR</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define __TOUR</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;stdbool.h&gt;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;time.h&gt;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="town_8h.html" title="Fonctions des villes.">town.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="instance_8h.html" title="Fonctions sur les instances.">instance.h</a>&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="distance_8h.html" title="Fonctions des distances.">distance.h</a>&quot;</span>
+<a name="l00020"></a>00020 
+<a name="l00027"></a><a class="code" href="structTour.html">00027</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00029"></a><a class="code" href="structTour.html#ab50c14f153f1a4b16788d31d9d845c69">00029</a>     <a class="code" href="structTown.html" title="Objet des ville.">Town</a> towns[N];
+<a name="l00031"></a><a class="code" href="structTour.html#af54d0892d0de565850fdf26e98b90a03">00031</a>     <span class="keywordtype">int</span> nbTowns;
+<a name="l00033"></a><a class="code" href="structTour.html#ad7ec8574d813b76140f78b035cdd93a9">00033</a>     <span class="keywordtype">double</span> length;
+<a name="l00035"></a><a class="code" href="structTour.html#a4da8a499459d000a23d79af9d1a5565d">00035</a>     <a class="code" href="structDistance.html" title="Objet des distances.">Distance</a>* distances;
 <a name="l00036"></a>00036 }<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>;
 <a name="l00037"></a>00037 
-<a name="l00043"></a>00043 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a8ab1bcd4b0eba8cff94a0a738466c218">tour_initialize</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour, <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
-<a name="l00044"></a>00044 
-<a name="l00050"></a>00050 <span class="keywordtype">bool</span> <a class="code" href="tour_8h.html#a14eee1524a119e2590e9ba3995a90082">tour_nextPermutation</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pPermutation);
-<a name="l00051"></a>00051 
-<a name="l00056"></a>00056 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a64a4d80ac01c7f79ce9a848bab526591">tour_calculLength</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour);
-<a name="l00057"></a>00057 
-<a name="l00063"></a>00063 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a3317bfe1a2e6c3e83f511bf7af8943fb">tour_display</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> pTour, <span class="keywordtype">bool</span> pDisplay);
-<a name="l00064"></a>00064 
-<a name="l00070"></a>00070 <a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> <a class="code" href="tour_8h.html#aa7ed7da19b87745e4a223998e76b58e0">tour_randomWalk</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
-<a name="l00071"></a>00071 
-<a name="l00078"></a>00078 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a6e0808318993beda445cc1b7138b1c0c">tour_2opt</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour, <span class="keywordtype">int</span> pFirst, <span class="keywordtype">int</span> pSecond);
-<a name="l00079"></a>00079 <span class="preprocessor">#endif</span>
-<a name="l00080"></a>00080 <span class="preprocessor"></span>
+<a name="l00044"></a>00044 <a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> <a class="code" href="tour_8h.html#a8c2060b7e3fca06c336a66a84f7f122f" title="Créer une nouvelle tournée initialisée avec les données d&amp;#39;une instance.">tour_new</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00045"></a>00045 
+<a name="l00051"></a>00051 <span class="keywordtype">bool</span> <a class="code" href="tour_8h.html#a14eee1524a119e2590e9ba3995a90082" title="Génère la permutation de ville suivante d&amp;#39;une tournée.">tour_nextPermutation</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pPermutation);
+<a name="l00052"></a>00052 
+<a name="l00057"></a>00057 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a64a4d80ac01c7f79ce9a848bab526591" title="Calcul la longueur d&amp;#39;une tournée.">tour_calculLength</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour);
+<a name="l00058"></a>00058 
+<a name="l00064"></a>00064 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#af35a3d1a665069d93f813c1f9a964cb4" title="Affiche une tournée.">tour_display</a>(<span class="keyword">const</span> <a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> pTour);
+<a name="l00065"></a>00065 
+<a name="l00072"></a>00072 <a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> <a class="code" href="tour_8h.html#a92eb68608de57ebe513f9855df6c32d1" title="Génère une tournée aléatoire.">tour_randomWalk</a>(<span class="keyword">const</span> <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00073"></a>00073 
+<a name="l00080"></a>00080 <span class="keywordtype">void</span> <a class="code" href="tour_8h.html#a6e0808318993beda445cc1b7138b1c0c" title="Fait une 2opt.">tour_2opt</a>(<a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a>* pTour, <span class="keywordtype">int</span> pFirst, <span class="keywordtype">int</span> pSecond);
+<a name="l00081"></a>00081 <span class="preprocessor">#endif</span>
+<a name="l00082"></a>00082 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -124,7 +124,7 @@ function toggleVisibility(linkObj) {
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -133,7 +133,7 @@ function toggleVisibility(linkObj) {
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Généré le Fri Dec 28 2012 21:21:21 pour voyageurDeCommerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Wed Jan 9 2013 21:13:44 pour Levoyageurdecommerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

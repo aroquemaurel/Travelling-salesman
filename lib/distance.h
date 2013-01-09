@@ -1,11 +1,10 @@
 /**
  * \file distance.h
- * \brief Programme de tests.
+ * \brief Fonctions des distances
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 01/12/2012 20:33:44
  *
- * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
+ * Entêtes des fonctions se rapportant aux distances
  *
  */
 
@@ -19,39 +18,53 @@
  * \struct Distance distance.h
  * \brief Objet des distances
  *
- * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
- * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
- * connait la taille de chaîne contient !
+ * Distance entre deux villes
+ * @see Town
  */
 typedef struct {
+    /// Première ville
 	Town firstTown;
+    /// Seconde ville
 	Town secondTown;
+    /// Distance entre les deux villes
 	double distance;
 }Distance;
 
 /**
+ * Créer une nouvelle distance
  * 
- * @param pDistance
- * @param pFirstTown
- * @param pSecondTown
+ * @param pFirstTown Première ville
+ * @param pSecondTown Seconde ville
+ * @return Distance entre les deux villes
  */
-void distance_new(Distance* pDistance, Town* pFirstTown, Town* pSecondTown);
+Distance distance_new(Town* pFirstTown, Town* pSecondTown);
+
 /**
- * 
- * @param pTown1
- * @param pTown2
- * @return 
+ * Calcul la distance entre deux villes
+ * @param pTown1 Première ville
+ * @param pTown2 Seconde ville
+ * @return La distance
  */
 double distance_calculDistance(const Town pTown1, const Town pTown2);
 
 /**
- * 
- * @param pDistances
- * @param i
- * @param j
- * @return 
+ * Calcul la distance entre deux ID de villes
+ * @param pDistances La matrice de distances
+ * @param i La première ville
+ * @param j La seconde ville
+ * @return La distance
  */
 double distance_betweenTowns(Distance* pDistances, int i, int j);
 
+/**
+ * Recherche la distance entre deux villes dans le tableau de distance
+ * 
+ * @param pDistances La matrice de distance
+ * @param pFirst La première ville
+ * @param pSecond la seconde ville
+ * 
+ * @return La distance
+ */
+Distance distance_searchDistance(Distance* pDistances, const int pFirst, const int pSecond);
 #endif
 

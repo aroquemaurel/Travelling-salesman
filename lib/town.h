@@ -1,11 +1,10 @@
 /**
  * \file town.h
- * \brief Programme de tests.
+ * \brief Fonctions des villes.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 21/11/2012 22:35:19
  *
- * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
+ * Entêtes des fonctions se rapportant à une ville. 
  *
  */
 
@@ -18,23 +17,24 @@
  * \struct Town town.h
  * \brief Objet des ville
  *
- * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
- * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
- * connait la taille de chaîne contient !
+ * Structure représentant une ville
  */
 typedef struct {
-	int x; /// test x
-	int y; /// test y
-	int id; /// test id
+    /// Abscisse de la ville
+	int x; 
+    /// Ordonnée de la ville
+	int y; 
+    /// Id de la ville
+	int id; 
 } Town;
 
 /**
- * 
- * @param pTown
- * @param pId
- * @param pX
- * @param pY
+ * Création d'une nouvelle ville
+ *
+ * @param pId Id de la ville
+ * @param pX Abscisse
+ * @param pY Ordonnée
  */
-void town_initialize(Town* pTown, const int pId, const int pX, const int pY);
+Town town_new(const int pId, const int pX, const int pY);
 #endif
 

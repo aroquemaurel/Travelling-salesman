@@ -12,12 +12,12 @@
 /*
  * Simple C Test Suite
  */
-void tour_initialize(Tour* pTour, Instance pInstance);
+void tour_new(Tour* pTour, Instance pInstance);
 
 void testTour_initialize() {
 	Tour* pTour;
 	Instance pInstance;
-	tour_initialize(pTour, pInstance);
+	tour_new(pTour, pInstance);
 	if (1 /*check result*/) {
 		printf("%%TEST_FAILED%% time=0 testname=testTour_initialize (tourTest) message=error message sample\n");
 	}
@@ -50,7 +50,7 @@ void testTour_randomWalk() {
 	Instance instance;
     Tour tour;
     FILE* file = fopen("resources/inputFile/essai8.txt", "r");
-    instance_initialize(&instance, file);
+    instance_new(&instance, file);
 	tour = tour_randomWalk(instance);
     tour_display(tour, true);
 	if (1 /*check result*/) {

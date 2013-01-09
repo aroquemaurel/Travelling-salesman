@@ -1,8 +1,7 @@
 /**
- * \file bruteForce.c
+ * \file instance.c
  * \brief Fonctions utiles.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 21/11/2012 22:03:26
  *
  * Entêtes des fonctions pouvant être utiles dans tout le projet. 
@@ -12,7 +11,9 @@
 
 #include "instance.h"
 
-void instance_initialize(Instance* pInstance, FILE* pFile) {
+
+Instance instance_new(FILE* pFile) {
+    Instance ret;
 	int dimension, buffId=0;
 	int buff;
 	bool displayData = false;
@@ -22,8 +23,8 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 	float buffX, buffY;
 	Town townBuff;
 	
-	pInstance->nbTowns = 0;
-	pInstance->name = "";
+	ret.nbTowns = 0;
+	ret.name = "";
 
 	while(!feof(pFile)) {
 		if(!displayData) {
@@ -48,8 +49,8 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 			}
 			fscanf(pFile, " %d %f %f", &buff, &buffX, &buffY);
             
-			town_initialize(&townBuff, ++buffId, buffX, buffY);
-			instance_push(pInstance, townBuff);
+			townBuff = town_new(++buffId, buffX, buffY);
+			instance_push(&ret, townBuff);
 			if(buffId >= dimension) {
 				fscanf(pFile, " %s", buffTag);
 				displayData = false;
@@ -57,29 +58,36 @@ void instance_initialize(Instance* pInstance, FILE* pFile) {
 		}
 
 	}
-    pInstance->nbTowns = dimension;
-	pInstance->name = name;
+    ret.nbTowns = dimension;
+	ret.name = name;
+    
+    return ret;
 }
+
 
 void instance_display(const Instance pInstance) {
-
+    // TODO
 }
+
 
 void instance_push(Instance* pInstance, const Town pTown) { // TODO exception nbTowns != 500. TODO Defines ou dynamique
 	pInstance->towns[pInstance->nbTowns++] = pTown;
 }
+
 
 void instance_initializeDistancesMatrix(Instance* pInstance) {
 	int i, j, k = 0;
 	Distance buffDistance;
 	for(i = 0 ; i <= pInstance->nbTowns; ++i) {
 		for(j = 0 ; j < i ; ++j) {
-			distance_new(&buffDistance, &(pInstance->towns[i-1]), &(pInstance->towns[j]));
+			buffDistance = distance_new(&(pInstance->towns[i-1]), &(pInstance->towns[j]));
 			pInstance->distances[k] = buffDistance;
 			++k;
 		}
 	}
 }
+
+
 void instance_displayLinearVector(Instance pInstance) {
 	int i;
 	for(i = 0 ; i < util_sum(0, pInstance.nbTowns); ++i) {
@@ -87,6 +95,7 @@ void instance_displayLinearVector(Instance pInstance) {
 	}
 	printf("\n");
 }
+
 
 void instance_displayMatrix(Instance pInstance) { 
 	int previous = pInstance.distances[0].firstTown.id; 

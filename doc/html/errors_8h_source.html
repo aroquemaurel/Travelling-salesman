@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>voyageurDeCommerce:  Fichier source de /development/cours/L2/algo3/TP/voyageCommerce/lib/errors.h</title>
+<title>Levoyageurdecommerce:  Fichier source de lib/errors.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -82,40 +82,56 @@ function toggleVisibility(linkObj) {
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>/development/cours/L2/algo3/TP/voyageCommerce/lib/errors.h</h1>  </div>
+<h1>lib/errors.h</h1>  </div>
 </div>
 <div class="contents">
 <a href="errors_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __ERRORS</span>
-<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __ERRORS</span>
-<a name="l00014"></a>00014 <span class="preprocessor"></span>
-<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
-<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
-<a name="l00017"></a>00017 
-<a name="l00026"></a><a class="code" href="structErrors.html">00026</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
-<a name="l00027"></a>00027     <span class="keywordtype">char</span>* errorNbArguments;
-<a name="l00028"></a>00028     <span class="keywordtype">char</span>* errorTagFNotFound;
-<a name="l00029"></a>00029     <span class="keywordtype">char</span>* errorFileNotFound;
-<a name="l00030"></a>00030     <span class="keywordtype">char</span>* errorNoAlgoSpecified;
-<a name="l00031"></a>00031     <span class="keywordtype">char</span>* errorLsrNotValidParameter;
-<a name="l00032"></a>00032     <span class="keywordtype">int</span> nbErrors;
-<a name="l00033"></a>00033 } <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>;
-<a name="l00034"></a>00034 
-<a name="l00039"></a>00039 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a7b18bd56b2f03b4ac10845421e915853">errors_initialize</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
-<a name="l00040"></a>00040 
-<a name="l00045"></a>00045 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a9432e8a46dc6939f08895669f3678ccf">errors_displayErrorsMessage</a>(<span class="keyword">const</span> <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a> pErrors);
-<a name="l00046"></a>00046 
-<a name="l00051"></a>00051 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a0578fb7fcec18f8016a960fe51ddc7bc">errors_setNbArguments</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
-<a name="l00052"></a>00052 
-<a name="l00057"></a>00057 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a87df0338b6a2197054a47514070433c3">errors_setTagFNotFound</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
-<a name="l00058"></a>00058 
-<a name="l00064"></a>00064 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a7393147938b78a391b74930ceb07fc88">errors_setFileNotFound</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors, <span class="keywordtype">char</span>* fileName);
-<a name="l00065"></a>00065 
-<a name="l00070"></a>00070 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a4b02c122b53eeefe092ae99b42eb7111">errors_setNoAlgoSpecified</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
-<a name="l00071"></a>00071 
-<a name="l00076"></a>00076 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#acf068a008ed0089d91fd4c53f445374d">errors_setLsrNotValidParameter</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
-<a name="l00077"></a>00077 <span class="preprocessor">#endif</span>
-<a name="l00078"></a>00078 <span class="preprocessor"></span>
+<a name="l00011"></a>00011 <span class="preprocessor">#ifndef __ERRORS</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="preprocessor">#define __ERRORS</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00016"></a>00016 
+<a name="l00025"></a><a class="code" href="structErrors.html">00025</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00027"></a><a class="code" href="structErrors.html#add18d77e05e1b61b88feeb2d5bdf5525">00027</a>     <span class="keywordtype">char</span>* errorNbArguments; 
+<a name="l00029"></a><a class="code" href="structErrors.html#ae16317e85c4bbd2d2f8aa0412e87790f">00029</a>     <span class="keywordtype">char</span>* errorTagFNotFound; 
+<a name="l00031"></a><a class="code" href="structErrors.html#a7133eba5ff36c1f6d71a6cd2bcc0e8b1">00031</a>     <span class="keywordtype">char</span>* errorFileNotFound; 
+<a name="l00033"></a><a class="code" href="structErrors.html#a23cf6180d45a3075891ab189d0eb9023">00033</a>     <span class="keywordtype">char</span>* errorNoAlgoSpecified; 
+<a name="l00035"></a><a class="code" href="structErrors.html#a05183e1b32b7845f7234c5e7c0565727">00035</a>     <span class="keywordtype">char</span>* errorMissingParameterLsr; 
+<a name="l00037"></a><a class="code" href="structErrors.html#ad4a0fa4e6c5510a25606e1385415490f">00037</a>     <span class="keywordtype">char</span>* errorMissingParameterLsnr; 
+<a name="l00039"></a><a class="code" href="structErrors.html#a3709f24fb0e0a975e7d2e870a9d04af4">00039</a>     <span class="keywordtype">char</span>* errorMissingParameterGa; 
+<a name="l00041"></a><a class="code" href="structErrors.html#a0fe0b5ce5f5b8bc80d1fe84525ebfa88">00041</a>     <span class="keywordtype">char</span>* errorNoValidParameterLsr; 
+<a name="l00043"></a><a class="code" href="structErrors.html#ade2a8eb0b3d94e5fa156df6d6e12f609">00043</a>     <span class="keywordtype">char</span>* errorNoValidParameterLsnr; 
+<a name="l00045"></a><a class="code" href="structErrors.html#aa8fc65c54b7397a4eff642f0416bf533">00045</a>     <span class="keywordtype">char</span>* errorNoValidParameterGa;
+<a name="l00047"></a><a class="code" href="structErrors.html#aab575112743341bf554002622a903483">00047</a>     <span class="keywordtype">int</span> nbErrors; 
+<a name="l00048"></a>00048 } <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>;
+<a name="l00049"></a>00049 
+<a name="l00055"></a>00055 <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a> <a class="code" href="errors_8h.html#a6f76c1bae168e5138cef3e47ff1508a2" title="Initialisation de l&amp;#39;objet.">errors_new</a>();
+<a name="l00056"></a>00056 
+<a name="l00062"></a>00062 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a9432e8a46dc6939f08895669f3678ccf" title="Affiches toutes les erreurs de pErrors.">errors_displayErrorsMessage</a>(<span class="keyword">const</span> <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a> pErrors);
+<a name="l00063"></a>00063 
+<a name="l00069"></a>00069 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a0578fb7fcec18f8016a960fe51ddc7bc" title="Signale que le nombre d&amp;#39;argument est incorrect.">errors_setNbArguments</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00070"></a>00070 
+<a name="l00076"></a>00076 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a87df0338b6a2197054a47514070433c3" title="Signale que la balise -f n&amp;#39;a pas été trouvée.">errors_setTagFNotFound</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00077"></a>00077 
+<a name="l00084"></a>00084 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a7393147938b78a391b74930ceb07fc88" title="Signale que le fichier fileName n&amp;#39;existe pas.">errors_setFileNotFound</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors, <span class="keywordtype">char</span>* fileName);
+<a name="l00085"></a>00085 
+<a name="l00091"></a>00091 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a4b02c122b53eeefe092ae99b42eb7111" title="Signale qu&amp;#39;aucun algorithme n&amp;#39;a été spécifié.">errors_setNoAlgoSpecified</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00092"></a>00092 
+<a name="l00098"></a>00098 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a08a06ef5607dd42f53ec130243f14286" title="Signale que les paramètres derrière -lsnr ne sont pas valides (non entier).">errors_setNoValidParameterLsnr</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00099"></a>00099 
+<a name="l00105"></a>00105 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a91bbcd02a371d8ab3563526f6dd187b5" title="Signale que le paramètre derrière -lsr n&amp;#39;est pas valide (n&amp;#39;est pas un entier).">errors_setNoValidParameterLsr</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00106"></a>00106 
+<a name="l00112"></a>00112 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a4d831f2a1e1faee9f6e83217cbd02099" title="Signale qu&amp;#39;aucun paramètre n&amp;#39;a été spécifié derrière -ga.">errors_setMissingParameterGa</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00113"></a>00113 
+<a name="l00119"></a>00119 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#a5b0a7201a86827526fd6d0108c9618c8" title="Signale qu&amp;#39;aucun paramètre n&amp;#39;a été spécifié derrière -lsnr.">errors_setMissingParameterLsnr</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00120"></a>00120 
+<a name="l00126"></a>00126 <span class="keywordtype">void</span> <a class="code" href="errors_8h.html#adde0644139455cc5a515d4acb1816dae" title="Signale qu&amp;#39;aucun paramètre n&amp;#39;a été spécifié derrière -lsr.">errors_setMissingParameterLsr</a>(<a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 <span class="preprocessor">#endif</span>
+<a name="l00131"></a>00131 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -123,7 +139,7 @@ function toggleVisibility(linkObj) {
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,7 +148,7 @@ function toggleVisibility(linkObj) {
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Généré le Fri Dec 28 2012 21:21:21 pour voyageurDeCommerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Wed Jan 9 2013 21:13:44 pour Levoyageurdecommerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

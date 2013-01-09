@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Levoyageurdecommerce: Référence du fichier src/tour.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Généré par Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+--></script>
+<script type="text/javascript">
+function hasClass(ele,cls) {
+  return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+function addClass(ele,cls) {
+  if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+}
+
+function removeClass(ele,cls) {
+  if (hasClass(ele,cls)) {
+    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    ele.className=ele.className.replace(reg,' ');
+  }
+}
+
+function toggleVisibility(linkObj) {
+ var base = linkObj.getAttribute('id');
+ var summary = document.getElementById(base + '-summary');
+ var content = document.getElementById(base + '-content');
+ var trigger = document.getElementById(base + '-trigger');
+ if ( hasClass(linkObj,'closed') ) {
+   summary.style.display = 'none';
+   content.style.display = 'block';
+   trigger.src = 'open.png';
+   removeClass(linkObj,'closed');
+   addClass(linkObj,'opened');
+ } else if ( hasClass(linkObj,'opened') ) {
+   summary.style.display = 'block';
+   content.style.display = 'none';
+   trigger.src = 'closed.png';
+   removeClass(linkObj,'opened');
+   addClass(linkObj,'closed');
+ }
+ return false;
+}
+</script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier src/tour.c</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Fonctions des tournées.  
+<a href="#_details">Plus de détails...</a></p>
+<code>#include &quot;<a class="el" href="tour_8h_source.html">tour.h</a>&quot;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTour.html">Tour</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#a8c2060b7e3fca06c336a66a84f7f122f">tour_new</a> (<a class="el" href="structInstance.html">Instance</a> pInstance)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Créer une nouvelle tournée initialisée avec les données d'une instance.  <a href="#a8c2060b7e3fca06c336a66a84f7f122f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#a14eee1524a119e2590e9ba3995a90082">tour_nextPermutation</a> (<a class="el" href="structTour.html">Tour</a> *pPermutation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Génère la permutation de ville suivante d'une tournée.  <a href="#a14eee1524a119e2590e9ba3995a90082"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#a64a4d80ac01c7f79ce9a848bab526591">tour_calculLength</a> (<a class="el" href="structTour.html">Tour</a> *pTour)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul la longueur d'une tournée.  <a href="#a64a4d80ac01c7f79ce9a848bab526591"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#af35a3d1a665069d93f813c1f9a964cb4">tour_display</a> (const <a class="el" href="structTour.html">Tour</a> pTour)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche une tournée.  <a href="#af35a3d1a665069d93f813c1f9a964cb4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTour.html">Tour</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#a92eb68608de57ebe513f9855df6c32d1">tour_randomWalk</a> (const <a class="el" href="structInstance.html">Instance</a> pInstance)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Génère une tournée aléatoire.  <a href="#a92eb68608de57ebe513f9855df6c32d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#a6e0808318993beda445cc1b7138b1c0c">tour_2opt</a> (<a class="el" href="structTour.html">Tour</a> *pTour, int pFirst, int pSecond)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Fait une 2opt.  <a href="#a6e0808318993beda445cc1b7138b1c0c"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Fonctions des tournées. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Antoine de Roquemaurel </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>21/11/2012 22:04:08</dd></dl>
+<p>Implémentation des fonctions se rapportant à une tournée. </p>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a6e0808318993beda445cc1b7138b1c0c"></a><!-- doxytag: member="tour.c::tour_2opt" ref="a6e0808318993beda445cc1b7138b1c0c" args="(Tour *pTour, int pFirst, int pSecond)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tour_2opt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTour.html">Tour</a> *&nbsp;</td>
+          <td class="paramname"> <em>pTour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pSecond</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fait une 2opt. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pTour</em>&nbsp;</td><td>Le tour pourlaquelle on veut faire une 2opt </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pFirst</em>&nbsp;</td><td>L'id du début du premier trajet </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pSecond</em>&nbsp;</td><td>L'id du début du second trajet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a64a4d80ac01c7f79ce9a848bab526591"></a><!-- doxytag: member="tour.c::tour_calculLength" ref="a64a4d80ac01c7f79ce9a848bab526591" args="(Tour *pTour)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tour_calculLength </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTour.html">Tour</a> *&nbsp;</td>
+          <td class="paramname"> <em>pTour</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcul la longueur d'une tournée. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pTour</em>&nbsp;</td><td>La tournée pourlaquelle on veut calculer la longueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af35a3d1a665069d93f813c1f9a964cb4"></a><!-- doxytag: member="tour.c::tour_display" ref="af35a3d1a665069d93f813c1f9a964cb4" args="(const Tour pTour)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tour_display </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTour.html">Tour</a>&nbsp;</td>
+          <td class="paramname"> <em>pTour</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Affiche une tournée. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pTour</em>&nbsp;</td><td>La tournée à afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8c2060b7e3fca06c336a66a84f7f122f"></a><!-- doxytag: member="tour.c::tour_new" ref="a8c2060b7e3fca06c336a66a84f7f122f" args="(Instance pInstance)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTour.html">Tour</a> tour_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInstance.html">Instance</a>&nbsp;</td>
+          <td class="paramname"> <em>pInstance</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Créer une nouvelle tournée initialisée avec les données d'une instance. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pInstance</em>&nbsp;</td><td><a class="el" href="structInstance.html" title="Objet des instances.">Instance</a> servant à initialisée la tournée </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>la nouvelle tournée </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a14eee1524a119e2590e9ba3995a90082"></a><!-- doxytag: member="tour.c::tour_nextPermutation" ref="a14eee1524a119e2590e9ba3995a90082" args="(Tour *pPermutation)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tour_nextPermutation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTour.html">Tour</a> *&nbsp;</td>
+          <td class="paramname"> <em>pPermutation</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Génère la permutation de ville suivante d'une tournée. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pPermutation</em>&nbsp;</td><td>La tournée pour laquelle la permutation doit être générée </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Vrai si une permutation à été généré faux s'il ne reste plus de permutation. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a92eb68608de57ebe513f9855df6c32d1"></a><!-- doxytag: member="tour.c::tour_randomWalk" ref="a92eb68608de57ebe513f9855df6c32d1" args="(const Instance pInstance)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTour.html">Tour</a> tour_randomWalk </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structInstance.html">Instance</a>&nbsp;</td>
+          <td class="paramname"> <em>pInstance</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Génère une tournée aléatoire. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pInstance</em>&nbsp;</td><td>L'instance pour laquelle générer un random walk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La tournée aléatoire </dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Généré le Wed Jan 9 2013 21:13:44 pour Levoyageurdecommerce par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

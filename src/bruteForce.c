@@ -1,8 +1,7 @@
 /**
  * \file bruteForce.c
- * \brief Programme de tests.
+ * \brief Fonctions de brute force.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 27/12/2012 17:58:29
  *
  * Implémentation des fonctions utilisant la force brute. 
@@ -15,17 +14,21 @@
 
 Tour bruteForce_bestPath(Instance pInstance) {
 	Tour buffTour, bestTour;
-	tour_initialize(&buffTour, pInstance);
+	buffTour = tour_new(pInstance);
 	bestTour = buffTour;
-	while(tour_nextPermutation(&buffTour)) {
+
+	do {
 		tour_calculLength(&buffTour);
 		if(buffTour.length < bestTour.length) {
 			bestTour = buffTour;
 		}
         
-        util_displayVerboseMode("Tour : ");
-        tour_display(buffTour, gVerboseMode);
-        util_displayVerboseMode("\n\n");
-	}
-	return bestTour;
+        if(gVerboseMode) {
+            printf("Tour : ");
+            tour_display(buffTour);
+            printf("\n\n");
+        }
+	}while(tour_nextPermutation(&buffTour));
+
+	return (bestTour);
 }

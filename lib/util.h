@@ -1,8 +1,7 @@
 /**
- * \file bruteForce.c
+ * \file util.h
  * \brief Fonctions utiles.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 19/11/2012 16:27:39
  *
  * Entêtes des fonctions pouvant être utiles dans tout le projet. 
@@ -16,65 +15,67 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
+#include "tour.h"
 
-#include "town.h"
-
-/**
- */
+/// Mode verbose
 bool gVerboseMode;
 
 /**
- * 
- * @param pArray
- * @param pSize
- * @param pSearch
- * @return 
+ * Cherche la première occurence d'une chaine de caractère dans un tableau de chaine caractère
+ * @param pArray Le tableau de chaines de caractères dans lequel chercher
+ * @param pSize La taille du tableau
+ * @param pSearch La chaine de caractère à chercher
+ * @return La position de la chaine dans le tableau ou -1 si elle n'a pas été trouvée
  */
 int util_searchFirstOccurenceInArray(char** pArray, const int pSize, char* pSearch);
-/**
- * 
- * @param pString
- */
-inline void util_displayVerboseMode(char* pString);
 
 /**
- * 
- * @param pTab
- * @param pBegin
- * @param pEnd
+ * Inverse les éléments d'un tableau pTag entre les cases pBegin et pEnd
+ * @param pTab Tableau à inverser
+ * @param pBegin Début de la section à inverser
+ * @param pEnd Fin de la section à inverser
  */
 void util_reverseArray(Town* pTab, const int pBegin, const int pEnd);
 
 /**
- * 
- * @param pTab1
- * @param pTab2
- * @param pSize
- * @return 
- */
-bool util_arrayIsEqual(int* pTab1, int* pTab2, int pSize);
-
-/**
- * 
- * @param pTab
- * @param pSize
+ * Affiche le contenu d'un tableau d'entiers
+ * @param pTab Le tableau à afficher
+ * @param pSize La taille du tableau
  */
 void util_displayArray(const int* pTab, const int pSize);
 
 /**
- * 
- * @param pBegin
- * @param pEnd
- * @return 
+ * Calcul la somme des éléments allant de pBegin à pEnd
+ * @param pBegin Début de la somme
+ * @param pEnd Fin de la somme
+ * @return La somme des éléments
  */
 int util_sum(const int pBegin, const int pEnd);
 
 /**
- * 
- * @param a
- * @param b
+ * Échange deux variables
+ * @param a Première variable à échanger
+ * @param b Seconde variable
  */
 void util_swap(int* a, int* b);
 
+/**
+ * Calcul une valeur aléatoire entre pMin et pMax
+ * @param pMin Minimum 
+ * @param pMax Maximum
+ * @return 
+ */
 int util_rand(const int pMin, const int pMax);
+
+/**
+ * Indique si un sous-tableau d'un tableau est présent dans un autre tableau
+ * @param pChild Le tableau à chercher
+ * @param pBegin Le début de la section à chercher
+ * @param pEnd La fin de la section à chercher
+ * @param pParent Le tableau dans lequel chercher
+ * @param pRecursvite Pour simplifier vis-à-vis de la récursivité, doit toujours être à false
+ *
+ * @return Vrai si le sous-tableau à été trouvé faux sinon
+ */
+bool util_sousTabExist(Tour pChild, const int pBegin, const int pEnd, Tour pParent, bool pRecursvite);
 #endif

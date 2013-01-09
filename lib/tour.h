@@ -1,12 +1,10 @@
 /**
  * \file tour.h
- * \brief Programme de tests.
+ * \brief Fonctions des tournées.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 21/11/2012 22:04:13
  *
- * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
- *
+ * Entêtes des fonctions se rapportant à une tournée.  *
  */
 
 #ifndef __TOUR
@@ -24,56 +22,60 @@
  * \struct Tour tour.h
  * \brief Objet d'une tournée
  *
- * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
- * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
- * connait la taille de chaîne contient !
+ * Informations concernant une tournée. 
  */
 typedef struct {
+    /// Tableau de ville. Les villes sont triés dans l'ordre de la tournée
 	Town towns[N];
+    /// Nombre de ville de la tournée
 	int nbTowns;
+    /// Longueur de la tournée
 	double length;
+    /// Matrice de distances
     Distance* distances;
 }Tour;
 
 /**
- * 
- * @param pTour
- * @param pInstance
+ * Créer une nouvelle tournée initialisée avec les données d'une instance
+ *
+ * @param pInstance Instance servant à initialisée la tournée
+ * @return la nouvelle tournée
  */
-void tour_initialize(Tour* pTour, Instance pInstance);
+Tour tour_new(Instance pInstance);
 
 /**
- * 
- * @param pPermutation
- * @return 
+ * Génère la permutation de ville suivante d'une tournée
+ * @param pPermutation La tournée pour laquelle la permutation doit être générée
+ * @return Vrai si une permutation à été généré faux s'il ne reste plus de permutation.
  */
 bool tour_nextPermutation(Tour* pPermutation);
 
 /**
- * 
- * @param pTour
+ * Calcul la longueur d'une tournée
+ * @param pTour La tournée pourlaquelle on veut calculer la longueur
  */
 void tour_calculLength(Tour* pTour);
 
 /**
+ * Affiche une tournée
  * 
- * @param pTour
- * @param pDisplay
+ * @param pTour La tournée à afficher
  */
-void tour_display(Tour pTour, bool pDisplay);
+void tour_display(const Tour pTour);
 
 /**
+ * Génère une tournée aléatoire
+ * @param pInstance L'instance pour laquelle générer un random walk
  * 
- * @param pInstance
- * @return 
+ * @return La tournée aléatoire
  */
-Tour tour_randomWalk(Instance pInstance);
+Tour tour_randomWalk(const Instance pInstance);
 
 /**
- * 
- * @param pTour
- * @param pFirst
- * @param pSecond
+ * Fait une 2opt 
+ * @param pTour Le tour pourlaquelle on veut faire une 2opt
+ * @param pFirst L'id du début du premier trajet
+ * @param pSecond L'id du début du second trajet
  */
 void tour_2opt(Tour* pTour, int pFirst, int pSecond);
 #endif

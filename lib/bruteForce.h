@@ -1,25 +1,27 @@
 /**
  * \file bruteForce.h
- * \brief Programme de tests.
+ * \brief Fonctions de brute force.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 27/12/2012 17:58:36
  *
- *  Implémentation des fonctions servant à la force brute.
+ *  Entêtes des fonctions servant à la force brute.
  * Ces fonctions ne sont appelés que depuis le main
  *
  */
 
 #ifndef __BRUTEFORCE
 #define __BRUTEFORCE
+
 #include "instance.h"
 #include "tour.h"
 #include "util.h"
 
 /**
+ * Permet d'obtenir le meilleur chemin d'une instance via la force brute. 
+ * Il est conseillé de ne pas essayer avec des instances de plus de 8 villes.
  * 
- * @param pInstance
- * @return 
+ * @param pInstance L'instance pour laquelle on doit calculer le plus court chemin
+ * @return La meilleur tournée.
  */
 Tour bruteForce_bestPath(Instance pInstance);
 

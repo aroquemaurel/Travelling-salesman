@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  28 DEC 2012 21:25
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  9 JAN 2013 20:45
 entering extended mode
  %&-line parsing enabled.
 **refman.tex
@@ -824,7 +824,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
-[2])
+[2]
+Underfull \vbox (badness 1389) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.96997pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+Underfull \vbox (badness 1389) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.96997pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
@@ -835,7 +855,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] [4
+[5] [6
 
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 54.
@@ -854,13 +874,13 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 Chapitre 2.
 (./files.tex
 
-LaTeX Warning: Reference `util_8h' on page 3 undefined on input line 10.
+LaTeX Warning: Reference `genetic_8h' on page 3 undefined on input line 6.
 
 ) [3] [4
 
 ]
 Chapitre 3.
-(./structDistance.tex
+(./structAlgo.tex
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
  (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -868,113 +888,24 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 )
-(./structErrors.tex [5]) (./structInstance.tex) (./structTour.tex)
-(./structTown.tex [6]) [7] [8
-
-]
+(./structDistance.tex [5]) (./structErrors.tex [6]) (./structInstance.tex)
+(./structTour.tex [7]) (./structTown.tex) [8]
 Chapitre 4.
 (./bruteForce_8h.tex
-Overfull \hbox (149.11824pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/lib/bruteForce.h 
- []
-
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 40.
-[9]) (./distance_8h.tex
-Overfull \hbox (131.36296pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/lib/distance.h 
- []
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 37.
+ [9
 
-[10]) (./errors_8h.tex
-Overfull \hbox (119.08008pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/lib/errors.h 
- []
+]) (./distance_8h.tex [10]) (./errors_8h.tex [11]
+[12] [13]) (./instance_8h.tex [14] [15]) (./localSearch_8h.tex [16])
+(./parsing_8h.tex [17] [18]) (./tour_8h.tex [19] [20]) (./town_8h.tex [21])
+(./util_8h.tex [22] [23]) (./bruteForce_8c.tex [24]) (./distance_8c.tex
+[25] [26]) (./genetic_8c.tex) (./instance_8c.tex [27] [28])
+(./localSearch_8c.tex [29]) (./main_8c.tex) (./parsing_8c.tex [30] [31])
+(./tour_8c.tex [32] [33]) (./town_8c.tex) (./util_8c.tex [34] [35])
+(./refman.ind [36] [37
 
-[11]) (./instance_8h.tex
-Overfull \hbox (131.36296pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/lib/instance.h 
- []
-
-[12] [13]) (./parsing_8h.tex
-Overfull \hbox (127.15845pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/lib/parsing.h 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
-[]\T1/ptm/m/n/10 enum [][]Al-go-Type[][] { \T1/ptm/b/n/10 BRUTE-FORCE\T1/ptm/m/
-n/10 , \T1/ptm/b/n/10 LOCALSEARCH_-RANDOM\T1/ptm/m/n/10 , \T1/ptm/b/n/10 LOCALS
-EARCH_-
- []
-
-[14] [15]) (./tour_8h.tex
-Overfull \hbox (105.91862pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/lib/tour.h 
- []
-
-[16] [17]) (./town_8h.tex
-Overfull \hbox (111.2179pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/lib/town.h 
- []
-
-[18]) (./bruteForce_8c.tex
-Overfull \hbox (149.6224pt too wide) in paragraph at lines 4--4
-[]\T1/ptm/b/n/14.4 Référence du fichier /de-vel-op-men-t/-cours/L2/algo3/TP/voy
-ageCommerce/src/bruteForce.c 
- []
-
-[19] [20]) (./refman.ind [21]
-Overfull \hbox (69.05402pt too wide) in paragraph at lines 3--5
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/lib/bruteForce.h
-,
- []
-
-
-Overfull \hbox (58.65385pt too wide) in paragraph at lines 5--7
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/lib/distance.h,
- []
-
-
-Overfull \hbox (49.20406pt too wide) in paragraph at lines 7--9
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/lib/errors.h,
- []
-
-
-Overfull \hbox (58.65385pt too wide) in paragraph at lines 9--11
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/lib/instance.h,
- []
-
-
-Overfull \hbox (55.32404pt too wide) in paragraph at lines 11--13
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/lib/parsing.h,
- []
-
-
-Overfull \hbox (41.44427pt too wide) in paragraph at lines 13--15
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/lib/tour.h,
- []
-
-
-Overfull \hbox (45.63422pt too wide) in paragraph at lines 15--17
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/lib/town.h,
- []
-
-
-Overfull \hbox (69.59396pt too wide) in paragraph at lines 17--19
-[]\T1/ptm/m/n/10 /development/cours/L2/algo3/TP/voyageCommerce/src/bruteForce.c
-,
- []
-
-[22
-
-] [23
+] [38] [39
 
 ]) (./refman.aux)
 
@@ -982,13 +913,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9194 strings out of 495061
- 129424 string characters out of 1182622
- 226116 words of memory out of 3000000
- 11998 multiletter control sequences out of 15000+50000
+ 9518 strings out of 495061
+ 138334 string characters out of 1182622
+ 229118 words of memory out of 3000000
+ 12132 multiletter control sequences out of 15000+50000
  41634 words of font info for 43 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,12n,58p,524b,505s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,58p,381b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/cou
@@ -996,9 +927,9 @@ rier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texli
 ve/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on refman.pdf (29 pages, 220368 bytes).
+Output written on refman.pdf (47 pages, 369449 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 561 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1596 PDF objects out of 1728 (max. 8388607)
+ 345 named destinations out of 1000 (max. 500000)
+ 1089 words of extra memory for PDF output out of 10000 (max. 10000000)
 

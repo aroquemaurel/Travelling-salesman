@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>voyageurDeCommerce:  Fichier source de /development/cours/L2/algo3/TP/voyageCommerce/lib/bruteForce.h</title>
+<title>Levoyageurdecommerce:  Fichier source de lib/bruteForce.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -82,20 +82,21 @@ function toggleVisibility(linkObj) {
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>/development/cours/L2/algo3/TP/voyageCommerce/lib/bruteForce.h</h1>  </div>
+<h1>lib/bruteForce.h</h1>  </div>
 </div>
 <div class="contents">
 <a href="bruteForce_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
 <a name="l00012"></a>00012 <span class="preprocessor">#ifndef __BRUTEFORCE</span>
 <a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __BRUTEFORCE</span>
-<a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="instance_8h.html" title="Programme de tests.">instance.h</a>&quot;</span>
-<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="tour_8h.html" title="Programme de tests.">tour.h</a>&quot;</span>
-<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;util.h&quot;</span>
-<a name="l00017"></a>00017 
-<a name="l00023"></a>00023 <a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> <a class="code" href="bruteForce_8h.html#aa893fd74b7ec74e51d7be37ea24a940f">bruteForce_bestPath</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025 <span class="preprocessor">#endif</span>
-<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="instance_8h.html" title="Fonctions sur les instances.">instance.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="tour_8h.html" title="Fonctions des tournées.">tour.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="util_8h.html" title="Fonctions utiles.">util.h</a>&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00026"></a>00026 <a class="code" href="structTour.html" title="Objet d&amp;#39;une tournée.">Tour</a> <a class="code" href="bruteForce_8h.html#aa893fd74b7ec74e51d7be37ea24a940f" title="Permet d&amp;#39;obtenir le meilleur chemin d&amp;#39;une instance via la force brute.">bruteForce_bestPath</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="preprocessor">#endif</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -103,7 +104,7 @@ function toggleVisibility(linkObj) {
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,7 +113,7 @@ function toggleVisibility(linkObj) {
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Généré le Fri Dec 28 2012 21:21:21 pour voyageurDeCommerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Wed Jan 9 2013 21:13:44 pour Levoyageurdecommerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

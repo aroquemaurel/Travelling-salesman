@@ -1,26 +1,27 @@
 /**
- * \file bruteForce.c
- * \brief Fonctions utiles.
+ * \file tour.c
+ * \brief Fonctions des tournées.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 21/11/2012 22:04:08
  *
- * Entêtes des fonctions pouvant être utiles dans tout le projet. 
- * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
+ * Implémentation des fonctions se rapportant à une tournée. 
  *
  */
 
 #include "tour.h"
 
-void tour_initialize(Tour* pTour, Instance pInstance) {
+Tour tour_new(Instance pInstance) {
+    Tour ret;
 	int i;
-	pTour->nbTowns = pInstance.nbTowns;
-	pTour->length = -1;
+	ret.nbTowns = pInstance.nbTowns;
+	ret.length = -1;
 	for(i=0; i < pInstance.nbTowns; ++i) {
-		pTour->towns[i] = pInstance.towns[i];
+		ret.towns[i] = pInstance.towns[i];
 	}
-    pTour->distances = pInstance.distances;
-	tour_calculLength(pTour);
+    ret.distances = pInstance.distances;
+	tour_calculLength(&ret);
+    
+    return ret;
 }
 bool tour_nextPermutation(Tour* pPermutation) {
 	int i=pPermutation->nbTowns-1;
@@ -58,19 +59,17 @@ void tour_calculLength(Tour* pTour) {
 	pTour->length = length;	
 }
 
-void tour_display(Tour pTour, bool pDisplay) {
-    if(pDisplay) {
-        int i;
-        for(i = 0 ; i < pTour.nbTowns ; ++i) {
-            printf("%d ", pTour.towns[i].id);
-        }
-        printf("\nLa longueur de ce tour est %f", pTour.length);
+void tour_display(const Tour pTour) {
+    int i;
+    for(i = 0 ; i < pTour.nbTowns ; ++i) {
+        printf("%d ", pTour.towns[i].id);
     }
+    printf("\nLa longueur de ce tour est %f", pTour.length);
 }
 
-Tour tour_randomWalk(Instance pInstance) {
+Tour tour_randomWalk(const Instance pInstance) {
     Tour ret;
-    tour_initialize(&ret, pInstance);
+    ret = tour_new(pInstance);
 	int i=0;
 	int j=0;
 	Town temp;
@@ -87,17 +86,13 @@ Tour tour_randomWalk(Instance pInstance) {
 
 
 void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
-    pSecond--;
-    
+    pFirst--;
     if(pFirst > pSecond) {
         util_swap(&pFirst, &pSecond);
     } 
-    if(pSecond > pTour->nbTowns) {
-        pSecond = 1;
+    if(pSecond >= 10) {
+        pSecond = 0;
     }
-    if(pSecond < 1) {
-        pSecond = pTour->nbTowns;
-    }
-    util_reverseArray(pTour->towns, pFirst, pSecond);     
+    util_reverseArray(pTour->towns, pFirst+1, pSecond-1);     
     tour_calculLength(pTour);
 }

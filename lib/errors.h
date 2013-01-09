@@ -1,11 +1,10 @@
 /**
  * \file errors.h
- * \brief Programme de tests.
+ * \brief Fonctions sur les erreurs.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 21/11/2012 17:42:37
  *
- * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
+ * Entêtes des fonctions concernant les erreurs du programme.  
  *
  */
 
@@ -19,72 +18,114 @@
  * \struct Errors errors.h
  * \brief Objet des erreurs
  *
- * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
- * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
- * connait la taille de chaîne contient !
+ * Toutes les chaines de caractères des erreurs. Si une variable vaut NULL, l'erreur n'est pas
+ * présente, sinon elle sera affiché.
+ * nbErrors est le nombre d'erreur, si celui-ci =0 alors le programme peut fonctionner correctement
  */
 typedef struct {
-	char* errorNbArguments;
-	char* errorTagFNotFound;
-	char* errorFileNotFound;
-	char* errorNoAlgoSpecified;
-	char* errorLsrNotValidParameter;
-    char* errorMissingParameterLsr;
-    char* errorMissingParameterLsnr;
-    char* errorMissingParameterGa;
-    char* errorNoValidParameterLsr;
-    char* errorNoValidParameterLsnr;
+    /// Nombre d'argument incorrect
+    char* errorNbArguments; 
+    /// Tag -f non trouvé
+	char* errorTagFNotFound; 
+    /// Fichier non trouvé
+	char* errorFileNotFound; 
+    /// Algorithme non spécifié
+	char* errorNoAlgoSpecified; 
+    /// Paramètre après -lsr manquant
+    char* errorMissingParameterLsr; 
+    /// Paramètre après -lsnr manquant
+    char* errorMissingParameterLsnr; 
+    /// Paramètre après -ga manquant
+    char* errorMissingParameterGa; 
+    /// Paramètre après -lsr non valide
+    char* errorNoValidParameterLsr; 
+    /// Paramètre après -lsnr non valide
+    char* errorNoValidParameterLsnr; 
+    /// Paramètre après -ga non valide
     char* errorNoValidParameterGa;
-	int nbErrors;
+    ///Nombre d'erreurs
+	int nbErrors; 
 } Errors;
 
 /**
+ * Initialisation de l'objet
  * 
- * @param pErrors
+ * @return Une instance de Erreur initialisée
  */
-void errors_initialize(Errors* pErrors);
+Errors errors_new();
 
 /**
+ * Affiches toutes les erreurs de pErrors
  * 
- * @param pErrors
+ * @param pErrors L'objet pour lequelle on doit afficher les erreurs
  */
 void errors_displayErrorsMessage(const Errors pErrors);
 
 /**
+ * Signale que le nombre d'argument est incorrect
  * 
- * @param pErrors
+ * @param pErrors L'objet des erreurs
  */
 void errors_setNbArguments(Errors* pErrors);
 
 /**
+ * Signale que la balise -f n'a pas été trouvée
  * 
- * @param pErrors
+ * @param pErrors L'objet des erreurs
  */
 void errors_setTagFNotFound(Errors* pErrors);
 
 /**
+ * Signale que le fichier fileName n'existe pas
  * 
- * @param pErrors
- * @param fileName
+ * @param pErrors L'objet des erreurs
+ * @param fileName Le nom de fichier non trouvé
  */
 void errors_setFileNotFound(Errors* pErrors, char* fileName);
 
 /**
- * 
- * @param pErrors
+ * Signale qu'aucun algorithme n'a été spécifié
+ *
+ * @param pErrors L'objet des erreurs
  */
 void errors_setNoAlgoSpecified(Errors* pErrors);
 
 /**
- * 
- * @param pErrors
+ * Signale que les paramètres derrière -lsnr ne sont pas valides (non entier)
+ *
+ * @param pErrors L'objet des erreurs
  */
-void errors_setLsrNotValidParameter(Errors* pErrors);
 void errors_setNoValidParameterLsnr(Errors* pErrors);
+
+/**
+ * Signale que le paramètre derrière -lsr n'est pas valide (n'est pas un entier)
+ *
+ * @param pErrors L'objet des erreurs
+ */
 void errors_setNoValidParameterLsr(Errors* pErrors);
+
+/**
+ * Signale qu'aucun paramètre n'a été spécifié derrière -ga
+ *
+ * @param pErrors L'objet des erreurs
+ */
 void errors_setMissingParameterGa(Errors* pErrors);
+
+/**
+ * Signale qu'aucun paramètre n'a été spécifié derrière -lsnr
+ *
+ * @param pErrors L'objet des erreurs
+ */
 void errors_setMissingParameterLsnr(Errors* pErrors);
+
+/**
+ * Signale qu'aucun paramètre n'a été spécifié derrière -lsr
+ *
+ * @param pErrors L'objet des erreurs
+ */
 void errors_setMissingParameterLsr(Errors* pErrors);
+
+
 
 #endif
 

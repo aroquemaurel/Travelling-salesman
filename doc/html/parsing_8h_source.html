@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>voyageurDeCommerce:  Fichier source de /development/cours/L2/algo3/TP/voyageCommerce/lib/parsing.h</title>
+<title>Levoyageurdecommerce:  Fichier source de lib/parsing.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -82,7 +82,7 @@ function toggleVisibility(linkObj) {
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>/development/cours/L2/algo3/TP/voyageCommerce/lib/parsing.h</h1>  </div>
+<h1>lib/parsing.h</h1>  </div>
 </div>
 <div class="contents">
 <a href="parsing_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
@@ -90,24 +90,30 @@ function toggleVisibility(linkObj) {
 <a name="l00012"></a>00012 <span class="preprocessor"></span><span class="preprocessor">#define __PARSING</span>
 <a name="l00013"></a>00013 <span class="preprocessor"></span>
 <a name="l00014"></a>00014 <span class="preprocessor">#include &lt;stdbool.h&gt;</span>
-<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;util.h&quot;</span>
-<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="errors_8h.html" title="Programme de tests.">errors.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="util_8h.html" title="Fonctions utiles.">util.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="errors_8h.html" title="Fonctions sur les erreurs.">errors.h</a>&quot;</span>
 <a name="l00017"></a>00017 
-<a name="l00026"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74">00026</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> { 
-<a name="l00027"></a>00027     BRUTEFORCE, 
-<a name="l00028"></a>00028     LOCALSEARCH_RANDOM, 
-<a name="l00029"></a>00029     LOCALSEARCH_SYSTEMATIC, 
-<a name="l00030"></a>00030     GENETIC
-<a name="l00031"></a>00031 } AlgoType;
-<a name="l00032"></a>00032 
-<a name="l00039"></a>00039 <span class="keywordtype">bool</span> <a class="code" href="parsing_8h.html#a017908431f5412fb0a5d3441b4200415">parsing_parseVerboseMode</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize);
-<a name="l00040"></a>00040 
-<a name="l00048"></a>00048 <span class="keywordtype">char</span>* <a class="code" href="parsing_8h.html#a8b91b593ba82d06c6ffbeeaf6e0825aa">parsing_parseFileName</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
-<a name="l00049"></a>00049 
-<a name="l00059"></a>00059 <a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74" title="parsing.h">AlgoType</a> <a class="code" href="parsing_8h.html#a33b71f5b28c034fb83e724b8be057862">parsing_algoType</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors, <span class="keywordtype">int</span>* param1AlgoType, <span class="keywordtype">int</span>* param2AlgoType);
+<a name="l00024"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74">00024</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> { 
+<a name="l00026"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74a4ed30f79e62fd681ecd1e71004be644b">00026</a>     BRUTEFORCE, 
+<a name="l00028"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74a075d0543c019afa80e375b2a07c2185f">00028</a>     LOCALSEARCH_RANDOM, 
+<a name="l00030"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74a2d5bdfca4bcb06a53944914e14bbace8">00030</a>     LOCALSEARCH_SYSTEMATIC, 
+<a name="l00032"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74a89d2be3f56ab8dada00b2d44308d922b">00032</a>     GENETIC, 
+<a name="l00034"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74adc6f24fd6915a3f2786a1b7045406924">00034</a>     <a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74adc6f24fd6915a3f2786a1b7045406924" title="Correspond au marqueur de fin des algorithmes.">END</a>
+<a name="l00035"></a>00035 } AlgoType;
+<a name="l00036"></a>00036 
+<a name="l00043"></a><a class="code" href="structAlgo.html">00043</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00045"></a><a class="code" href="structAlgo.html#ac238c59b48a6658c527f7ee987e0daac">00045</a>     <a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74" title="parsing.h">AlgoType</a> type;
+<a name="l00047"></a><a class="code" href="structAlgo.html#a715ddb57a67fbadc6771d167f20d1d2e">00047</a>     <span class="keywordtype">int</span> firstParameter;
+<a name="l00049"></a><a class="code" href="structAlgo.html#a73bb72b60e1d63c33843ace474b7d957">00049</a>     <span class="keywordtype">int</span> secondParameter;
+<a name="l00050"></a>00050 } <a class="code" href="structAlgo.html" title="Enumération d&amp;#39;un algorithme.">Algo</a>;
+<a name="l00051"></a>00051 
+<a name="l00059"></a>00059 <span class="keywordtype">bool</span> <a class="code" href="parsing_8h.html#a017908431f5412fb0a5d3441b4200415" title="Cherche si le mode verbeux à été spécifié ou non.">parsing_parseVerboseMode</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize);
 <a name="l00060"></a>00060 
-<a name="l00061"></a>00061 <span class="preprocessor">#endif</span>
-<a name="l00062"></a>00062 <span class="preprocessor"></span>
+<a name="l00070"></a>00070 <span class="keywordtype">char</span>* <a class="code" href="parsing_8h.html#a8b91b593ba82d06c6ffbeeaf6e0825aa" title="Cherche le nom du fichier de l&amp;#39;Instance.">parsing_parseFileName</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00071"></a>00071 
+<a name="l00081"></a>00081 <span class="keywordtype">void</span> <a class="code" href="parsing_8h.html#add899bfe309b1afa905f9adf4300246d">parsing_algoType</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors, <a class="code" href="structAlgo.html" title="Enumération d&amp;#39;un algorithme.">Algo</a>* algos);
+<a name="l00082"></a>00082 <span class="preprocessor">#endif</span>
+<a name="l00083"></a>00083 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -115,7 +121,7 @@ function toggleVisibility(linkObj) {
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,7 +130,7 @@ function toggleVisibility(linkObj) {
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Généré le Fri Dec 28 2012 21:21:21 pour voyageurDeCommerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Wed Jan 9 2013 21:13:44 pour Levoyageurdecommerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

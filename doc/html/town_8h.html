@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>voyageurDeCommerce: Référence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/town.h</title>
+<title>Levoyageurdecommerce: Référence du fichier lib/town.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -86,11 +86,11 @@ function toggleVisibility(linkObj) {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Fonctions</a>  </div>
   <div class="headertitle">
-<h1>Référence du fichier /development/cours/L2/algo3/TP/voyageCommerce/lib/town.h</h1>  </div>
+<h1>Référence du fichier lib/town.h</h1>  </div>
 </div>
 <div class="contents">
 
-<p>Programme de tests.  
+<p>Fonctions des villes.  
 <a href="#_details">Plus de détails...</a></p>
 <code>#include &lt;stdio.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
@@ -103,28 +103,22 @@ Classes</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Objet des ville.  <a href="structTown.html#_details">Plus de détails...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="town_8h.html#a2a25215b53c1e310557e06b9d3104f6b">town_initialize</a> (<a class="el" href="structTown.html">Town</a> *pTown, const int pId, const int pX, const int pY)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTown.html">Town</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="town_8h.html#adab2fb69b4124ed799f98e1d4950f7c7">town_new</a> (const int pId, const int pX, const int pY)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Création d'une nouvelle ville.  <a href="#adab2fb69b4124ed799f98e1d4950f7c7"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
-<p>Programme de tests. </p>
+<p>Fonctions des villes. </p>
 <dl class="author"><dt><b>Auteur:</b></dt><dd>Antoine de Roquemaurel </dd></dl>
-<dl class="version"><dt><b>Version:</b></dt><dd>0.1 </dd></dl>
 <dl class="date"><dt><b>Date:</b></dt><dd>21/11/2012 22:35:19</dd></dl>
-<p>Programme de test pour l'objet de gestion des chaînes de caractères Str_t. </p>
+<p>Entêtes des fonctions se rapportant à une ville. </p>
 <hr/><h2>Documentation des fonctions</h2>
-<a class="anchor" id="a2a25215b53c1e310557e06b9d3104f6b"></a><!-- doxytag: member="town.h::town_initialize" ref="a2a25215b53c1e310557e06b9d3104f6b" args="(Town *pTown, const int pId, const int pX, const int pY)" -->
+<a class="anchor" id="adab2fb69b4124ed799f98e1d4950f7c7"></a><!-- doxytag: member="town.h::town_new" ref="adab2fb69b4124ed799f98e1d4950f7c7" args="(const int pId, const int pX, const int pY)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void town_initialize </td>
+          <td class="memname"><a class="el" href="structTown.html">Town</a> town_new </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structTown.html">Town</a> *&nbsp;</td>
-          <td class="paramname"> <em>pTown</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const int&nbsp;</td>
           <td class="paramname"> <em>pId</em>, </td>
         </tr>
@@ -148,12 +142,13 @@ Fonctions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Création d'une nouvelle ville. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>pTown</em>&nbsp;</td><td></td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>pId</em>&nbsp;</td><td></td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>pX</em>&nbsp;</td><td></td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>pY</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pId</em>&nbsp;</td><td>Id de la ville </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pX</em>&nbsp;</td><td>Abscisse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pY</em>&nbsp;</td><td>Ordonnée </td></tr>
   </table>
   </dd>
 </dl>
@@ -166,7 +161,7 @@ Fonctions</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -175,7 +170,7 @@ Fonctions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Généré le Fri Dec 28 2012 21:21:21 pour voyageurDeCommerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Wed Jan 9 2013 21:13:44 pour Levoyageurdecommerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

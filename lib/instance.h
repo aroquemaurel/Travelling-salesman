@@ -1,11 +1,10 @@
 /**
  * \file instance.h
- * \brief Programme de tests.
+ * \brief Fonctions sur les instances.
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 21/11/2012 22:03:34
  *
- * Programme de test pour l'objet de gestion des chaînes de caractères Str_t.
+ * Toutes les entêtes des fonctions se rapportant à une instance.
  *
  */
 #ifndef __INSTANCE
@@ -14,63 +13,77 @@
 #include <stdbool.h>
 #include <string.h>
 
-#include "util.h"
+
 #include "town.h"
 #include "distance.h"
 
+/// Taille maximale des tableaux
 #define N 1024
 
 /**
  * \struct Instance instance.h
  * \brief Objet des instances
- *
- * Town bla bla bla est un petit objet de gestion de chaînes de caractères. 
- * La chaîne se termine obligatoirement par un zéro de fin et l'objet 
- * connait la taille de chaîne contient !
+ * \see Town 
+ * \see Distance
+ * 
+ * Une instance contient toutes les villes ( Town ) classés par ID, les calculs des algorithmes utilisent une instance
+ * afin d'en retourner la meilleur tournée.
  */
 typedef struct {
-	Town towns[N];
-	Distance distances[N];
+    /// Tableau des villes( Town ) classés par ID
+	Town towns[N]; 
+    /// Tableau linéaire contenant toutes les distances entre les villes. 
+	Distance distances[N]; 
+    /// Nombre de ville de l' Instance
 	int nbTowns;
-	char* name;
-	char* type;
+    /// Nom de l' Instance
+	char* name; 
+    /// Type de l' Instance
+	char* type; 
 } Instance;
 
 /**
+ * Affiche une Instance
  * 
- * @param pInstance
+ * @param pInstance l' Instance à afficher
  */
 void instance_display(const Instance pInstance);
 
 /**
+ * Créer une nouvelle Instance à partir d'un fichier
  * 
- * @param pInstance
- * @param pFile
+ * @param pFile Le pointeur sur fichier contenant les informations de l'instance
+ * 
+ * @return la nouvelle Instance
  */
-void instance_initialize(Instance* pInstance, FILE* pFile);
+Instance instance_new(FILE* pFile);
 
 /**
+ * Ajoute une nouvelle ville dans une Instance
  * 
- * @param pInstance
- * @param pTown
+ * @param pInstance L'instance à modifier
+ * @param pTown La ville à ajouter
  */
 void instance_push(Instance* pInstance, const Town pTown);
 
 /**
- * 
- * @param pInstance
+ * Initialise la matrice des distances 
+ * @param pInstance L'instance à modifier
+ * @see Distance
  */
 void instance_initializeDistancesMatrix(Instance* pInstance);
 
 /**
- * 
- * @param pInstance
+ * Affiche la matrice des distances sous forme linéaire
+ * @param pInstance L'instance à afficher
+ * @see Distance
  */
 void instance_displayLinearVector(Instance pInstance);
 
 /**
- * 
- * @param pInstance
+ * Affiche la matrice des distances sous forme de matrice symétrique
+ * @param pInstance L'instance à afficher
+ * @see Distance
  */
 void instance_displayMatrix(Instance pInstance);
 #endif

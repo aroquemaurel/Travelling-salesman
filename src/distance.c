@@ -1,21 +1,20 @@
 /**
- * \file bruteForce.c
- * \brief Fonctions utiles.
+ * \file distance.c
+ * \brief Fonctions des distances 
  * \author Antoine de Roquemaurel
- * \version 0.1
  * \date 01/12/2012 20:33:39
  *
- * Entêtes des fonctions pouvant être utiles dans tout le projet. 
- * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
+ * Entêtes des fonctions se rapportant aux distances
  *
  */
 
 #include "distance.h"
 #include "util.h"
-void distance_new(Distance* pDistance, Town* pFirstTown, Town* pSecondTown) {
-	pDistance->firstTown = *pFirstTown;
-	pDistance->secondTown = *pSecondTown;
-	pDistance->distance = distance_calculDistance(*pFirstTown, *pSecondTown);
+Distance distance_new(Town* pFirstTown, Town* pSecondTown) {    
+    Distance ret;
+	ret.firstTown = *pFirstTown;
+	ret.secondTown = *pSecondTown;
+	ret.distance = distance_calculDistance(*pFirstTown, *pSecondTown);
 }
 
 double distance_calculDistance(const Town pTown1, const Town pTown2) {
@@ -27,13 +26,7 @@ double distance_calculDistance(const Town pTown1, const Town pTown2) {
 }
 
 Distance distance_searchDistance(Distance* pDistances, const int pFirst, const int pSecond) {
-	int i = util_sum(0,pFirst-1);
-	int j;
-	int search = 0;
-
-	Distance test;
-	
-	return (pDistances[i+pSecond-1]);
+	return (pDistances[util_sum(0,pFirst-1)+pSecond-1]);
 }
 
 double distance_betweenTowns(Distance* pDistances, int i, int j) {
