@@ -8,6 +8,39 @@
  * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
  */
+/**
+ * \mainpage Le problème du voyageur de commerce - Projet d'algorithmique en langage C
+ * \author L2 Antoine de Roquemaurel (G1.1)
+ *
+ * \section Le problème
+* Étant donné n points (des "villes") et les distances les séparant, trouver un chemin de longueur totale qui passe exactement une fois par chaque point et 
+* reviennent au point de départ (une tournée).
+*
+* Ce problème peut servir tel quel a l'optimisation de trajectoires de machines-outils : par ex-
+emple, pour minimiser le temps total que met une fraiseuse a commande numérique pour
+percer n points dans une plaque de tôle ou pour percer les trous des composants d'un circuit
+electronique comme dans le cas qui nous intéresse.
+
+Ce problème est plus compliqué qu'il n'y parait et on ne connait pas de méthode de résolution
+permettant d'obtenir des solutions exactes en un temps raisonnable pour de grandes instances
+(grand nombre de villes) du problème. Pour ces grandes instances, on devra donc souvent se
+contenter de solutions approchés, car on se retrouve face à une explosion combinatoire :
+le nombre de chemins possibles passant par 69 villes est déjà un nombre d’une longueur de
+100 chiffres. Pour comparaison, un nombre d'une longueur de 80 chiffres permettrait déjà de
+représenter le nombre d'atomes dans tout l'univers connu.
+
+Le problème du "voyageur de commerce" a été étudié depuis lontemps et on dispose d’une
+grande variété d'algorithmes donnant le plus souvent des solutions approchés mais calculables
+en un temps raisonnable.
+
+\section Les algorithmes implémentéé
+Ce problème sera implémenté via différents algorithmes : 
+- Brute force
+- Recherche locale aléatorie
+- Recherche loacle systématique
+- Algorithme génétique
+*
+ */ 
 
 #include <stdio.h>
 #include <stdbool.h>
