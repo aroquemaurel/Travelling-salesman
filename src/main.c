@@ -8,6 +8,7 @@
  * Ce sont des fonctions simples, qui doivent être indépendantes du projet.
  *
  */
+
 /**
  * \mainpage Le problème du voyageur de commerce - Projet d'algorithmique en langage C
  * \author L2 Antoine de Roquemaurel (G1.1)

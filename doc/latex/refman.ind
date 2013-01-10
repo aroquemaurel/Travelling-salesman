@@ -2,303 +2,303 @@
 
   \item {Algo}, \hyperpage{7}
   \item {AlgoType}
-    \subitem {parsing.h}, \hyperpage{20}
+    \subitem {parsing.h}, \hyperpage{22}
 
   \indexspace
 
   \item {BRUTEFORCE}
-    \subitem {parsing.h}, \hyperpage{20}
+    \subitem {parsing.h}, \hyperpage{22}
   \item {bruteForce.c}
     \subitem {bruteForce\_\discretionary {-}{}{}bestPath}, 
-		\hyperpage{28}
+		\hyperpage{30}
   \item {bruteForce.h}
     \subitem {bruteForce\_\discretionary {-}{}{}bestPath}, 
-		\hyperpage{11}
+		\hyperpage{13}
   \item {bruteForce\_\discretionary {-}{}{}bestPath}
-    \subitem {bruteForce.c}, \hyperpage{28}
-    \subitem {bruteForce.h}, \hyperpage{11}
+    \subitem {bruteForce.c}, \hyperpage{30}
+    \subitem {bruteForce.h}, \hyperpage{13}
 
   \indexspace
 
   \item {Distance}, \hyperpage{7}
   \item {distance.c}
     \subitem {distance\_\discretionary {-}{}{}betweenTowns}, 
-		\hyperpage{29}
+		\hyperpage{31}
     \subitem {distance\_\discretionary {-}{}{}calculDistance}, 
-		\hyperpage{29}
-    \subitem {distance\_\discretionary {-}{}{}new}, \hyperpage{29}
+		\hyperpage{31}
+    \subitem {distance\_\discretionary {-}{}{}new}, \hyperpage{31}
     \subitem {distance\_\discretionary {-}{}{}searchDistance}, 
-		\hyperpage{29}
+		\hyperpage{31}
   \item {distance.h}
     \subitem {distance\_\discretionary {-}{}{}betweenTowns}, 
-		\hyperpage{12}
+		\hyperpage{14}
     \subitem {distance\_\discretionary {-}{}{}calculDistance}, 
-		\hyperpage{13}
-    \subitem {distance\_\discretionary {-}{}{}new}, \hyperpage{13}
+		\hyperpage{15}
+    \subitem {distance\_\discretionary {-}{}{}new}, \hyperpage{15}
     \subitem {distance\_\discretionary {-}{}{}searchDistance}, 
-		\hyperpage{13}
+		\hyperpage{15}
   \item {distance\_\discretionary {-}{}{}betweenTowns}
-    \subitem {distance.c}, \hyperpage{29}
-    \subitem {distance.h}, \hyperpage{12}
+    \subitem {distance.c}, \hyperpage{31}
+    \subitem {distance.h}, \hyperpage{14}
   \item {distance\_\discretionary {-}{}{}calculDistance}
-    \subitem {distance.c}, \hyperpage{29}
-    \subitem {distance.h}, \hyperpage{13}
+    \subitem {distance.c}, \hyperpage{31}
+    \subitem {distance.h}, \hyperpage{15}
   \item {distance\_\discretionary {-}{}{}new}
-    \subitem {distance.c}, \hyperpage{29}
-    \subitem {distance.h}, \hyperpage{13}
+    \subitem {distance.c}, \hyperpage{31}
+    \subitem {distance.h}, \hyperpage{15}
   \item {distance\_\discretionary {-}{}{}searchDistance}
-    \subitem {distance.c}, \hyperpage{29}
-    \subitem {distance.h}, \hyperpage{13}
+    \subitem {distance.c}, \hyperpage{31}
+    \subitem {distance.h}, \hyperpage{15}
 
   \indexspace
 
   \item {END}
-    \subitem {parsing.h}, \hyperpage{20}
+    \subitem {parsing.h}, \hyperpage{22}
   \item {Errors}, \hyperpage{8}
   \item {errors.h}
     \subitem {errors\_\discretionary {-}{}{}displayErrorsMessage}, 
-		\hyperpage{15}
-    \subitem {errors\_\discretionary {-}{}{}new}, \hyperpage{15}
+		\hyperpage{17}
+    \subitem {errors\_\discretionary {-}{}{}new}, \hyperpage{17}
     \subitem {errors\_\discretionary {-}{}{}setFileNotFound}, 
-		\hyperpage{15}
+		\hyperpage{17}
     \subitem {errors\_\discretionary {-}{}{}setMissingParameterGa}, 
-		\hyperpage{15}
+		\hyperpage{17}
     \subitem {errors\_\discretionary {-}{}{}setMissingParameterLsnr}, 
-		\hyperpage{15}
+		\hyperpage{17}
     \subitem {errors\_\discretionary {-}{}{}setMissingParameterLsr}, 
-		\hyperpage{15}
+		\hyperpage{17}
     \subitem {errors\_\discretionary {-}{}{}setNbArguments}, 
-		\hyperpage{15}
+		\hyperpage{17}
     \subitem {errors\_\discretionary {-}{}{}setNoAlgoSpecified}, 
-		\hyperpage{16}
+		\hyperpage{18}
     \subitem {errors\_\discretionary {-}{}{}setNoValidParameterLsnr}, 
-		\hyperpage{16}
+		\hyperpage{18}
     \subitem {errors\_\discretionary {-}{}{}setNoValidParameterLsr}, 
-		\hyperpage{16}
+		\hyperpage{18}
     \subitem {errors\_\discretionary {-}{}{}setTagFNotFound}, 
-		\hyperpage{16}
+		\hyperpage{18}
   \item {errors\_\discretionary {-}{}{}displayErrorsMessage}
-    \subitem {errors.h}, \hyperpage{15}
+    \subitem {errors.h}, \hyperpage{17}
   \item {errors\_\discretionary {-}{}{}new}
-    \subitem {errors.h}, \hyperpage{15}
+    \subitem {errors.h}, \hyperpage{17}
   \item {errors\_\discretionary {-}{}{}setFileNotFound}
-    \subitem {errors.h}, \hyperpage{15}
+    \subitem {errors.h}, \hyperpage{17}
   \item {errors\_\discretionary {-}{}{}setMissingParameterGa}
-    \subitem {errors.h}, \hyperpage{15}
+    \subitem {errors.h}, \hyperpage{17}
   \item {errors\_\discretionary {-}{}{}setMissingParameterLsnr}
-    \subitem {errors.h}, \hyperpage{15}
+    \subitem {errors.h}, \hyperpage{17}
   \item {errors\_\discretionary {-}{}{}setMissingParameterLsr}
-    \subitem {errors.h}, \hyperpage{15}
+    \subitem {errors.h}, \hyperpage{17}
   \item {errors\_\discretionary {-}{}{}setNbArguments}
-    \subitem {errors.h}, \hyperpage{15}
+    \subitem {errors.h}, \hyperpage{17}
   \item {errors\_\discretionary {-}{}{}setNoAlgoSpecified}
-    \subitem {errors.h}, \hyperpage{16}
+    \subitem {errors.h}, \hyperpage{18}
   \item {errors\_\discretionary {-}{}{}setNoValidParameterLsnr}
-    \subitem {errors.h}, \hyperpage{16}
+    \subitem {errors.h}, \hyperpage{18}
   \item {errors\_\discretionary {-}{}{}setNoValidParameterLsr}
-    \subitem {errors.h}, \hyperpage{16}
+    \subitem {errors.h}, \hyperpage{18}
   \item {errors\_\discretionary {-}{}{}setTagFNotFound}
-    \subitem {errors.h}, \hyperpage{16}
+    \subitem {errors.h}, \hyperpage{18}
 
   \indexspace
 
   \item {GENETIC}
-    \subitem {parsing.h}, \hyperpage{20}
+    \subitem {parsing.h}, \hyperpage{22}
 
   \indexspace
 
   \item {Instance}, \hyperpage{9}
   \item {instance.c}
-    \subitem {instance\_\discretionary {-}{}{}display}, \hyperpage{31}
+    \subitem {instance\_\discretionary {-}{}{}display}, \hyperpage{33}
     \subitem {instance\_\discretionary {-}{}{}displayLinearVector}, 
-		\hyperpage{31}
+		\hyperpage{33}
     \subitem {instance\_\discretionary {-}{}{}displayMatrix}, 
-		\hyperpage{31}
+		\hyperpage{33}
     \subitem {instance\_\discretionary {-}{}{}initializeDistancesMatrix}, 
-		\hyperpage{31}
-    \subitem {instance\_\discretionary {-}{}{}new}, \hyperpage{32}
-    \subitem {instance\_\discretionary {-}{}{}push}, \hyperpage{32}
+		\hyperpage{33}
+    \subitem {instance\_\discretionary {-}{}{}new}, \hyperpage{34}
+    \subitem {instance\_\discretionary {-}{}{}push}, \hyperpage{34}
   \item {instance.h}
-    \subitem {instance\_\discretionary {-}{}{}display}, \hyperpage{17}
+    \subitem {instance\_\discretionary {-}{}{}display}, \hyperpage{19}
     \subitem {instance\_\discretionary {-}{}{}displayLinearVector}, 
-		\hyperpage{17}
+		\hyperpage{19}
     \subitem {instance\_\discretionary {-}{}{}displayMatrix}, 
-		\hyperpage{18}
+		\hyperpage{20}
     \subitem {instance\_\discretionary {-}{}{}initializeDistancesMatrix}, 
-		\hyperpage{18}
-    \subitem {instance\_\discretionary {-}{}{}new}, \hyperpage{18}
-    \subitem {instance\_\discretionary {-}{}{}push}, \hyperpage{18}
+		\hyperpage{20}
+    \subitem {instance\_\discretionary {-}{}{}new}, \hyperpage{20}
+    \subitem {instance\_\discretionary {-}{}{}push}, \hyperpage{20}
   \item {instance\_\discretionary {-}{}{}display}
-    \subitem {instance.c}, \hyperpage{31}
-    \subitem {instance.h}, \hyperpage{17}
+    \subitem {instance.c}, \hyperpage{33}
+    \subitem {instance.h}, \hyperpage{19}
   \item {instance\_\discretionary {-}{}{}displayLinearVector}
-    \subitem {instance.c}, \hyperpage{31}
-    \subitem {instance.h}, \hyperpage{17}
+    \subitem {instance.c}, \hyperpage{33}
+    \subitem {instance.h}, \hyperpage{19}
   \item {instance\_\discretionary {-}{}{}displayMatrix}
-    \subitem {instance.c}, \hyperpage{31}
-    \subitem {instance.h}, \hyperpage{18}
+    \subitem {instance.c}, \hyperpage{33}
+    \subitem {instance.h}, \hyperpage{20}
   \item {instance\_\discretionary {-}{}{}initializeDistancesMatrix}
-    \subitem {instance.c}, \hyperpage{31}
-    \subitem {instance.h}, \hyperpage{18}
+    \subitem {instance.c}, \hyperpage{33}
+    \subitem {instance.h}, \hyperpage{20}
   \item {instance\_\discretionary {-}{}{}new}
-    \subitem {instance.c}, \hyperpage{32}
-    \subitem {instance.h}, \hyperpage{18}
+    \subitem {instance.c}, \hyperpage{34}
+    \subitem {instance.h}, \hyperpage{20}
   \item {instance\_\discretionary {-}{}{}push}
-    \subitem {instance.c}, \hyperpage{32}
-    \subitem {instance.h}, \hyperpage{18}
+    \subitem {instance.c}, \hyperpage{34}
+    \subitem {instance.h}, \hyperpage{20}
 
   \indexspace
 
-  \item {lib/bruteForce.h}, \hyperpage{11}
-  \item {lib/distance.h}, \hyperpage{12}
-  \item {lib/errors.h}, \hyperpage{13}
-  \item {lib/instance.h}, \hyperpage{16}
-  \item {lib/localSearch.h}, \hyperpage{19}
-  \item {lib/parsing.h}, \hyperpage{19}
-  \item {lib/tour.h}, \hyperpage{21}
-  \item {lib/town.h}, \hyperpage{23}
-  \item {lib/util.h}, \hyperpage{24}
+  \item {lib/bruteForce.h}, \hyperpage{13}
+  \item {lib/distance.h}, \hyperpage{14}
+  \item {lib/errors.h}, \hyperpage{15}
+  \item {lib/instance.h}, \hyperpage{18}
+  \item {lib/localSearch.h}, \hyperpage{21}
+  \item {lib/parsing.h}, \hyperpage{21}
+  \item {lib/tour.h}, \hyperpage{23}
+  \item {lib/town.h}, \hyperpage{25}
+  \item {lib/util.h}, \hyperpage{26}
   \item {LOCALSEARCH\_\-RANDOM}
-    \subitem {parsing.h}, \hyperpage{20}
+    \subitem {parsing.h}, \hyperpage{22}
   \item {LOCALSEARCH\_\-SYSTEMATIC}
-    \subitem {parsing.h}, \hyperpage{20}
+    \subitem {parsing.h}, \hyperpage{22}
 
   \indexspace
 
   \item {main}
-    \subitem {main.c}, \hyperpage{33}
+    \subitem {main.c}, \hyperpage{35}
   \item {main.c}
-    \subitem {main}, \hyperpage{33}
+    \subitem {main}, \hyperpage{35}
 
   \indexspace
 
   \item {parsing.c}
-    \subitem {parsing\_\discretionary {-}{}{}algoType}, \hyperpage{34}
+    \subitem {parsing\_\discretionary {-}{}{}algoType}, \hyperpage{36}
     \subitem {parsing\_\discretionary {-}{}{}parseFileName}, 
-		\hyperpage{34}
+		\hyperpage{36}
     \subitem {parsing\_\discretionary {-}{}{}parseVerboseMode}, 
-		\hyperpage{34}
+		\hyperpage{36}
   \item {parsing.h}
-    \subitem {AlgoType}, \hyperpage{20}
-    \subitem {BRUTEFORCE}, \hyperpage{20}
-    \subitem {END}, \hyperpage{20}
-    \subitem {GENETIC}, \hyperpage{20}
-    \subitem {LOCALSEARCH\_\-RANDOM}, \hyperpage{20}
-    \subitem {LOCALSEARCH\_\-SYSTEMATIC}, \hyperpage{20}
-    \subitem {parsing\_\discretionary {-}{}{}algoType}, \hyperpage{20}
+    \subitem {AlgoType}, \hyperpage{22}
+    \subitem {BRUTEFORCE}, \hyperpage{22}
+    \subitem {END}, \hyperpage{22}
+    \subitem {GENETIC}, \hyperpage{22}
+    \subitem {LOCALSEARCH\_\-RANDOM}, \hyperpage{22}
+    \subitem {LOCALSEARCH\_\-SYSTEMATIC}, \hyperpage{22}
+    \subitem {parsing\_\discretionary {-}{}{}algoType}, \hyperpage{22}
     \subitem {parsing\_\discretionary {-}{}{}parseFileName}, 
-		\hyperpage{21}
+		\hyperpage{23}
     \subitem {parsing\_\discretionary {-}{}{}parseVerboseMode}, 
-		\hyperpage{21}
+		\hyperpage{23}
   \item {parsing\_\discretionary {-}{}{}algoType}
-    \subitem {parsing.c}, \hyperpage{34}
-    \subitem {parsing.h}, \hyperpage{20}
+    \subitem {parsing.c}, \hyperpage{36}
+    \subitem {parsing.h}, \hyperpage{22}
   \item {parsing\_\discretionary {-}{}{}parseFileName}
-    \subitem {parsing.c}, \hyperpage{34}
-    \subitem {parsing.h}, \hyperpage{21}
+    \subitem {parsing.c}, \hyperpage{36}
+    \subitem {parsing.h}, \hyperpage{23}
   \item {parsing\_\discretionary {-}{}{}parseVerboseMode}
-    \subitem {parsing.c}, \hyperpage{34}
-    \subitem {parsing.h}, \hyperpage{21}
+    \subitem {parsing.c}, \hyperpage{36}
+    \subitem {parsing.h}, \hyperpage{23}
 
   \indexspace
 
-  \item {src/bruteForce.c}, \hyperpage{27}
-  \item {src/distance.c}, \hyperpage{28}
-  \item {src/genetic.c}, \hyperpage{30}
-  \item {src/instance.c}, \hyperpage{30}
-  \item {src/localSearch.c}, \hyperpage{32}
-  \item {src/main.c}, \hyperpage{33}
-  \item {src/parsing.c}, \hyperpage{33}
-  \item {src/tour.c}, \hyperpage{35}
-  \item {src/town.c}, \hyperpage{37}
-  \item {src/util.c}, \hyperpage{37}
+  \item {src/bruteForce.c}, \hyperpage{29}
+  \item {src/distance.c}, \hyperpage{30}
+  \item {src/genetic.c}, \hyperpage{32}
+  \item {src/instance.c}, \hyperpage{32}
+  \item {src/localSearch.c}, \hyperpage{34}
+  \item {src/main.c}, \hyperpage{35}
+  \item {src/parsing.c}, \hyperpage{35}
+  \item {src/tour.c}, \hyperpage{37}
+  \item {src/town.c}, \hyperpage{39}
+  \item {src/util.c}, \hyperpage{39}
 
   \indexspace
 
   \item {Tour}, \hyperpage{10}
   \item {tour.c}
-    \subitem {tour\_\discretionary {-}{}{}2opt}, \hyperpage{36}
-    \subitem {tour\_\discretionary {-}{}{}calculLength}, \hyperpage{36}
-    \subitem {tour\_\discretionary {-}{}{}display}, \hyperpage{36}
-    \subitem {tour\_\discretionary {-}{}{}new}, \hyperpage{36}
+    \subitem {tour\_\discretionary {-}{}{}2opt}, \hyperpage{38}
+    \subitem {tour\_\discretionary {-}{}{}calculLength}, \hyperpage{38}
+    \subitem {tour\_\discretionary {-}{}{}display}, \hyperpage{38}
+    \subitem {tour\_\discretionary {-}{}{}new}, \hyperpage{38}
     \subitem {tour\_\discretionary {-}{}{}nextPermutation}, 
-		\hyperpage{36}
-    \subitem {tour\_\discretionary {-}{}{}randomWalk}, \hyperpage{36}
+		\hyperpage{38}
+    \subitem {tour\_\discretionary {-}{}{}randomWalk}, \hyperpage{38}
   \item {tour.h}
-    \subitem {tour\_\discretionary {-}{}{}2opt}, \hyperpage{22}
-    \subitem {tour\_\discretionary {-}{}{}calculLength}, \hyperpage{22}
-    \subitem {tour\_\discretionary {-}{}{}display}, \hyperpage{23}
-    \subitem {tour\_\discretionary {-}{}{}new}, \hyperpage{23}
+    \subitem {tour\_\discretionary {-}{}{}2opt}, \hyperpage{24}
+    \subitem {tour\_\discretionary {-}{}{}calculLength}, \hyperpage{24}
+    \subitem {tour\_\discretionary {-}{}{}display}, \hyperpage{25}
+    \subitem {tour\_\discretionary {-}{}{}new}, \hyperpage{25}
     \subitem {tour\_\discretionary {-}{}{}nextPermutation}, 
-		\hyperpage{23}
-    \subitem {tour\_\discretionary {-}{}{}randomWalk}, \hyperpage{23}
+		\hyperpage{25}
+    \subitem {tour\_\discretionary {-}{}{}randomWalk}, \hyperpage{25}
   \item {tour\_\discretionary {-}{}{}2opt}
-    \subitem {tour.c}, \hyperpage{36}
-    \subitem {tour.h}, \hyperpage{22}
+    \subitem {tour.c}, \hyperpage{38}
+    \subitem {tour.h}, \hyperpage{24}
   \item {tour\_\discretionary {-}{}{}calculLength}
-    \subitem {tour.c}, \hyperpage{36}
-    \subitem {tour.h}, \hyperpage{22}
+    \subitem {tour.c}, \hyperpage{38}
+    \subitem {tour.h}, \hyperpage{24}
   \item {tour\_\discretionary {-}{}{}display}
-    \subitem {tour.c}, \hyperpage{36}
-    \subitem {tour.h}, \hyperpage{23}
+    \subitem {tour.c}, \hyperpage{38}
+    \subitem {tour.h}, \hyperpage{25}
   \item {tour\_\discretionary {-}{}{}new}
-    \subitem {tour.c}, \hyperpage{36}
-    \subitem {tour.h}, \hyperpage{23}
+    \subitem {tour.c}, \hyperpage{38}
+    \subitem {tour.h}, \hyperpage{25}
   \item {tour\_\discretionary {-}{}{}nextPermutation}
-    \subitem {tour.c}, \hyperpage{36}
-    \subitem {tour.h}, \hyperpage{23}
+    \subitem {tour.c}, \hyperpage{38}
+    \subitem {tour.h}, \hyperpage{25}
   \item {tour\_\discretionary {-}{}{}randomWalk}
-    \subitem {tour.c}, \hyperpage{36}
-    \subitem {tour.h}, \hyperpage{23}
+    \subitem {tour.c}, \hyperpage{38}
+    \subitem {tour.h}, \hyperpage{25}
   \item {Town}, \hyperpage{10}
   \item {town.c}
-    \subitem {town\_\discretionary {-}{}{}new}, \hyperpage{37}
+    \subitem {town\_\discretionary {-}{}{}new}, \hyperpage{39}
   \item {town.h}
-    \subitem {town\_\discretionary {-}{}{}new}, \hyperpage{24}
+    \subitem {town\_\discretionary {-}{}{}new}, \hyperpage{26}
   \item {town\_\discretionary {-}{}{}new}
-    \subitem {town.c}, \hyperpage{37}
-    \subitem {town.h}, \hyperpage{24}
+    \subitem {town.c}, \hyperpage{39}
+    \subitem {town.h}, \hyperpage{26}
 
   \indexspace
 
   \item {util.c}
-    \subitem {util\_\discretionary {-}{}{}displayArray}, \hyperpage{38}
-    \subitem {util\_\discretionary {-}{}{}rand}, \hyperpage{38}
-    \subitem {util\_\discretionary {-}{}{}reverseArray}, \hyperpage{39}
+    \subitem {util\_\discretionary {-}{}{}displayArray}, \hyperpage{40}
+    \subitem {util\_\discretionary {-}{}{}rand}, \hyperpage{40}
+    \subitem {util\_\discretionary {-}{}{}reverseArray}, \hyperpage{41}
     \subitem {util\_\discretionary {-}{}{}searchFirstOccurenceInArray}, 
-		\hyperpage{39}
-    \subitem {util\_\discretionary {-}{}{}sousTabExist}, \hyperpage{39}
-    \subitem {util\_\discretionary {-}{}{}sum}, \hyperpage{39}
-    \subitem {util\_\discretionary {-}{}{}swap}, \hyperpage{40}
+		\hyperpage{41}
+    \subitem {util\_\discretionary {-}{}{}sousTabExist}, \hyperpage{41}
+    \subitem {util\_\discretionary {-}{}{}sum}, \hyperpage{41}
+    \subitem {util\_\discretionary {-}{}{}swap}, \hyperpage{42}
   \item {util.h}
-    \subitem {util\_\discretionary {-}{}{}displayArray}, \hyperpage{25}
-    \subitem {util\_\discretionary {-}{}{}rand}, \hyperpage{25}
-    \subitem {util\_\discretionary {-}{}{}reverseArray}, \hyperpage{26}
+    \subitem {util\_\discretionary {-}{}{}displayArray}, \hyperpage{27}
+    \subitem {util\_\discretionary {-}{}{}rand}, \hyperpage{27}
+    \subitem {util\_\discretionary {-}{}{}reverseArray}, \hyperpage{28}
     \subitem {util\_\discretionary {-}{}{}searchFirstOccurenceInArray}, 
-		\hyperpage{26}
-    \subitem {util\_\discretionary {-}{}{}sousTabExist}, \hyperpage{26}
-    \subitem {util\_\discretionary {-}{}{}sum}, \hyperpage{26}
-    \subitem {util\_\discretionary {-}{}{}swap}, \hyperpage{27}
+		\hyperpage{28}
+    \subitem {util\_\discretionary {-}{}{}sousTabExist}, \hyperpage{28}
+    \subitem {util\_\discretionary {-}{}{}sum}, \hyperpage{28}
+    \subitem {util\_\discretionary {-}{}{}swap}, \hyperpage{29}
   \item {util\_\discretionary {-}{}{}displayArray}
-    \subitem {util.c}, \hyperpage{38}
-    \subitem {util.h}, \hyperpage{25}
-  \item {util\_\discretionary {-}{}{}rand}
-    \subitem {util.c}, \hyperpage{38}
-    \subitem {util.h}, \hyperpage{25}
-  \item {util\_\discretionary {-}{}{}reverseArray}
-    \subitem {util.c}, \hyperpage{39}
-    \subitem {util.h}, \hyperpage{26}
-  \item {util\_\discretionary {-}{}{}searchFirstOccurenceInArray}
-    \subitem {util.c}, \hyperpage{39}
-    \subitem {util.h}, \hyperpage{26}
-  \item {util\_\discretionary {-}{}{}sousTabExist}
-    \subitem {util.c}, \hyperpage{39}
-    \subitem {util.h}, \hyperpage{26}
-  \item {util\_\discretionary {-}{}{}sum}
-    \subitem {util.c}, \hyperpage{39}
-    \subitem {util.h}, \hyperpage{26}
-  \item {util\_\discretionary {-}{}{}swap}
     \subitem {util.c}, \hyperpage{40}
     \subitem {util.h}, \hyperpage{27}
+  \item {util\_\discretionary {-}{}{}rand}
+    \subitem {util.c}, \hyperpage{40}
+    \subitem {util.h}, \hyperpage{27}
+  \item {util\_\discretionary {-}{}{}reverseArray}
+    \subitem {util.c}, \hyperpage{41}
+    \subitem {util.h}, \hyperpage{28}
+  \item {util\_\discretionary {-}{}{}searchFirstOccurenceInArray}
+    \subitem {util.c}, \hyperpage{41}
+    \subitem {util.h}, \hyperpage{28}
+  \item {util\_\discretionary {-}{}{}sousTabExist}
+    \subitem {util.c}, \hyperpage{41}
+    \subitem {util.h}, \hyperpage{28}
+  \item {util\_\discretionary {-}{}{}sum}
+    \subitem {util.c}, \hyperpage{41}
+    \subitem {util.h}, \hyperpage{28}
+  \item {util\_\discretionary {-}{}{}swap}
+    \subitem {util.c}, \hyperpage{42}
+    \subitem {util.h}, \hyperpage{29}
 
 \end{theindex}

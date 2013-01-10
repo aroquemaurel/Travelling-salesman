@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  10 JAN 2013 11:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  10 JAN 2013 11:42
 entering extended mode
  %&-line parsing enabled.
 **refman.tex
@@ -892,27 +892,27 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 )
-(./structDistance.tex [7]) (./structErrors.tex [8]) (./structInstance.tex)
-(./structTour.tex [9]) (./structTown.tex) [10]
+(./structDistance.tex [7]) (./structErrors.tex [8]) (./structInstance.tex
+[9]) (./structTour.tex) (./structTown.tex [10]) [11] [12
+
+]
 Chapitre 5.
 (./bruteForce_8h.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 37.
- [11
-
-]) (./distance_8h.tex [12]) (./errors_8h.tex [13]
+ [13]) (./distance_8h.tex [14]) (./errors_8h.tex [15]
 Underfull \vbox (badness 3088) has occurred while \output is active []
 
- [14]
-[15]) (./instance_8h.tex [16] [17]) (./localSearch_8h.tex [18])
-(./parsing_8h.tex [19] [20]) (./tour_8h.tex [21] [22]) (./town_8h.tex [23])
-(./util_8h.tex [24] [25] [26]) (./bruteForce_8c.tex [27]) (./distance_8c.tex
-[28]) (./genetic_8c.tex [29]) (./instance_8c.tex [30] [31])
-(./localSearch_8c.tex) (./main_8c.tex [32]) (./parsing_8c.tex [33] [34])
-(./tour_8c.tex [35] [36]) (./town_8c.tex) (./util_8c.tex [37] [38] [39])
-(./refman.ind [40] [41
+ [16]
+[17]) (./instance_8h.tex [18] [19]) (./localSearch_8h.tex [20])
+(./parsing_8h.tex [21] [22]) (./tour_8h.tex [23] [24]) (./town_8h.tex [25])
+(./util_8h.tex [26] [27] [28]) (./bruteForce_8c.tex [29]) (./distance_8c.tex
+[30]) (./genetic_8c.tex [31]) (./instance_8c.tex [32] [33])
+(./localSearch_8c.tex) (./main_8c.tex [34]) (./parsing_8c.tex [35] [36])
+(./tour_8c.tex [37] [38]) (./town_8c.tex) (./util_8c.tex [39] [40] [41])
+(./refman.ind [42] [43
 
-] [42] [43
+] [44] [45
 
 ]) (./refman.aux)
 
@@ -920,8 +920,8 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9551 strings out of 495061
- 138852 string characters out of 1182622
+ 9553 strings out of 495061
+ 138866 string characters out of 1182622
  228126 words of memory out of 3000000
  12145 multiletter control sequences out of 15000+50000
  41634 words of font info for 43 fonts, out of 3000000 for 9000
@@ -934,9 +934,9 @@ rier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texli
 ve/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on refman.pdf (51 pages, 387073 bytes).
+Output written on refman.pdf (53 pages, 388947 bytes).
 PDF statistics:
- 1690 PDF objects out of 1728 (max. 8388607)
- 362 named destinations out of 1000 (max. 500000)
+ 1698 PDF objects out of 1728 (max. 8388607)
+ 364 named destinations out of 1000 (max. 500000)
  1161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
