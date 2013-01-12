@@ -60,15 +60,15 @@ void parsing_algoType(char** pTab, const int pSize, Errors* pErrors, Algo* algos
     
     if((positionTag = util_searchFirstOccurenceInArray(pTab, pSize, "-ga")) != -1) {
 		if(pTab[positionTag+1] == NULL) {
-				//TODO Paramètre manquant 
+            errors_setMissingParameterGa(pErrors);
 		} else if(atoi(pTab[positionTag+1]) == 0) {
-			// TODO Erreur paramètre après -ga non entier ou = 0	
+			errors_setNoValidParameterGa(pErrors);
 		} else {
             algos[numberAlgo].firstParameter =  atoi(pTab[positionTag+1]);
 			if(pTab[positionTag+2] == NULL) {
-				//TODO Paramètre manquant 
+				errors_setMissingParameterGa(pErrors);
 			} else if(atof(pTab[positionTag+2]) == 0) {
-				// TODO Erreur paramètre après -ga non entier ou = 0	
+                errors_setNoValidParameterGa(pErrors);
 			} else {
 				algos[numberAlgo].secondParameter = atoi(pTab[positionTag+2]);
 				algos[numberAlgo].type = GENETIC;
