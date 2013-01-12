@@ -33,7 +33,7 @@ typedef struct {
     /// Tableau des villes( Town ) classés par ID
 	Town towns[N]; 
     /// Tableau linéaire contenant toutes les distances entre les villes. 
-	Distance distances[N]; 
+	Distance* distances; 
     /// Nombre de ville de l' Instance
 	int nbTowns;
     /// Nom de l' Instance

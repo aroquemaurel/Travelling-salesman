@@ -17,8 +17,9 @@
 #include <time.h>
 
 #include "tour.h"
+
 /**
- * \struct Trajet trajet.h
+ * \struct Path path.h
  * \brief Objet d'un trajet
  *
  * Informations concernant un trajet.

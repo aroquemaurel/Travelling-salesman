@@ -63,7 +63,7 @@ int main (int argc, char** argv) {
     srand(time(NULL));
     Tour tour1, tour2; 
     Town town1;
-
+    Distance test;
 	gVerboseMode = parsing_parseVerboseMode(argv, argc);  
 	fileName = parsing_parseFileName(argv, argc, &errors); 
 	parsing_algoType(argv, argc, &errors, algos); //On récupère les algorithmes a effectués demandés
@@ -80,29 +80,10 @@ int main (int argc, char** argv) {
            switch(algos[i].type) {
                 case BRUTEFORCE:
                     printf("=== Brute force ===\n");
-                    instance_initializeDistancesMatrix(&instance);
+                    instance_displayMatrix(instance);
                     tour = bruteForce_bestPath(instance);
                     break;
                 case LOCALSEARCH_RANDOM:
-                    tour1.nbTowns = 10;
-                    tour2 = tour1;
-                    
-                    tour1.towns[0].id = 1;
-                    tour1.towns[1].id = 2;
-                    tour1.towns[2].id = 3;
-                    tour1.towns[3].id = 4; 
-                    tour1.towns[4].id = 5;
-                    tour1.towns[5].id = 6;
-                    tour1.towns[6].id = 7;
-                    tour1.towns[7].id = 8;
-                    tour1.towns[8].id = 9;
-                    tour1.towns[9].id = 10;
-                    
-                    tour_display(tour1);
-                    tour_2opt(&tour1, 2,10);
-                    printf("\n");
-                    tour_display(tour1);
-                    printf("\n");printf("\n");
                     printf("=== Recherche locale aléatoire ===\n");
                     tour = localSearch_randomBestPath(instance, algos[i].firstParameter); 
                     break;
@@ -111,9 +92,8 @@ int main (int argc, char** argv) {
                     tour = localSearch_systematicBestPath(instance, algos[i].firstParameter);
                     break;
                 case GENETIC:
-                    tour = genetic_getBestPath(instance, 230,300,0.6);
                     printf("=== Génétique ===\n");
-                    printf("Genetic not implemented");
+                    tour = genetic_getBestPath(instance, 230,algos[i].firstParameter,algos[i].secondParameter);
                     break;
            }
             printf("MEILLEUR TOURNÉE \n");

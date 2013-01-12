@@ -38,7 +38,7 @@ Tour genetic_DPX(Tour pParent1, Tour pParent2) {
 Tour genetic_getBestPath(Instance pInstance, const int pNbTour, const int pNbGeneration, const float pProba) {
     Tour* population;
     Tour children;
-    population = malloc(500* sizeof(Tour));
+    population = malloc(pNbTour*sizeof(Tour));
     int i, j;
     int least=0;
     int firstNb, secondNb;

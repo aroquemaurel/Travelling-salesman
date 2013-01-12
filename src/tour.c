@@ -48,12 +48,12 @@ bool tour_nextPermutation(Tour* pPermutation) {
 void tour_calculLength(Tour* pTour) {
 	int i;
 	double length=0;
-
+    
 	for (i = 0; i < pTour->nbTowns ; ++i) { 
 		if(i+1 != pTour->nbTowns) {
-			length += distance_calculDistance(pTour->towns[i], pTour->towns[i+1]);
+            length += distance_betweenTowns(pTour->distances, pTour->towns[i], pTour->towns[i+1]).distance;
 		} else {
-			length += distance_calculDistance(pTour->towns[i], pTour->towns[0]);
+            length += distance_betweenTowns(pTour->distances, pTour->towns[i], pTour->towns[0]).distance;
 		}
 	}
 	pTour->length = length;	

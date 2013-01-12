@@ -16,7 +16,7 @@ Tour bruteForce_bestPath(Instance pInstance) {
 	Tour buffTour, bestTour;
 	buffTour = tour_new(pInstance);
 	bestTour = buffTour;
-
+instance_displayMatrix(pInstance);
 	do {
 		tour_calculLength(&buffTour);
 		if(buffTour.length < bestTour.length) {

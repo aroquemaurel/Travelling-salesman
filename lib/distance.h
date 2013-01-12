@@ -53,17 +53,7 @@ double distance_calculDistance(const Town pTown1, const Town pTown2);
  * @param j La seconde ville
  * @return La distance
  */
-double distance_betweenTowns(Distance* pDistances, int i, int j);
+Distance distance_betweenTowns(Distance* pDistances, Town i, Town j);
 
-/**
- * Recherche la distance entre deux villes dans le tableau de distance
- * 
- * @param pDistances La matrice de distance
- * @param pFirst La première ville
- * @param pSecond la seconde ville
- * 
- * @return La distance
- */
-Distance distance_searchDistance(Distance* pDistances, const int pFirst, const int pSecond);
 #endif
 

@@ -53,8 +53,8 @@ int util_sum(const int pBegin, const int pEnd) {
 	return ret;
 }
 
-void util_swap(int* a, int* b) {
-	int buff;
+void util_swap(Town* a, Town* b) {
+	Town buff;
 	buff = *a;
 	*a = *b;
 	*b = buff;
