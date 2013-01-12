@@ -10,6 +10,8 @@
 
 #include "tour.h"
 #include "path.h"
+#include "util.h"
+
 Tour tour_new(Instance pInstance) {
     Tour ret;
 	int i;
@@ -88,7 +90,7 @@ Tour tour_randomWalk(const Instance pInstance) {
 void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
     pFirst--;
     if(pFirst > pSecond) {
-        util_swap(&pFirst, &pSecond);
+        pFirst ^= pSecond ^= pFirst ^= pSecond;
     } 
     if(pSecond >= 10) {
         pSecond = 0;

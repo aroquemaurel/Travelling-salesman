@@ -61,9 +61,7 @@ int main (int argc, char** argv) {
 	Algo algos[3];
 	Tour tour;
     srand(time(NULL));
-    Tour tour1, tour2; 
-    Town town1;
-    Distance test;
+
 	gVerboseMode = parsing_parseVerboseMode(argv, argc);  
 	fileName = parsing_parseFileName(argv, argc, &errors); 
 	parsing_algoType(argv, argc, &errors, algos); //On récupère les algorithmes a effectués demandés

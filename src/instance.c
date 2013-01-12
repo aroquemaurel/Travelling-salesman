@@ -10,7 +10,7 @@
  */
 
 #include "instance.h"
-
+#include "util.h"
 
 Instance instance_new(FILE* pFile) {
     Instance newInstance;

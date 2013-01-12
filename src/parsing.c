@@ -10,6 +10,7 @@
  */
 
 #include "parsing.h"
+#include "errors.h"
 
 bool parsing_parseVerboseMode(char** pTab, const int pSize) {
 	return (util_searchFirstOccurenceInArray(pTab, pSize, "-v") != -1);

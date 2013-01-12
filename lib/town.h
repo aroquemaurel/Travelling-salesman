@@ -21,9 +21,9 @@
  */
 typedef struct {
     /// Abscisse de la ville
-	int x; 
+	double x; 
     /// Ordonnée de la ville
-	int y; 
+	double y; 
     /// Id de la ville
 	int id; 
 } Town;
@@ -37,6 +37,6 @@ typedef struct {
  */
 Town town_new(const int pId, const int pX, const int pY);
 
-Town town_display(const Town pTown);
+void town_display(const Town pTown);
 #endif
 
