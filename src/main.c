@@ -44,6 +44,7 @@
 #include "errors.h"
 #include "bruteForce.h"
 #include "localSearch.h"
+#include "genetic.h"
 
 /**
  * Fonction d'entrée du programme
@@ -110,37 +111,7 @@ int main (int argc, char** argv) {
                     tour = localSearch_systematicBestPath(instance, algos[i].firstParameter);
                     break;
                 case GENETIC:
-
-                    tour1.nbTowns = 10;
-                    tour2 = tour1;
-                    
-                    tour1.towns[0].id = 5;
-                    tour1.towns[1].id = 3;
-                    tour1.towns[2].id = 9;
-                    tour1.towns[3].id = 1; 
-                    tour1.towns[4].id = 2;
-                    tour1.towns[5].id = 8;
-                    tour1.towns[6].id = 0;
-                    tour1.towns[7].id = 6;
-                    tour1.towns[8].id = 7;
-                    tour1.towns[9].id = 4;
-                    
-                    tour2.towns[0].id = 1;
-                    tour2.towns[1].id = 2;
-                    tour2.towns[2].id = 5;
-                    tour2.towns[3].id = 3; 
-                    tour2.towns[4].id = 9;
-                    tour2.towns[5].id = 4;
-                    tour2.towns[6].id = 8;
-                    tour2.towns[7].id = 6;
-                    tour2.towns[8].id = 0;
-                    tour2.towns[9].id = 7;
-                    tour1 = tour_randomWalk(instance);
-                    tour2 = tour_randomWalk(instance);
-                    tour_display(tour1);printf("\n");
-                    tour_display(tour2);
-                    printf("%d\n", util_sousTabExist(tour1, 1,2,tour2, false));
-                    genetic_DPX(tour1, tour2);
+                    tour = genetic_getBestPath(instance, 230,300,0.6);
                     printf("=== Génétique ===\n");
                     printf("Genetic not implemented");
                     break;

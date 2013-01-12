@@ -29,7 +29,6 @@ void path_addNearNeighbor(Tour* pTour, Path* pPathsList, int* pNbPathsList) {
     buffDistance.distance = distance_calculDistance(pTour->towns[pTour->nbTowns-1], pPathsList[0].towns[0]);
     
     for(i=0; i < *pNbPathsList ; ++i) {
-        path_display(pPathsList[i]);
         buffDistBegin = distance_calculDistance(pTour->towns[pTour->nbTowns-1], pPathsList[i].towns[0]);
         buffDistEnd = distance_calculDistance(pTour->towns[pTour->nbTowns-1], pPathsList[i].towns[pPathsList[i].nbTowns-1]);
         

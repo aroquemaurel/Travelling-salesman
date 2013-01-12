@@ -25,10 +25,45 @@ Tour genetic_DPX(Tour pParent1, Tour pParent2) {
             first = i;    
         }
     }
-    
+   
     tour_addSeveralTowns(&newTour, pathsList[0].towns, pathsList[0].nbTowns);
     util_deleteArrayValue(pathsList, nbPaths, 0);
     while(nbPaths != 0) {
         path_addNearNeighbor(&newTour,pathsList, &nbPaths);
     }
+    
+    return newTour;
+}
+
+Tour genetic_getBestPath(Instance pInstance, const int pNbTour, const int pNbGeneration, const float pProba) {
+    Tour* population;
+    Tour children;
+    population = malloc(500* sizeof(Tour));
+    int i, j;
+    int least=0;
+    int firstNb, secondNb;
+    for(i=0 ; i < pNbTour ; ++i) {
+        population[i] = tour_randomWalk(pInstance);
+    }
+    for(i=0 ; i < pNbGeneration ; ++i) {
+        firstNb=util_rand(0, pNbTour-1);
+        secondNb=util_rand(0, pNbTour-1);
+        
+        children = genetic_DPX(population[firstNb], population[secondNb]);
+        if(rand() % 100 < pProba*100) {
+            firstNb=util_rand(0, children.nbTowns-1);
+            secondNb=util_rand(0, children.nbTowns-1);            
+            tour_2opt(&children, firstNb, secondNb);
+        }
+        
+        for(j=0 ; j < pNbGeneration ; ++j) {
+            if(population[j].length > population[least].length) {
+                least = j;
+            }
+        }
+        
+        population[least] = children;
+    }
+    tour_calculLength(&children);
+    return children;
 }

@@ -25,7 +25,7 @@
  */
 typedef struct {
     /// Tableau de ville. Les villes sont triés dans l'ordre de la tournée
-	Town towns[N];
+	Town towns[256];
     /// Nombre de ville de la tournée
 	int nbTowns;
     /// Longueur de la tournée

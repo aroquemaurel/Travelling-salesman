@@ -16,6 +16,7 @@
 #include "path.h"
 #include "util.h"
 
-Tour genetic_DPX(Tour pParent1, Tour pParent2) ;
+Tour genetic_DPX(Tour pParent1, Tour pParent2);
+Tour genetic_getBestPath(Instance pInstance, const int pNbTour, const int pNbGeneration, const float pProba);
 #endif	
 
