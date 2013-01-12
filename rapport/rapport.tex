@@ -23,6 +23,12 @@
 \newcommand{\module}{Algorithmique}
 \newcommand{\sigle}{algo}
 \newcommand{\semestre}{3}
+\newcommand{\pfp}{\texttt{pfp}}
+	
+\newcommand{\ifp}{\texttt{if}}
+	
+\newcommand{\elsep}{\texttt{else}}
+
 
 \input{/home/satenske/cours/includesLaTeX/l2/tddm.tex}
 \input{/home/aroquemaurel/cours/includesLaTeX/listings.tex} %prise en charge du langage C 
@@ -67,4 +73,38 @@
 		\item Correction bug des recherches locales.
 	\end{itemize}
 	\section{Programmation avec preuve de \texttt{util\_searchFirstOccurence}}
+	\subsection{Spécification}
+\begin{lstlisting}[language=C]
+/* N $>$ 0 */
+searchFirstOccurence(T, R, N, p);
+/* (($\forall$ I : 0 $\leq$ I $<$ N $\rightarrow$ T[i] $\neq$ R)$\rightarrow$ p $=$ -1) $\lor$ 
+ *  (($\exists$ J : 0 $\leq$ J $<$ N $\wedge$ T[J] $=$ R) $\rightarrow$ p $=$ J) 
+ */
+\end{lstlisting}
+\subsection{Programmation}
+\begin{lstlisting}[language=C]
+/* N $>$ 0 */
+p = 0;
+/* INV = $\forall$ J : 0 $\leq$ J $\leq$ p $\rightarrow$ T[J] $\neq$ R */
+while(p < N && T[p] != R) {
+	/* p $<$ N $\wedge$ T[p} $\neq$ R $\wedge$ INV */
+	++p;
+	/* INV */
+}
+/* p $>$ N $\wedge$ T[p] $=$ R $\wedge$ $\forall$J: 0 $\leq$ J $<$ p $\rightarrow$ T[J] $\neq$ R */
+if(p == N-1) {
+	p = -1;
+}
+/* (( $\forall$ I: 0 $\leq$ I $<$ N $\rightarrow$ T[I] $\neq$ R) $\rightarrow$ p = -1) $\wedge$
+ * (($\exists$ p : 0 $\leq$ < N $\wedge$ T[p] = R) $\wedge$ $\forall$ J : 0 $\leq$ J < p $\rightarrow$ T[J] $\neq$ R)
+ */
+\end{lstlisting}
+
+\subsection{Preuve de programme}
+\subsubsection{Initialisation}
+\begin{eqnarray*}
+	N > 0 &\rightarrow& \pfp ("p=0", \forall J : 0 \leq J < p \rightarrow T[J] \neq R)\\
+	N > 0 &\rightarrow& \underbrace{\forall J : 0 \leq J < 0}_{\perp} \rightarrow T[J] \neq R)
+\end{eqnarray*}
+L'initialisation est donc correct.
 \end{document}
