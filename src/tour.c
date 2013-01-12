@@ -88,13 +88,13 @@ Tour tour_randomWalk(const Instance pInstance) {
 void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
     pFirst--;
     if(pFirst > pSecond) {
-        util_swap(&pFirst, &pSecond);
+        pFirst ^= pSecond ^= pFirst ^= pSecond;
     } 
     if(pSecond >= 10) {
         pSecond = 0;
     }
     util_reverseArray(pTour->towns, pFirst+1, pSecond-1);     
-    tour_calculLength(pTour);
+    tour_calculLength(pTour); //TODO FIXME SEGFAULT
 }
 void tour_addTown(Tour* pTour, Town pTown) {
     pTour->towns[pTour->nbTowns++] = pTown;

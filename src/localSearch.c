@@ -17,6 +17,7 @@ Tour localSearch_randomBestPath(Instance pInstance, int pTryNb) {
 	Tour ret, buffTour;
 	int first2opt, second2opt;
 	int i;
+    instance_displayMatrix(pInstance);
 	buffTour = tour_randomWalk(pInstance);	
 	ret = buffTour;
     if(gVerboseMode) {
@@ -30,7 +31,7 @@ Tour localSearch_randomBestPath(Instance pInstance, int pTryNb) {
             second2opt = util_rand(1, pInstance.nbTowns);
 		} while(first2opt == second2opt || 
 				(first2opt == second2opt-1 || second2opt == first2opt-1));
-		tour_2opt(&buffTour, first2opt, second2opt); 
+		tour_2opt(&buffTour, first2opt, second2opt);  //TODO FIXME SEGFAULT
 
 		if(buffTour.length < ret.length) { 
 			ret = buffTour;

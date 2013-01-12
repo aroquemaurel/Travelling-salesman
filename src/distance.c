@@ -11,10 +11,12 @@
 #include "distance.h"
 #include "util.h"
 Distance distance_new(Town pFirstTown, Town pSecondTown) {    
-    Distance ret;
-	ret.firstTown = pFirstTown;
-	ret.secondTown = pSecondTown;
-	ret.distance = distance_calculDistance(pFirstTown, pSecondTown);
+    Distance newDistance;
+	newDistance.firstTown = pFirstTown;
+	newDistance.secondTown = pSecondTown;
+	newDistance.distance = distance_calculDistance(pFirstTown, pSecondTown);
+    
+    return newDistance;
 }
 
 double distance_calculDistance(const Town pTown1, const Town pTown2) {
@@ -29,14 +31,10 @@ Distance distance_searchDistance(Distance* pDistances, const int pFirst, const i
 	return (pDistances[util_sum(0,pFirst-1)+pSecond-1]);
 }
 
-double distance_betweenTowns(Distance* pDistances, int i, int j) {
-	Distance distance;
-	if(i < j) {
+Distance distance_betweenTowns(Distance* pDistances, Town i, Town j) {
+	if(i.id < j.id) {
 		util_swap(&i, &j);
-	} else if(j == i) {
-		return 0;
-	}
-	distance = distance_searchDistance(pDistances, i, j);
+	} 
 
-	return (distance.distance);
+	return (pDistances[util_sum(0,i.id-1)+j.id-1]);
 }

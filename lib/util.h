@@ -57,7 +57,7 @@ int util_sum(const int pBegin, const int pEnd);
  * @param a Première variable à échanger
  * @param b Seconde variable
  */
-void util_swap(int* a, int* b);
+void util_swap(Town* a, Town* b);
 
 /**
  * Calcul une valeur aléatoire entre pMin et pMax

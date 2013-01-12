@@ -10,6 +10,7 @@
  */
 
 #include "instance.h"
+#include "util.h"
 
 
 Instance instance_new(FILE* pFile) {
@@ -58,6 +59,8 @@ Instance instance_new(FILE* pFile) {
 		}
 
 	}
+    instance_initializeDistancesMatrix(&ret);
+
     ret.nbTowns = dimension;
 	ret.name = name;
     
@@ -78,6 +81,7 @@ void instance_push(Instance* pInstance, const Town pTown) { // TODO exception nb
 void instance_initializeDistancesMatrix(Instance* pInstance) {
 	int i, j, k = 0;
 	Distance buffDistance;
+    pInstance->distances = malloc(util_sum(0, pInstance->nbTowns)*sizeof(Distance));
 	for(i = 0 ; i <= pInstance->nbTowns; ++i) {
 		for(j = 0 ; j < i ; ++j) {
 			buffDistance = distance_new((pInstance->towns[i-1]), (pInstance->towns[j]));
