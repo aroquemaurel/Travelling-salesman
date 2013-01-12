@@ -10,10 +10,10 @@
  */
 
 #include "instance.h"
-#include "util.h"
+
 
 Instance instance_new(FILE* pFile) {
-    Instance newInstance;
+    Instance ret;
 	int dimension, buffId=0;
 	int buff;
 	bool displayData = false;
@@ -23,8 +23,8 @@ Instance instance_new(FILE* pFile) {
 	float buffX, buffY;
 	Town townBuff;
 	
-	newInstance.nbTowns = 0;
-	newInstance.name = "";
+	ret.nbTowns = 0;
+	ret.name = "";
 
 	while(!feof(pFile)) {
 		if(!displayData) {
@@ -50,7 +50,7 @@ Instance instance_new(FILE* pFile) {
 			fscanf(pFile, " %d %f %f", &buff, &buffX, &buffY);
             
 			townBuff = town_new(++buffId, buffX, buffY);
-			instance_push(&newInstance, townBuff);
+			instance_push(&ret, townBuff);
 			if(buffId >= dimension) {
 				fscanf(pFile, " %s", buffTag);
 				displayData = false;
@@ -58,12 +58,10 @@ Instance instance_new(FILE* pFile) {
 		}
 
 	}
-
-    newInstance.nbTowns = dimension;
-	newInstance.name = name;
-    instance_initializeDistancesMatrix(&newInstance);
+    ret.nbTowns = dimension;
+	ret.name = name;
     
-    return newInstance;
+    return ret;
 }
 
 
@@ -79,9 +77,7 @@ void instance_push(Instance* pInstance, const Town pTown) { // TODO exception nb
 
 void instance_initializeDistancesMatrix(Instance* pInstance) {
 	int i, j, k = 0;
-    Distance buffDistance;
-
-    pInstance->distances = malloc((util_sum(0, pInstance->nbTowns))*sizeof(Distance)); // On alloue la matrice des distances
+	Distance buffDistance;
 	for(i = 0 ; i <= pInstance->nbTowns; ++i) {
 		for(j = 0 ; j < i ; ++j) {
 			buffDistance = distance_new((pInstance->towns[i-1]), (pInstance->towns[j]));

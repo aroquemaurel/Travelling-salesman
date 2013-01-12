@@ -21,8 +21,10 @@ struct \hyperlink{structDistance}{Distance}
 \begin{DoxyCompactList}\small\item\em Créer une nouvelle distance. \item\end{DoxyCompactList}\item 
 double \hyperlink{distance_8h_a3c0a5cae2a774b648d20447b23d81d84}{distance\_\-calculDistance} (const \hyperlink{structTown}{Town} pTown1, const \hyperlink{structTown}{Town} pTown2)
 \begin{DoxyCompactList}\small\item\em Calcul la distance entre deux villes. \item\end{DoxyCompactList}\item 
-\hyperlink{structDistance}{Distance} \hyperlink{distance_8h_a75f9d06738c4cde184c3ad7e5845ae20}{distance\_\-betweenTowns} (\hyperlink{structDistance}{Distance} $\ast$pDistances, \hyperlink{structTown}{Town} i, \hyperlink{structTown}{Town} j)
-\begin{DoxyCompactList}\small\item\em Calcul la distance entre deux ID de villes. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+double \hyperlink{distance_8h_a3181d7b4c6f5044b216c1a96a5a89854}{distance\_\-betweenTowns} (\hyperlink{structDistance}{Distance} $\ast$pDistances, int i, int j)
+\begin{DoxyCompactList}\small\item\em Calcul la distance entre deux ID de villes. \item\end{DoxyCompactList}\item 
+\hyperlink{structDistance}{Distance} \hyperlink{distance_8h_a1168dcc0722a41c0d43e627741d8d0b5}{distance\_\-searchDistance} (\hyperlink{structDistance}{Distance} $\ast$pDistances, const int pFirst, const int pSecond)
+\begin{DoxyCompactList}\small\item\em Recherche la distance entre deux villes dans le tableau de distance. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
@@ -35,17 +37,17 @@ Antoine de Roquemaurel
 Entêtes des fonctions se rapportant aux distances 
 
 \subsection{Documentation des fonctions}
-\hypertarget{distance_8h_a75f9d06738c4cde184c3ad7e5845ae20}{
+\hypertarget{distance_8h_a3181d7b4c6f5044b216c1a96a5a89854}{
 \index{distance.h@{distance.h}!distance\_\-betweenTowns@{distance\_\-betweenTowns}}
 \index{distance\_\-betweenTowns@{distance\_\-betweenTowns}!distance.h@{distance.h}}
-\subsubsection[{distance\_\-betweenTowns}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Distance} distance\_\-betweenTowns (
+\subsubsection[{distance\_\-betweenTowns}]{\setlength{\rightskip}{0pt plus 5cm}double distance\_\-betweenTowns (
 \begin{DoxyParamCaption}
 \item[{{\bf Distance} $\ast$}]{ pDistances, }
-\item[{{\bf Town}}]{ i, }
-\item[{{\bf Town}}]{ j}
+\item[{int}]{ i, }
+\item[{int}]{ j}
 \end{DoxyParamCaption}
 )}}
-\label{distance_8h_a75f9d06738c4cde184c3ad7e5845ae20}
+\label{distance_8h_a3181d7b4c6f5044b216c1a96a5a89854}
 
 
 Calcul la distance entre deux ID de villes. 
@@ -95,4 +97,25 @@ Créer une nouvelle distance.
 \item[{\em pFirstTown}]Première ville \item[{\em pSecondTown}]Seconde ville \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
 \hyperlink{structDistance}{Distance} entre les deux villes 
+\end{DoxyReturn}
+\hypertarget{distance_8h_a1168dcc0722a41c0d43e627741d8d0b5}{
+\index{distance.h@{distance.h}!distance\_\-searchDistance@{distance\_\-searchDistance}}
+\index{distance\_\-searchDistance@{distance\_\-searchDistance}!distance.h@{distance.h}}
+\subsubsection[{distance\_\-searchDistance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Distance} distance\_\-searchDistance (
+\begin{DoxyParamCaption}
+\item[{{\bf Distance} $\ast$}]{ pDistances, }
+\item[{const int}]{ pFirst, }
+\item[{const int}]{ pSecond}
+\end{DoxyParamCaption}
+)}}
+\label{distance_8h_a1168dcc0722a41c0d43e627741d8d0b5}
+
+
+Recherche la distance entre deux villes dans le tableau de distance. 
+
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pDistances}]La matrice de distance \item[{\em pFirst}]La première ville \item[{\em pSecond}]la seconde ville\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La distance 
 \end{DoxyReturn}

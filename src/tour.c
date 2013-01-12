@@ -10,8 +10,6 @@
 
 #include "tour.h"
 #include "path.h"
-#include "util.h"
-
 Tour tour_new(Instance pInstance) {
     Tour ret;
 	int i;
@@ -50,12 +48,12 @@ bool tour_nextPermutation(Tour* pPermutation) {
 void tour_calculLength(Tour* pTour) {
 	int i;
 	double length=0;
-    
+
 	for (i = 0; i < pTour->nbTowns ; ++i) { 
 		if(i+1 != pTour->nbTowns) {
-            length += distance_betweenTowns(pTour->distances, pTour->towns[i], pTour->towns[i+1]).distance;
+			length += distance_calculDistance(pTour->towns[i], pTour->towns[i+1]);
 		} else {
-            length += distance_betweenTowns(pTour->distances, pTour->towns[i], pTour->towns[0]).distance;
+			length += distance_calculDistance(pTour->towns[i], pTour->towns[0]);
 		}
 	}
 	pTour->length = length;	
@@ -90,7 +88,7 @@ Tour tour_randomWalk(const Instance pInstance) {
 void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
     pFirst--;
     if(pFirst > pSecond) {
-        pFirst ^= pSecond ^= pFirst ^= pSecond;
+        util_swap(&pFirst, &pSecond);
     } 
     if(pSecond >= 10) {
         pSecond = 0;

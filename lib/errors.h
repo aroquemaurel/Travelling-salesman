@@ -105,12 +105,6 @@ void errors_setNoValidParameterLsnr(Errors* pErrors);
 void errors_setNoValidParameterLsr(Errors* pErrors);
 
 /**
- * Signale que le paramètre derrière -ga n'est pas valide (n'est pas un entier ou un double)
- * @param pErrors
- */
-void errors_setNoValidParameterGa(Errors* pErrors);
-
-/**
  * Signale qu'aucun paramètre n'a été spécifié derrière -ga
  *
  * @param pErrors L'objet des erreurs
@@ -130,7 +124,6 @@ void errors_setMissingParameterLsnr(Errors* pErrors);
  * @param pErrors L'objet des erreurs
  */
 void errors_setMissingParameterLsr(Errors* pErrors);
-
 
 
 

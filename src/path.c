@@ -8,7 +8,6 @@
  */
 
 #include "path.h"
-#include "util.h"
 
 Path path_new(Tour pTour, int pBegin, int pEnd) {
     int i;
