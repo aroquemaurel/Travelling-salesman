@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  7 JAN 2013 22:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  10 JAN 2013 11:55
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -987,19 +987,26 @@ LaTeX Font Warning: Font shape `T1/lmtt/bc/n' undefined
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rapport.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (./rapport.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 14652 strings out of 495061
- 231011 string characters out of 1182622
- 369759 words of memory out of 3000000
- 17454 multiletter control sequences out of 15000+50000
+ 14654 strings out of 495061
+ 231021 string characters out of 1182622
+ 370773 words of memory out of 3000000
+ 17455 multiletter control sequences out of 15000+50000
  63950 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 47i,5n,49p,337b,1259s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,11n,49p,337b,1259s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-texlive/font
 s/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/pu
@@ -1008,11 +1015,12 @@ re/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf-texliv
-e/fonts/type1/urw/avantgar/uagk8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
-/times/utmr8a.pfb>
-Output written on rapport.pdf (1 page, 250703 bytes).
+e/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-texlive/font
+s/type1/urw/avantgar/uagk8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times
+/utmr8a.pfb>
+Output written on rapport.pdf (2 pages, 261464 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

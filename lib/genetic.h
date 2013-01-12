@@ -1,6 +1,6 @@
 /**
- * \file localSearch.h
- * \brief Fonctions utiles.
+ * \file genetic.h
+ * \brief Fonctions d'algorithmes génétiques.
  * \author Antoine de Roquemaurel
  * \date 27/12/2012 18:00:30
  *
@@ -10,8 +10,12 @@
  */
 
 
-#ifndef __LOCALSEARCH
-#define	__LOCALSEARCH
+#ifndef __GENETIC
+#define	__GENETIC
+#include "tour.h"
+#include "path.h"
+#include "util.h"
 
+Tour genetic_DPX(Tour pParent1, Tour pParent2) ;
 #endif	
 

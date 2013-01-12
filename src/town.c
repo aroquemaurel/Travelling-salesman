@@ -10,8 +10,14 @@
 
 #include "town.h"
 Town town_new(const int pId, const int pX, const int pY) {
-    Town ret;
-	ret.id = pId;
-	ret.x = pX;
-	ret.y = pY;
+    Town newTown;
+	newTown.id = pId;
+	newTown.x = pX;
+	newTown.y = pY;
+    
+    return newTown;
+}
+
+Town town_display(const Town pTown) {
+    printf("Ville n°%d(%.2f %.2f)", pTown.id, pTown.x, pTown.y);
 }

@@ -80,7 +80,7 @@ void instance_initializeDistancesMatrix(Instance* pInstance) {
 	Distance buffDistance;
 	for(i = 0 ; i <= pInstance->nbTowns; ++i) {
 		for(j = 0 ; j < i ; ++j) {
-			buffDistance = distance_new(&(pInstance->towns[i-1]), &(pInstance->towns[j]));
+			buffDistance = distance_new((pInstance->towns[i-1]), (pInstance->towns[j]));
 			pInstance->distances[k] = buffDistance;
 			++k;
 		}

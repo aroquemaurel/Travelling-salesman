@@ -36,5 +36,7 @@ typedef struct {
  * @param pY Ordonnée
  */
 Town town_new(const int pId, const int pX, const int pY);
+
+Town town_display(const Town pTown);
 #endif
 

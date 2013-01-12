@@ -11,6 +11,7 @@
       <itemPath>lib/instance.h</itemPath>
       <itemPath>lib/localSearch.h</itemPath>
       <itemPath>lib/parsing.h</itemPath>
+      <itemPath>lib/path.h</itemPath>
       <itemPath>lib/tour.h</itemPath>
       <itemPath>lib/town.h</itemPath>
       <itemPath>lib/util.h</itemPath>
@@ -48,6 +49,7 @@
       <itemPath>src/localSearch.c</itemPath>
       <itemPath>src/main.c</itemPath>
       <itemPath>src/parsing.c</itemPath>
+      <itemPath>src/path.c</itemPath>
       <itemPath>src/tour.c</itemPath>
       <itemPath>src/town.c</itemPath>
       <itemPath>src/util.c</itemPath>

@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/localSearch.o \
 	${OBJECTDIR}/src/distance.o \
 	${OBJECTDIR}/src/tour.o \
+	${OBJECTDIR}/src/path.o \
 	${OBJECTDIR}/src/town.o \
 	${OBJECTDIR}/src/util.o \
 	${OBJECTDIR}/src/genetic.o \
@@ -102,6 +103,11 @@ ${OBJECTDIR}/src/tour.o: nbproject/Makefile-${CND_CONF}.mk src/tour.c
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
 	$(COMPILE.c) -g -Wall -Ilib -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/tour.o src/tour.c
+
+${OBJECTDIR}/src/path.o: nbproject/Makefile-${CND_CONF}.mk src/path.c 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.c) -g -Wall -Ilib -std=c99 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/path.o src/path.c
 
 ${OBJECTDIR}/src/town.o: nbproject/Makefile-${CND_CONF}.mk src/town.c 
 	${MKDIR} -p ${OBJECTDIR}/src
@@ -254,6 +260,19 @@ ${OBJECTDIR}/src/tour_nomain.o: ${OBJECTDIR}/src/tour.o src/tour.c
 	    $(COMPILE.c) -g -Wall -Ilib -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/tour_nomain.o src/tour.c;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/tour.o ${OBJECTDIR}/src/tour_nomain.o;\
+	fi
+
+${OBJECTDIR}/src/path_nomain.o: ${OBJECTDIR}/src/path.o src/path.c 
+	${MKDIR} -p ${OBJECTDIR}/src
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/src/path.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} $@.d;\
+	    $(COMPILE.c) -g -Wall -Ilib -std=c99 -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/path_nomain.o src/path.c;\
+	else  \
+	    ${CP} ${OBJECTDIR}/src/path.o ${OBJECTDIR}/src/path_nomain.o;\
 	fi
 
 ${OBJECTDIR}/src/town_nomain.o: ${OBJECTDIR}/src/town.o src/town.c 

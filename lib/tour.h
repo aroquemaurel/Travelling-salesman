@@ -17,7 +17,6 @@
 #include "town.h"
 #include "instance.h"
 #include "distance.h"
-
 /**
  * \struct Tour tour.h
  * \brief Objet d'une tournée
@@ -78,5 +77,8 @@ Tour tour_randomWalk(const Instance pInstance);
  * @param pSecond L'id du début du second trajet
  */
 void tour_2opt(Tour* pTour, int pFirst, int pSecond);
+void tour_addTown(Tour* pTour, Town pTown);
+void tour_addPath(Tour* pTour, Town* pTowns, const int pNbTowns);
+void tour_addSeveralTowns(Tour* pTour, Town* pTowns, const int pNbTowns);
 #endif
 

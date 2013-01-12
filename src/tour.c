@@ -9,7 +9,7 @@
  */
 
 #include "tour.h"
-
+#include "path.h"
 Tour tour_new(Instance pInstance) {
     Tour ret;
 	int i;
@@ -95,4 +95,14 @@ void tour_2opt(Tour* pTour, int pFirst, int pSecond) {
     }
     util_reverseArray(pTour->towns, pFirst+1, pSecond-1);     
     tour_calculLength(pTour);
+}
+void tour_addTown(Tour* pTour, Town pTown) {
+    pTour->towns[pTour->nbTowns++] = pTown;
+}
+void tour_addSeveralTowns(Tour* pTour, Town* pTowns, const int pNbTowns) {
+    int i ;
+
+    for(i=0 ; i < pNbTowns ; ++i) { 
+        tour_addTown(pTour, pTowns[i]);
+    }
 }

@@ -10,11 +10,11 @@
 
 #include "distance.h"
 #include "util.h"
-Distance distance_new(Town* pFirstTown, Town* pSecondTown) {    
+Distance distance_new(Town pFirstTown, Town pSecondTown) {    
     Distance ret;
-	ret.firstTown = *pFirstTown;
-	ret.secondTown = *pSecondTown;
-	ret.distance = distance_calculDistance(*pFirstTown, *pSecondTown);
+	ret.firstTown = pFirstTown;
+	ret.secondTown = pSecondTown;
+	ret.distance = distance_calculDistance(pFirstTown, pSecondTown);
 }
 
 double distance_calculDistance(const Town pTown1, const Town pTown2) {

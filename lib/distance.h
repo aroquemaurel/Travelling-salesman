@@ -13,7 +13,6 @@
 
 #include <math.h>
 #include "town.h"
-
 /**
  * \struct Distance distance.h
  * \brief Objet des distances
@@ -37,7 +36,7 @@ typedef struct {
  * @param pSecondTown Seconde ville
  * @return Distance entre les deux villes
  */
-Distance distance_new(Town* pFirstTown, Town* pSecondTown);
+Distance distance_new(Town pFirstTown, Town pSecondTown);
 
 /**
  * Calcul la distance entre deux villes

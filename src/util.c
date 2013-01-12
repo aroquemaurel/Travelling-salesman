@@ -87,3 +87,10 @@ bool util_sousTabExist(Tour pChild, const int pBegin, const int pEnd, Tour pPare
 
     return ret;
 }
+
+void util_deleteArrayValue(Path* pArray, int pSize, int pDeleteIndice) {
+    int i;
+    for(i = pDeleteIndice ; i < pSize ; ++i) {
+        pArray[i] = pArray[i+1];
+    }
+}

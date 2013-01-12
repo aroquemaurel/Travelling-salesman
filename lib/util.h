@@ -16,7 +16,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "tour.h"
-
+#include "path.h"
 /// Mode verbose
 bool gVerboseMode;
 
@@ -78,4 +78,7 @@ int util_rand(const int pMin, const int pMax);
  * @return Vrai si le sous-tableau à été trouvé faux sinon
  */
 bool util_sousTabExist(Tour pChild, const int pBegin, const int pEnd, Tour pParent, bool pRecursvite);
+
+void util_deleteArrayValue(Path* pArray, int pSize, int pDeleteIndice);
+
 #endif
