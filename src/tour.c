@@ -109,3 +109,16 @@ void tour_addSeveralTowns(Tour* pTour, Town* pTowns, const int pNbTowns) {
         tour_addTown(pTour, pTowns[i]);
     }
 }
+
+void tour_replaceTheWorstTour(Tour* pTours, const int pSize, Tour pTour) {
+    int least=0;
+    int i;
+    
+    for(i=0 ; i < pSize ; ++i) {
+        if(pTours[i].length > pTours[least].length) {
+            least = i;
+        }
+    }
+    
+    pTours[least] = pTour;
+}

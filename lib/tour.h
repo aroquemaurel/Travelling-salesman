@@ -80,5 +80,6 @@ void tour_2opt(Tour* pTour, int pFirst, int pSecond);
 void tour_addTown(Tour* pTour, Town pTown);
 void tour_addPath(Tour* pTour, Town* pTowns, const int pNbTowns);
 void tour_addSeveralTowns(Tour* pTour, Town* pTowns, const int pNbTowns);
+void tour_replaceTheWorstTour(Tour* pTours, const int pSize, Tour pTour);
 #endif
 
