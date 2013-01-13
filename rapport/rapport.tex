@@ -44,7 +44,7 @@
 		\item \texttt{make} ou \texttt{make build} Compile le projet
 		\item \texttt{make clean} supprime les fichiers binaires (.o)
 	\end{itemize}
-	Une fois un make effectué le fichier executable est disponible en racine du projet, il se nomme \texttt{voyageurDeCommerce}. 	
+	Une fois un make effectué le fichier exécutable est disponible en racine du projet, il se nomme \texttt{voyageurDeCommerce}. 	
 	\subsection{Execution}
 	Comme demandé dans le cahier des charges, le programme doit respecter une liste d'argument précis, exemples d'utilisation :
 	\begin{lstlisting}[language=sh, basicstyle=\scriptsize\ttfamily, caption=Exemple d'execution du programme]
@@ -65,13 +65,17 @@
 		\item[{lib}] Ce dossier contient les fichiers headers (.h)
 		\item[{src}] Ce dossier contient les sources du projet (.c) 
 		\item[{resources}] Ici sont entreposés les fichiers de ressources pouvant être utiles au programmes 
-		\item[{tests}] Les fichiers de tests. 
 	\end{description}
 	\section{Modifications apportés depuis la validation du 7 Janvier 2013}
 	Les modifications depuis la validation : 
 	\begin{itemize}
 		\item Correction bug des recherches locales.
+		\item Développement de la partie 3, algorithmes génétiques
 	\end{itemize}
+	\remarque{Pour la partie sur les algorithmes génétiques, il n'est pas précisé dans le sujet que le nombrez N d'individus doit être passé en paramètre du
+	programme, ainsi cette valeur n'est présente qu'en paramètre de la fonction \texttt{genetic\_bestPath} afin de respecter le cahier des charges du
+	point de vue des arguments.}
+
 	\section{Programmation avec preuve de \texttt{util\_searchFirstOccurence}}
 	\subsection{Spécification}
 \begin{lstlisting}[language=C]

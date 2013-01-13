@@ -61,8 +61,6 @@ int main (int argc, char** argv) {
 	Algo algos[3];
 	Tour tour;
     srand(time(NULL));
-    Tour tour1, tour2; 
-    Town town1;
 
 	gVerboseMode = parsing_parseVerboseMode(argv, argc);  
 	fileName = parsing_parseFileName(argv, argc, &errors); 
@@ -93,7 +91,6 @@ int main (int argc, char** argv) {
                 case GENETIC:
                     tour = genetic_getBestPath(instance, 230,300,0.6);
                     printf("=== Génétique ===\n");
-                    printf("Genetic not implemented");
                     break;
            }
             printf("MEILLEUR TOURNÉE \n");

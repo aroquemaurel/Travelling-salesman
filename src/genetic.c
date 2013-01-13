@@ -25,13 +25,13 @@ Tour genetic_DPX(Tour pParent1, Tour pParent2) {
             first = i;    
         }
     }
-   
+ 
     tour_addSeveralTowns(&newTour, pathsList[0].towns, pathsList[0].nbTowns);
     util_deleteArrayValue(pathsList, nbPaths, 0);
     while(nbPaths != 0) {
         path_addNearNeighbor(&newTour,pathsList, &nbPaths);
     }
-    
+   
     return newTour;
 }
 
@@ -64,6 +64,6 @@ Tour genetic_getBestPath(Instance pInstance, const int pNbTour, const int pNbGen
         
         population[least] = children;
     }
-    tour_calculLength(&children);
+   tour_calculLength(&children);
     return children;
 }

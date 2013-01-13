@@ -9,7 +9,7 @@
  */
 
 #include "town.h"
-Town town_new(const int pId, const int pX, const int pY) {
+Town town_new(const int pId, const float pX, const float pY) {
     Town newTown;
 	newTown.id = pId;
 	newTown.x = pX;
@@ -18,6 +18,6 @@ Town town_new(const int pId, const int pX, const int pY) {
     return newTown;
 }
 
-Town town_display(const Town pTown) {
+void town_display(const Town pTown) {
     printf("Ville n°%d(%.2f %.2f)", pTown.id, pTown.x, pTown.y);
 }

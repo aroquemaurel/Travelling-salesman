@@ -12,12 +12,11 @@
 #include "instance.h"
 #include "tour.h"
 
-// TODO Test
 Tour localSearch_randomBestPath(Instance pInstance, int pTryNb) {
 	Tour ret, buffTour;
 	int first2opt, second2opt;
 	int i;
-    instance_displayMatrix(pInstance);
+
 	buffTour = tour_randomWalk(pInstance);	
 	ret = buffTour;
     if(gVerboseMode) {

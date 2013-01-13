@@ -47,23 +47,12 @@ Distance distance_new(Town pFirstTown, Town pSecondTown);
 double distance_calculDistance(const Town pTown1, const Town pTown2);
 
 /**
- * Calcul la distance entre deux ID de villes
+ * Calcul la distance entre deux villes
  * @param pDistances La matrice de distances
  * @param i La première ville
  * @param j La seconde ville
  * @return La distance
  */
 Distance distance_betweenTowns(Distance* pDistances, Town i, Town j) ;
-
-/**
- * Recherche la distance entre deux villes dans le tableau de distance
- * 
- * @param pDistances La matrice de distance
- * @param pFirst La première ville
- * @param pSecond la seconde ville
- * 
- * @return La distance
- */
-Distance distance_searchDistance(Distance* pDistances, const int pFirst, const int pSecond);
 #endif
 

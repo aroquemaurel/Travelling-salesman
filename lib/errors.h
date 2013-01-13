@@ -125,7 +125,6 @@ void errors_setMissingParameterLsnr(Errors* pErrors);
  */
 void errors_setMissingParameterLsr(Errors* pErrors);
 
-
-
+void errors_setNoValidParameterGa(Errors* pErrors);
 #endif
 
