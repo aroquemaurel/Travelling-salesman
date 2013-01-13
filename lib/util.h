@@ -79,6 +79,13 @@ int util_rand(const int pMin, const int pMax);
  */
 bool util_sousTabExist(Tour pChild, const int pBegin, const int pEnd, Tour pParent, bool pRecursvite);
 
+
+/**
+ * Supprime la valeur pDeleteIndice d'un tableau
+ * @param pArray Le tableau
+ * @param pSize La taille du tableau
+ * @param pDeleteIndice L'indice à supprimer
+ */
 void util_deleteArrayValue(Path* pArray, int pSize, int pDeleteIndice);
 
 #endif

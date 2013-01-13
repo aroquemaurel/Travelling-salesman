@@ -125,6 +125,10 @@ void errors_setMissingParameterLsnr(Errors* pErrors);
  */
 void errors_setMissingParameterLsr(Errors* pErrors);
 
+/**
+ * Sgiane que le ou les paramètre après -ga ne sont pas valides (non entier ou décimal)
+ * @param pErrors L'objet des erreurs
+ */
 void errors_setNoValidParameterGa(Errors* pErrors);
 #endif
 
