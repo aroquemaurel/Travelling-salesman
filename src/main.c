@@ -73,27 +73,32 @@ int main (int argc, char** argv) {
     
 	if(errors.nbErrors == 0) { 	// on peut travailler
         instance = instance_new(file);
+        if(gVerboseMode) {
+            instance_display(instance);
+        }
         /* On calcul les solutions avec les différents algorithmes demandés */
+        /* Et on affiche le type d'algorithme avec de la couleur afin de bien repérer les 
+         * différents parties du programme*/
         while(algos[i].type != END) {
            switch(algos[i].type) {
                 case BRUTEFORCE:
-                    printf("=== Brute force ===\n");
+                  printf("\033[%d;%dm === BRUTE FORCE === \033[0m\n",30,33);
                     tour = bruteForce_bestPath(instance);
                     break;
                 case LOCALSEARCH_RANDOM:
-                    printf("=== Recherche locale aléatoire ===\n");
+                    printf("\033[%d;%dm === RECHERCHE LOCALE ALÉATOIRE === \033[0m\n",30,33);
                     tour = localSearch_randomBestPath(instance, algos[i].firstParameter); 
                     break;
                 case LOCALSEARCH_SYSTEMATIC:
-                    printf("=== Recherche locale systématique ===\n");
+                    printf("\033[%d;%dm === RECHERCHE LOCALE SYSTÉMATIQUE === \033[0m\n",30,33);
                     tour = localSearch_systematicBestPath(instance, algos[i].firstParameter);
                     break;
                 case GENETIC:
-                    tour = genetic_getBestPath(instance, 230,300,0.6);
-                    printf("=== Génétique ===\n");
+                    printf("\033[%d;%dm === GÉNÉTIQUE === \033[0m\n",30,33);
+                    tour = genetic_getBestPath(instance, 200,algos[i].firstParameter,algos[i].secondParameter);
                     break;
            }
-            printf("MEILLEUR TOURNÉE \n");
+            printf("Meilleure tournée \n");
             tour_display(tour);
             ++i;
             printf("\n\n");

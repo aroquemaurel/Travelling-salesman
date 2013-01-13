@@ -48,7 +48,7 @@ typedef struct {
     /// Premier paramètre de l'algorithme
     int firstParameter;
     /// Second paramètre
-    int secondParameter;
+    double secondParameter;
 } Algo;
 
 /**

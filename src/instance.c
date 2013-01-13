@@ -69,7 +69,18 @@ Instance instance_new(FILE* pFile) {
 
 
 void instance_display(const Instance pInstance) {
-    // TODO
+    int i ;
+    printf("\033[%d;%dm === AFFICHAGE DE L'INSTANCE === \033[0m\n",30,33);
+    printf("Nom: %s\n\t", pInstance.name);
+    printf("Nombre de ville: %d\n", pInstance.nbTowns);
+    printf("Liste des villes: \n");
+    for(i=0 ; i < pInstance.nbTowns ; ++i) {
+        printf("\t");
+        town_display(pInstance.towns[i]);
+        printf("\n");
+    }
+    instance_displayMatrix(pInstance);
+    printf("\n");
 }
 
 
@@ -92,7 +103,7 @@ void instance_initializeDistancesMatrix(Instance* pInstance) {
 }
 
 
-void instance_displayLinearVector(Instance pInstance) {
+void instance_displayLinearVector(const Instance pInstance) {
 	int i;
 	for(i = 0 ; i < util_sum(0, pInstance.nbTowns); ++i) {
 		printf("%d%d(%.2f) ", pInstance.distances[i].firstTown.id, pInstance.distances[i].secondTown.id, pInstance.distances[i].distance);  
@@ -101,7 +112,7 @@ void instance_displayLinearVector(Instance pInstance) {
 }
 
 
-void instance_displayMatrix(Instance pInstance) { 
+void instance_displayMatrix(const Instance pInstance) { 
 	int previous = pInstance.distances[0].firstTown.id; 
 	int i, k;
 
@@ -118,7 +129,7 @@ void instance_displayMatrix(Instance pInstance) {
 		} else if(pInstance.distances[i].distance < 1000) {
 			printf(" ");
 		}
-		printf("%.2f ", pInstance.distances[i].distance);  // TODO Remplacer i/j par distances
+		printf("%.2f ", pInstance.distances[i].distance); 
 	}
 	printf("\n");
 }

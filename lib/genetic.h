@@ -27,6 +27,13 @@
 Tour genetic_DPX(Tour pParent1, Tour pParent2);
 
 /**
+ * Fais muter la tournée pTour
+ * @param pTour La tournée à faire muter
+ * @param pProba La probabilité que la tournée pTour mute
+ * @return Vrai si la tournée à muter faux sinon.
+ */
+bool genetic_mutation(Tour* pTour, float pProba);
+/**
  * Retourne la meilleure tournée à l'aide d'un algorithme génétique
  * @param pInstance L'instance pour laquelle on veut calculer le plus court chemin
  * @param pNbTour Le nombre d'individus, ou tournée, que l'on veut initialiser

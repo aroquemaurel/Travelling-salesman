@@ -34,14 +34,29 @@ Tour genetic_DPX(Tour pParent1, Tour pParent2) {
    
     return newTour;
 }
+bool genetic_mutation(Tour* pTour, float pProba) {
+    int firstNb, secondNb;
+    bool retMutation = false;
+    
+    if(rand() % 100 < pProba*100) {
+        firstNb=util_rand(0, pTour->nbTowns-1);
+        secondNb=util_rand(0, pTour->nbTowns-1);            
+        tour_2opt(pTour, firstNb, secondNb);
+        
+        retMutation = true;
+    }
 
+    return retMutation;
+}
 Tour genetic_getBestPath(Instance pInstance, const int pNbTour, const int pNbGeneration, const float pProba) {
     Tour* population;
     Tour children;
     int i;
     int firstNb, secondNb;
-
-    population = malloc(500* sizeof(Tour));
+    int nbMutation = 0;
+    
+    //Pour éviter les segmentation fault en cas de nombre passés en paramètre trop grands
+    population = malloc((pNbGeneration+pNbTour)* sizeof(Tour)); 
     
     for(i=0 ; i < pNbTour ; ++i) {
         population[i] = tour_randomWalk(pInstance);
@@ -52,16 +67,16 @@ Tour genetic_getBestPath(Instance pInstance, const int pNbTour, const int pNbGen
         secondNb=util_rand(0, pNbTour-1);
         
         children = genetic_DPX(population[firstNb], population[secondNb]);
-        if(rand() % 100 < pProba*100) {
-            firstNb=util_rand(0, children.nbTowns-1);
-            secondNb=util_rand(0, children.nbTowns-1);            
-            tour_2opt(&children, firstNb, secondNb);
-        }
-        
+            if(genetic_mutation(&children, pProba)) {
+                ++nbMutation;
+            }
+                    
         tour_replaceTheWorstTour(population, pNbGeneration, children);
     }
     
    tour_calculLength(&children);
-   
+   if(gVerboseMode) {
+       printf("La fille à muté %d fois\n", nbMutation);
+   }
     return children;
 }

@@ -70,7 +70,7 @@ void parsing_algoType(char** pTab, const int pSize, Errors* pErrors, Algo* algos
 			} else if(atof(pTab[positionTag+2]) == 0) {
                 errors_setNoValidParameterGa(pErrors);
 			} else {
-				algos[numberAlgo].secondParameter = atoi(pTab[positionTag+2]);
+				algos[numberAlgo].secondParameter = atof(pTab[positionTag+2]);
 				algos[numberAlgo].type = GENETIC;
                 numberAlgo++;
 			}

@@ -2,8 +2,9 @@
 \indexentry{Distance@{Distance}|hyperpage}{7}
 \indexentry{Errors@{Errors}|hyperpage}{8}
 \indexentry{Instance@{Instance}|hyperpage}{9}
+\indexentry{Path@{Path}|hyperpage}{10}
 \indexentry{Tour@{Tour}|hyperpage}{10}
-\indexentry{Town@{Town}|hyperpage}{10}
+\indexentry{Town@{Town}|hyperpage}{11}
 \indexentry{lib/bruteForce.h@{lib/bruteForce.h}|hyperpage}{13}
 \indexentry{bruteForce.h@{bruteForce.h}!bruteForce\_\discretionary {-}{}{}bestPath@{bruteForce\_\discretionary {-}{}{}bestPath}|hyperpage}{13}
 \indexentry{bruteForce\_\discretionary {-}{}{}bestPath@{bruteForce\_\discretionary {-}{}{}bestPath}!bruteForce.h@{bruteForce.h}|hyperpage}{13}
@@ -14,11 +15,9 @@
 \indexentry{distance\_\discretionary {-}{}{}calculDistance@{distance\_\discretionary {-}{}{}calculDistance}!distance.h@{distance.h}|hyperpage}{15}
 \indexentry{distance.h@{distance.h}!distance\_\discretionary {-}{}{}new@{distance\_\discretionary {-}{}{}new}|hyperpage}{15}
 \indexentry{distance\_\discretionary {-}{}{}new@{distance\_\discretionary {-}{}{}new}!distance.h@{distance.h}|hyperpage}{15}
-\indexentry{distance.h@{distance.h}!distance\_\discretionary {-}{}{}searchDistance@{distance\_\discretionary {-}{}{}searchDistance}|hyperpage}{15}
-\indexentry{distance\_\discretionary {-}{}{}searchDistance@{distance\_\discretionary {-}{}{}searchDistance}!distance.h@{distance.h}|hyperpage}{15}
 \indexentry{lib/errors.h@{lib/errors.h}|hyperpage}{15}
-\indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}displayErrorsMessage@{errors\_\discretionary {-}{}{}displayErrorsMessage}|hyperpage}{17}
-\indexentry{errors\_\discretionary {-}{}{}displayErrorsMessage@{errors\_\discretionary {-}{}{}displayErrorsMessage}!errors.h@{errors.h}|hyperpage}{17}
+\indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}displayErrorsMessage@{errors\_\discretionary {-}{}{}displayErrorsMessage}|hyperpage}{16}
+\indexentry{errors\_\discretionary {-}{}{}displayErrorsMessage@{errors\_\discretionary {-}{}{}displayErrorsMessage}!errors.h@{errors.h}|hyperpage}{16}
 \indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}new@{errors\_\discretionary {-}{}{}new}|hyperpage}{17}
 \indexentry{errors\_\discretionary {-}{}{}new@{errors\_\discretionary {-}{}{}new}!errors.h@{errors.h}|hyperpage}{17}
 \indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setFileNotFound@{errors\_\discretionary {-}{}{}setFileNotFound}|hyperpage}{17}
@@ -31,143 +30,221 @@
 \indexentry{errors\_\discretionary {-}{}{}setMissingParameterLsr@{errors\_\discretionary {-}{}{}setMissingParameterLsr}!errors.h@{errors.h}|hyperpage}{17}
 \indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setNbArguments@{errors\_\discretionary {-}{}{}setNbArguments}|hyperpage}{17}
 \indexentry{errors\_\discretionary {-}{}{}setNbArguments@{errors\_\discretionary {-}{}{}setNbArguments}!errors.h@{errors.h}|hyperpage}{17}
-\indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setNoAlgoSpecified@{errors\_\discretionary {-}{}{}setNoAlgoSpecified}|hyperpage}{18}
-\indexentry{errors\_\discretionary {-}{}{}setNoAlgoSpecified@{errors\_\discretionary {-}{}{}setNoAlgoSpecified}!errors.h@{errors.h}|hyperpage}{18}
+\indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setNoAlgoSpecified@{errors\_\discretionary {-}{}{}setNoAlgoSpecified}|hyperpage}{17}
+\indexentry{errors\_\discretionary {-}{}{}setNoAlgoSpecified@{errors\_\discretionary {-}{}{}setNoAlgoSpecified}!errors.h@{errors.h}|hyperpage}{17}
+\indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setNoValidParameterGa@{errors\_\discretionary {-}{}{}setNoValidParameterGa}|hyperpage}{18}
+\indexentry{errors\_\discretionary {-}{}{}setNoValidParameterGa@{errors\_\discretionary {-}{}{}setNoValidParameterGa}!errors.h@{errors.h}|hyperpage}{18}
 \indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setNoValidParameterLsnr@{errors\_\discretionary {-}{}{}setNoValidParameterLsnr}|hyperpage}{18}
 \indexentry{errors\_\discretionary {-}{}{}setNoValidParameterLsnr@{errors\_\discretionary {-}{}{}setNoValidParameterLsnr}!errors.h@{errors.h}|hyperpage}{18}
 \indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setNoValidParameterLsr@{errors\_\discretionary {-}{}{}setNoValidParameterLsr}|hyperpage}{18}
 \indexentry{errors\_\discretionary {-}{}{}setNoValidParameterLsr@{errors\_\discretionary {-}{}{}setNoValidParameterLsr}!errors.h@{errors.h}|hyperpage}{18}
 \indexentry{errors.h@{errors.h}!errors\_\discretionary {-}{}{}setTagFNotFound@{errors\_\discretionary {-}{}{}setTagFNotFound}|hyperpage}{18}
 \indexentry{errors\_\discretionary {-}{}{}setTagFNotFound@{errors\_\discretionary {-}{}{}setTagFNotFound}!errors.h@{errors.h}|hyperpage}{18}
-\indexentry{lib/instance.h@{lib/instance.h}|hyperpage}{18}
-\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}|hyperpage}{19}
-\indexentry{instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}!instance.h@{instance.h}|hyperpage}{19}
-\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}|hyperpage}{19}
-\indexentry{instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}!instance.h@{instance.h}|hyperpage}{19}
-\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}|hyperpage}{20}
-\indexentry{instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}!instance.h@{instance.h}|hyperpage}{20}
-\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}|hyperpage}{20}
-\indexentry{instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}!instance.h@{instance.h}|hyperpage}{20}
-\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}|hyperpage}{20}
-\indexentry{instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}!instance.h@{instance.h}|hyperpage}{20}
-\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}|hyperpage}{20}
-\indexentry{instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}!instance.h@{instance.h}|hyperpage}{20}
-\indexentry{lib/localSearch.h@{lib/localSearch.h}|hyperpage}{21}
-\indexentry{lib/parsing.h@{lib/parsing.h}|hyperpage}{21}
-\indexentry{parsing.h@{parsing.h}!AlgoType@{AlgoType}|hyperpage}{22}
-\indexentry{AlgoType@{AlgoType}!parsing.h@{parsing.h}|hyperpage}{22}
-\indexentry{BRUTEFORCE@{BRUTEFORCE}!parsing.h@{parsing.h}|hyperpage}{22}
-\indexentry{parsing.h@{parsing.h}!BRUTEFORCE@{BRUTEFORCE}|hyperpage}{22}
-\indexentry{LOCALSEARCH\_\-RANDOM@{LOCALSEARCH\_\-RANDOM}!parsing.h@{parsing.h}|hyperpage}{22}
-\indexentry{parsing.h@{parsing.h}!LOCALSEARCH\_\-RANDOM@{LOCALSEARCH\_\-RANDOM}|hyperpage}{22}
-\indexentry{LOCALSEARCH\_\-SYSTEMATIC@{LOCALSEARCH\_\-SYSTEMATIC}!parsing.h@{parsing.h}|hyperpage}{22}
-\indexentry{parsing.h@{parsing.h}!LOCALSEARCH\_\-SYSTEMATIC@{LOCALSEARCH\_\-SYSTEMATIC}|hyperpage}{22}
-\indexentry{GENETIC@{GENETIC}!parsing.h@{parsing.h}|hyperpage}{22}
-\indexentry{parsing.h@{parsing.h}!GENETIC@{GENETIC}|hyperpage}{22}
-\indexentry{END@{END}!parsing.h@{parsing.h}|hyperpage}{22}
-\indexentry{parsing.h@{parsing.h}!END@{END}|hyperpage}{22}
-\indexentry{parsing.h@{parsing.h}!parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}|hyperpage}{22}
-\indexentry{parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}!parsing.h@{parsing.h}|hyperpage}{22}
-\indexentry{parsing.h@{parsing.h}!parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}|hyperpage}{23}
-\indexentry{parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}!parsing.h@{parsing.h}|hyperpage}{23}
-\indexentry{parsing.h@{parsing.h}!parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}|hyperpage}{23}
-\indexentry{parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}!parsing.h@{parsing.h}|hyperpage}{23}
-\indexentry{lib/tour.h@{lib/tour.h}|hyperpage}{23}
-\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}|hyperpage}{24}
-\indexentry{tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}!tour.h@{tour.h}|hyperpage}{24}
-\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}|hyperpage}{24}
-\indexentry{tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}!tour.h@{tour.h}|hyperpage}{24}
-\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}|hyperpage}{25}
-\indexentry{tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}!tour.h@{tour.h}|hyperpage}{25}
-\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}|hyperpage}{25}
-\indexentry{tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}!tour.h@{tour.h}|hyperpage}{25}
-\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}|hyperpage}{25}
-\indexentry{tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}!tour.h@{tour.h}|hyperpage}{25}
-\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}|hyperpage}{25}
-\indexentry{tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}!tour.h@{tour.h}|hyperpage}{25}
-\indexentry{lib/town.h@{lib/town.h}|hyperpage}{25}
-\indexentry{town.h@{town.h}!town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}|hyperpage}{26}
-\indexentry{town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}!town.h@{town.h}|hyperpage}{26}
-\indexentry{lib/util.h@{lib/util.h}|hyperpage}{26}
-\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}|hyperpage}{27}
-\indexentry{util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}!util.h@{util.h}|hyperpage}{27}
-\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}|hyperpage}{27}
-\indexentry{util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}!util.h@{util.h}|hyperpage}{27}
-\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}|hyperpage}{28}
-\indexentry{util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}!util.h@{util.h}|hyperpage}{28}
-\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}|hyperpage}{28}
-\indexentry{util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}!util.h@{util.h}|hyperpage}{28}
-\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}|hyperpage}{28}
-\indexentry{util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}!util.h@{util.h}|hyperpage}{28}
-\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}|hyperpage}{28}
-\indexentry{util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}!util.h@{util.h}|hyperpage}{28}
-\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}|hyperpage}{29}
-\indexentry{util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}!util.h@{util.h}|hyperpage}{29}
-\indexentry{src/bruteForce.c@{src/bruteForce.c}|hyperpage}{29}
-\indexentry{bruteForce.c@{bruteForce.c}!bruteForce\_\discretionary {-}{}{}bestPath@{bruteForce\_\discretionary {-}{}{}bestPath}|hyperpage}{30}
-\indexentry{bruteForce\_\discretionary {-}{}{}bestPath@{bruteForce\_\discretionary {-}{}{}bestPath}!bruteForce.c@{bruteForce.c}|hyperpage}{30}
-\indexentry{src/distance.c@{src/distance.c}|hyperpage}{30}
-\indexentry{distance.c@{distance.c}!distance\_\discretionary {-}{}{}betweenTowns@{distance\_\discretionary {-}{}{}betweenTowns}|hyperpage}{31}
-\indexentry{distance\_\discretionary {-}{}{}betweenTowns@{distance\_\discretionary {-}{}{}betweenTowns}!distance.c@{distance.c}|hyperpage}{31}
-\indexentry{distance.c@{distance.c}!distance\_\discretionary {-}{}{}calculDistance@{distance\_\discretionary {-}{}{}calculDistance}|hyperpage}{31}
-\indexentry{distance\_\discretionary {-}{}{}calculDistance@{distance\_\discretionary {-}{}{}calculDistance}!distance.c@{distance.c}|hyperpage}{31}
-\indexentry{distance.c@{distance.c}!distance\_\discretionary {-}{}{}new@{distance\_\discretionary {-}{}{}new}|hyperpage}{31}
-\indexentry{distance\_\discretionary {-}{}{}new@{distance\_\discretionary {-}{}{}new}!distance.c@{distance.c}|hyperpage}{31}
-\indexentry{distance.c@{distance.c}!distance\_\discretionary {-}{}{}searchDistance@{distance\_\discretionary {-}{}{}searchDistance}|hyperpage}{31}
-\indexentry{distance\_\discretionary {-}{}{}searchDistance@{distance\_\discretionary {-}{}{}searchDistance}!distance.c@{distance.c}|hyperpage}{31}
-\indexentry{src/genetic.c@{src/genetic.c}|hyperpage}{32}
-\indexentry{src/instance.c@{src/instance.c}|hyperpage}{32}
-\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}|hyperpage}{33}
-\indexentry{instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}!instance.c@{instance.c}|hyperpage}{33}
-\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}|hyperpage}{33}
-\indexentry{instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}!instance.c@{instance.c}|hyperpage}{33}
-\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}|hyperpage}{33}
-\indexentry{instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}!instance.c@{instance.c}|hyperpage}{33}
-\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}|hyperpage}{33}
-\indexentry{instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}!instance.c@{instance.c}|hyperpage}{33}
-\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}|hyperpage}{34}
-\indexentry{instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}!instance.c@{instance.c}|hyperpage}{34}
-\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}|hyperpage}{34}
-\indexentry{instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}!instance.c@{instance.c}|hyperpage}{34}
-\indexentry{src/localSearch.c@{src/localSearch.c}|hyperpage}{34}
-\indexentry{src/main.c@{src/main.c}|hyperpage}{35}
-\indexentry{main.c@{main.c}!main@{main}|hyperpage}{35}
-\indexentry{main@{main}!main.c@{main.c}|hyperpage}{35}
-\indexentry{src/parsing.c@{src/parsing.c}|hyperpage}{35}
-\indexentry{parsing.c@{parsing.c}!parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}|hyperpage}{36}
-\indexentry{parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}!parsing.c@{parsing.c}|hyperpage}{36}
-\indexentry{parsing.c@{parsing.c}!parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}|hyperpage}{36}
-\indexentry{parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}!parsing.c@{parsing.c}|hyperpage}{36}
-\indexentry{parsing.c@{parsing.c}!parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}|hyperpage}{36}
-\indexentry{parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}!parsing.c@{parsing.c}|hyperpage}{36}
-\indexentry{src/tour.c@{src/tour.c}|hyperpage}{37}
-\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}|hyperpage}{38}
-\indexentry{tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}!tour.c@{tour.c}|hyperpage}{38}
-\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}|hyperpage}{38}
-\indexentry{tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}!tour.c@{tour.c}|hyperpage}{38}
-\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}|hyperpage}{38}
-\indexentry{tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}!tour.c@{tour.c}|hyperpage}{38}
-\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}|hyperpage}{38}
-\indexentry{tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}!tour.c@{tour.c}|hyperpage}{38}
-\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}|hyperpage}{38}
-\indexentry{tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}!tour.c@{tour.c}|hyperpage}{38}
-\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}|hyperpage}{38}
-\indexentry{tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}!tour.c@{tour.c}|hyperpage}{38}
-\indexentry{src/town.c@{src/town.c}|hyperpage}{39}
-\indexentry{town.c@{town.c}!town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}|hyperpage}{39}
-\indexentry{town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}!town.c@{town.c}|hyperpage}{39}
-\indexentry{src/util.c@{src/util.c}|hyperpage}{39}
-\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}|hyperpage}{40}
-\indexentry{util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}!util.c@{util.c}|hyperpage}{40}
-\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}|hyperpage}{40}
-\indexentry{util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}!util.c@{util.c}|hyperpage}{40}
-\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}|hyperpage}{41}
-\indexentry{util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}!util.c@{util.c}|hyperpage}{41}
-\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}|hyperpage}{41}
-\indexentry{util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}!util.c@{util.c}|hyperpage}{41}
-\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}|hyperpage}{41}
-\indexentry{util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}!util.c@{util.c}|hyperpage}{41}
-\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}|hyperpage}{41}
-\indexentry{util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}!util.c@{util.c}|hyperpage}{41}
-\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}|hyperpage}{42}
-\indexentry{util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}!util.c@{util.c}|hyperpage}{42}
+\indexentry{lib/genetic.h@{lib/genetic.h}|hyperpage}{18}
+\indexentry{genetic.h@{genetic.h}!genetic\_\discretionary {-}{}{}DPX@{genetic\_\discretionary {-}{}{}DPX}|hyperpage}{19}
+\indexentry{genetic\_\discretionary {-}{}{}DPX@{genetic\_\discretionary {-}{}{}DPX}!genetic.h@{genetic.h}|hyperpage}{19}
+\indexentry{genetic.h@{genetic.h}!genetic\_\discretionary {-}{}{}getBestPath@{genetic\_\discretionary {-}{}{}getBestPath}|hyperpage}{19}
+\indexentry{genetic\_\discretionary {-}{}{}getBestPath@{genetic\_\discretionary {-}{}{}getBestPath}!genetic.h@{genetic.h}|hyperpage}{19}
+\indexentry{genetic.h@{genetic.h}!genetic\_\discretionary {-}{}{}mutation@{genetic\_\discretionary {-}{}{}mutation}|hyperpage}{20}
+\indexentry{genetic\_\discretionary {-}{}{}mutation@{genetic\_\discretionary {-}{}{}mutation}!genetic.h@{genetic.h}|hyperpage}{20}
+\indexentry{lib/instance.h@{lib/instance.h}|hyperpage}{20}
+\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}|hyperpage}{21}
+\indexentry{instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}!instance.h@{instance.h}|hyperpage}{21}
+\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}|hyperpage}{21}
+\indexentry{instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}!instance.h@{instance.h}|hyperpage}{21}
+\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}|hyperpage}{21}
+\indexentry{instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}!instance.h@{instance.h}|hyperpage}{21}
+\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}|hyperpage}{22}
+\indexentry{instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}!instance.h@{instance.h}|hyperpage}{22}
+\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}|hyperpage}{22}
+\indexentry{instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}!instance.h@{instance.h}|hyperpage}{22}
+\indexentry{instance.h@{instance.h}!instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}|hyperpage}{22}
+\indexentry{instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}!instance.h@{instance.h}|hyperpage}{22}
+\indexentry{lib/localSearch.h@{lib/localSearch.h}|hyperpage}{22}
+\indexentry{localSearch.h@{localSearch.h}!localSearch\_\discretionary {-}{}{}randomBestPath@{localSearch\_\discretionary {-}{}{}randomBestPath}|hyperpage}{23}
+\indexentry{localSearch\_\discretionary {-}{}{}randomBestPath@{localSearch\_\discretionary {-}{}{}randomBestPath}!localSearch.h@{localSearch.h}|hyperpage}{23}
+\indexentry{localSearch.h@{localSearch.h}!localSearch\_\discretionary {-}{}{}systematicBestPath@{localSearch\_\discretionary {-}{}{}systematicBestPath}|hyperpage}{23}
+\indexentry{localSearch\_\discretionary {-}{}{}systematicBestPath@{localSearch\_\discretionary {-}{}{}systematicBestPath}!localSearch.h@{localSearch.h}|hyperpage}{23}
+\indexentry{lib/parsing.h@{lib/parsing.h}|hyperpage}{24}
+\indexentry{parsing.h@{parsing.h}!AlgoType@{AlgoType}|hyperpage}{24}
+\indexentry{AlgoType@{AlgoType}!parsing.h@{parsing.h}|hyperpage}{24}
+\indexentry{BRUTEFORCE@{BRUTEFORCE}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!BRUTEFORCE@{BRUTEFORCE}|hyperpage}{25}
+\indexentry{LOCALSEARCH\_\-RANDOM@{LOCALSEARCH\_\-RANDOM}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!LOCALSEARCH\_\-RANDOM@{LOCALSEARCH\_\-RANDOM}|hyperpage}{25}
+\indexentry{LOCALSEARCH\_\-SYSTEMATIC@{LOCALSEARCH\_\-SYSTEMATIC}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!LOCALSEARCH\_\-SYSTEMATIC@{LOCALSEARCH\_\-SYSTEMATIC}|hyperpage}{25}
+\indexentry{GENETIC@{GENETIC}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!GENETIC@{GENETIC}|hyperpage}{25}
+\indexentry{END@{END}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!END@{END}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}|hyperpage}{25}
+\indexentry{parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}|hyperpage}{25}
+\indexentry{parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{parsing.h@{parsing.h}!parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}|hyperpage}{25}
+\indexentry{parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}!parsing.h@{parsing.h}|hyperpage}{25}
+\indexentry{lib/path.h@{lib/path.h}|hyperpage}{26}
+\indexentry{path.h@{path.h}!path\_\discretionary {-}{}{}addNearNeighbor@{path\_\discretionary {-}{}{}addNearNeighbor}|hyperpage}{26}
+\indexentry{path\_\discretionary {-}{}{}addNearNeighbor@{path\_\discretionary {-}{}{}addNearNeighbor}!path.h@{path.h}|hyperpage}{26}
+\indexentry{path.h@{path.h}!path\_\discretionary {-}{}{}display@{path\_\discretionary {-}{}{}display}|hyperpage}{27}
+\indexentry{path\_\discretionary {-}{}{}display@{path\_\discretionary {-}{}{}display}!path.h@{path.h}|hyperpage}{27}
+\indexentry{path.h@{path.h}!path\_\discretionary {-}{}{}new@{path\_\discretionary {-}{}{}new}|hyperpage}{27}
+\indexentry{path\_\discretionary {-}{}{}new@{path\_\discretionary {-}{}{}new}!path.h@{path.h}|hyperpage}{27}
+\indexentry{lib/tour.h@{lib/tour.h}|hyperpage}{27}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}|hyperpage}{28}
+\indexentry{tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}!tour.h@{tour.h}|hyperpage}{28}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}addSeveralTowns@{tour\_\discretionary {-}{}{}addSeveralTowns}|hyperpage}{28}
+\indexentry{tour\_\discretionary {-}{}{}addSeveralTowns@{tour\_\discretionary {-}{}{}addSeveralTowns}!tour.h@{tour.h}|hyperpage}{28}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}addTown@{tour\_\discretionary {-}{}{}addTown}|hyperpage}{29}
+\indexentry{tour\_\discretionary {-}{}{}addTown@{tour\_\discretionary {-}{}{}addTown}!tour.h@{tour.h}|hyperpage}{29}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}|hyperpage}{29}
+\indexentry{tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}!tour.h@{tour.h}|hyperpage}{29}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}|hyperpage}{29}
+\indexentry{tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}!tour.h@{tour.h}|hyperpage}{29}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}|hyperpage}{29}
+\indexentry{tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}!tour.h@{tour.h}|hyperpage}{29}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}|hyperpage}{29}
+\indexentry{tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}!tour.h@{tour.h}|hyperpage}{29}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}|hyperpage}{30}
+\indexentry{tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}!tour.h@{tour.h}|hyperpage}{30}
+\indexentry{tour.h@{tour.h}!tour\_\discretionary {-}{}{}replaceTheWorstTour@{tour\_\discretionary {-}{}{}replaceTheWorstTour}|hyperpage}{30}
+\indexentry{tour\_\discretionary {-}{}{}replaceTheWorstTour@{tour\_\discretionary {-}{}{}replaceTheWorstTour}!tour.h@{tour.h}|hyperpage}{30}
+\indexentry{lib/town.h@{lib/town.h}|hyperpage}{30}
+\indexentry{town.h@{town.h}!town\_\discretionary {-}{}{}display@{town\_\discretionary {-}{}{}display}|hyperpage}{31}
+\indexentry{town\_\discretionary {-}{}{}display@{town\_\discretionary {-}{}{}display}!town.h@{town.h}|hyperpage}{31}
+\indexentry{town.h@{town.h}!town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}|hyperpage}{31}
+\indexentry{town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}!town.h@{town.h}|hyperpage}{31}
+\indexentry{lib/util.h@{lib/util.h}|hyperpage}{31}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}deleteArrayValue@{util\_\discretionary {-}{}{}deleteArrayValue}|hyperpage}{32}
+\indexentry{util\_\discretionary {-}{}{}deleteArrayValue@{util\_\discretionary {-}{}{}deleteArrayValue}!util.h@{util.h}|hyperpage}{32}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}|hyperpage}{33}
+\indexentry{util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}!util.h@{util.h}|hyperpage}{33}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}|hyperpage}{33}
+\indexentry{util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}!util.h@{util.h}|hyperpage}{33}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}|hyperpage}{33}
+\indexentry{util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}!util.h@{util.h}|hyperpage}{33}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}|hyperpage}{33}
+\indexentry{util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}!util.h@{util.h}|hyperpage}{33}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}|hyperpage}{33}
+\indexentry{util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}!util.h@{util.h}|hyperpage}{33}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}|hyperpage}{34}
+\indexentry{util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}!util.h@{util.h}|hyperpage}{34}
+\indexentry{util.h@{util.h}!util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}|hyperpage}{34}
+\indexentry{util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}!util.h@{util.h}|hyperpage}{34}
+\indexentry{src/bruteForce.c@{src/bruteForce.c}|hyperpage}{34}
+\indexentry{bruteForce.c@{bruteForce.c}!bruteForce\_\discretionary {-}{}{}bestPath@{bruteForce\_\discretionary {-}{}{}bestPath}|hyperpage}{35}
+\indexentry{bruteForce\_\discretionary {-}{}{}bestPath@{bruteForce\_\discretionary {-}{}{}bestPath}!bruteForce.c@{bruteForce.c}|hyperpage}{35}
+\indexentry{src/distance.c@{src/distance.c}|hyperpage}{35}
+\indexentry{distance.c@{distance.c}!distance\_\discretionary {-}{}{}betweenTowns@{distance\_\discretionary {-}{}{}betweenTowns}|hyperpage}{36}
+\indexentry{distance\_\discretionary {-}{}{}betweenTowns@{distance\_\discretionary {-}{}{}betweenTowns}!distance.c@{distance.c}|hyperpage}{36}
+\indexentry{distance.c@{distance.c}!distance\_\discretionary {-}{}{}calculDistance@{distance\_\discretionary {-}{}{}calculDistance}|hyperpage}{36}
+\indexentry{distance\_\discretionary {-}{}{}calculDistance@{distance\_\discretionary {-}{}{}calculDistance}!distance.c@{distance.c}|hyperpage}{36}
+\indexentry{distance.c@{distance.c}!distance\_\discretionary {-}{}{}new@{distance\_\discretionary {-}{}{}new}|hyperpage}{36}
+\indexentry{distance\_\discretionary {-}{}{}new@{distance\_\discretionary {-}{}{}new}!distance.c@{distance.c}|hyperpage}{36}
+\indexentry{src/errors.c@{src/errors.c}|hyperpage}{37}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}displayErrorsMessage@{errors\_\discretionary {-}{}{}displayErrorsMessage}|hyperpage}{38}
+\indexentry{errors\_\discretionary {-}{}{}displayErrorsMessage@{errors\_\discretionary {-}{}{}displayErrorsMessage}!errors.c@{errors.c}|hyperpage}{38}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}new@{errors\_\discretionary {-}{}{}new}|hyperpage}{38}
+\indexentry{errors\_\discretionary {-}{}{}new@{errors\_\discretionary {-}{}{}new}!errors.c@{errors.c}|hyperpage}{38}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setFileNotFound@{errors\_\discretionary {-}{}{}setFileNotFound}|hyperpage}{38}
+\indexentry{errors\_\discretionary {-}{}{}setFileNotFound@{errors\_\discretionary {-}{}{}setFileNotFound}!errors.c@{errors.c}|hyperpage}{38}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setMissingParameterGa@{errors\_\discretionary {-}{}{}setMissingParameterGa}|hyperpage}{38}
+\indexentry{errors\_\discretionary {-}{}{}setMissingParameterGa@{errors\_\discretionary {-}{}{}setMissingParameterGa}!errors.c@{errors.c}|hyperpage}{38}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setMissingParameterLsnr@{errors\_\discretionary {-}{}{}setMissingParameterLsnr}|hyperpage}{38}
+\indexentry{errors\_\discretionary {-}{}{}setMissingParameterLsnr@{errors\_\discretionary {-}{}{}setMissingParameterLsnr}!errors.c@{errors.c}|hyperpage}{38}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setMissingParameterLsr@{errors\_\discretionary {-}{}{}setMissingParameterLsr}|hyperpage}{38}
+\indexentry{errors\_\discretionary {-}{}{}setMissingParameterLsr@{errors\_\discretionary {-}{}{}setMissingParameterLsr}!errors.c@{errors.c}|hyperpage}{38}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setNoAlgoSpecified@{errors\_\discretionary {-}{}{}setNoAlgoSpecified}|hyperpage}{39}
+\indexentry{errors\_\discretionary {-}{}{}setNoAlgoSpecified@{errors\_\discretionary {-}{}{}setNoAlgoSpecified}!errors.c@{errors.c}|hyperpage}{39}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setNoValidParameterGa@{errors\_\discretionary {-}{}{}setNoValidParameterGa}|hyperpage}{39}
+\indexentry{errors\_\discretionary {-}{}{}setNoValidParameterGa@{errors\_\discretionary {-}{}{}setNoValidParameterGa}!errors.c@{errors.c}|hyperpage}{39}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setNoValidParameterLsnr@{errors\_\discretionary {-}{}{}setNoValidParameterLsnr}|hyperpage}{39}
+\indexentry{errors\_\discretionary {-}{}{}setNoValidParameterLsnr@{errors\_\discretionary {-}{}{}setNoValidParameterLsnr}!errors.c@{errors.c}|hyperpage}{39}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setNoValidParameterLsr@{errors\_\discretionary {-}{}{}setNoValidParameterLsr}|hyperpage}{39}
+\indexentry{errors\_\discretionary {-}{}{}setNoValidParameterLsr@{errors\_\discretionary {-}{}{}setNoValidParameterLsr}!errors.c@{errors.c}|hyperpage}{39}
+\indexentry{errors.c@{errors.c}!errors\_\discretionary {-}{}{}setTagFNotFound@{errors\_\discretionary {-}{}{}setTagFNotFound}|hyperpage}{39}
+\indexentry{errors\_\discretionary {-}{}{}setTagFNotFound@{errors\_\discretionary {-}{}{}setTagFNotFound}!errors.c@{errors.c}|hyperpage}{39}
+\indexentry{src/genetic.c@{src/genetic.c}|hyperpage}{39}
+\indexentry{genetic.c@{genetic.c}!genetic\_\discretionary {-}{}{}DPX@{genetic\_\discretionary {-}{}{}DPX}|hyperpage}{40}
+\indexentry{genetic\_\discretionary {-}{}{}DPX@{genetic\_\discretionary {-}{}{}DPX}!genetic.c@{genetic.c}|hyperpage}{40}
+\indexentry{genetic.c@{genetic.c}!genetic\_\discretionary {-}{}{}getBestPath@{genetic\_\discretionary {-}{}{}getBestPath}|hyperpage}{40}
+\indexentry{genetic\_\discretionary {-}{}{}getBestPath@{genetic\_\discretionary {-}{}{}getBestPath}!genetic.c@{genetic.c}|hyperpage}{40}
+\indexentry{genetic.c@{genetic.c}!genetic\_\discretionary {-}{}{}mutation@{genetic\_\discretionary {-}{}{}mutation}|hyperpage}{41}
+\indexentry{genetic\_\discretionary {-}{}{}mutation@{genetic\_\discretionary {-}{}{}mutation}!genetic.c@{genetic.c}|hyperpage}{41}
+\indexentry{src/instance.c@{src/instance.c}|hyperpage}{41}
+\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}|hyperpage}{42}
+\indexentry{instance\_\discretionary {-}{}{}display@{instance\_\discretionary {-}{}{}display}!instance.c@{instance.c}|hyperpage}{42}
+\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}|hyperpage}{42}
+\indexentry{instance\_\discretionary {-}{}{}displayLinearVector@{instance\_\discretionary {-}{}{}displayLinearVector}!instance.c@{instance.c}|hyperpage}{42}
+\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}|hyperpage}{42}
+\indexentry{instance\_\discretionary {-}{}{}displayMatrix@{instance\_\discretionary {-}{}{}displayMatrix}!instance.c@{instance.c}|hyperpage}{42}
+\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}|hyperpage}{42}
+\indexentry{instance\_\discretionary {-}{}{}initializeDistancesMatrix@{instance\_\discretionary {-}{}{}initializeDistancesMatrix}!instance.c@{instance.c}|hyperpage}{42}
+\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}|hyperpage}{42}
+\indexentry{instance\_\discretionary {-}{}{}new@{instance\_\discretionary {-}{}{}new}!instance.c@{instance.c}|hyperpage}{42}
+\indexentry{instance.c@{instance.c}!instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}|hyperpage}{43}
+\indexentry{instance\_\discretionary {-}{}{}push@{instance\_\discretionary {-}{}{}push}!instance.c@{instance.c}|hyperpage}{43}
+\indexentry{src/localSearch.c@{src/localSearch.c}|hyperpage}{43}
+\indexentry{localSearch.c@{localSearch.c}!localSearch\_\discretionary {-}{}{}randomBestPath@{localSearch\_\discretionary {-}{}{}randomBestPath}|hyperpage}{44}
+\indexentry{localSearch\_\discretionary {-}{}{}randomBestPath@{localSearch\_\discretionary {-}{}{}randomBestPath}!localSearch.c@{localSearch.c}|hyperpage}{44}
+\indexentry{localSearch.c@{localSearch.c}!localSearch\_\discretionary {-}{}{}systematicBestPath@{localSearch\_\discretionary {-}{}{}systematicBestPath}|hyperpage}{44}
+\indexentry{localSearch\_\discretionary {-}{}{}systematicBestPath@{localSearch\_\discretionary {-}{}{}systematicBestPath}!localSearch.c@{localSearch.c}|hyperpage}{44}
+\indexentry{src/main.c@{src/main.c}|hyperpage}{44}
+\indexentry{main.c@{main.c}!main@{main}|hyperpage}{45}
+\indexentry{main@{main}!main.c@{main.c}|hyperpage}{45}
+\indexentry{src/parsing.c@{src/parsing.c}|hyperpage}{45}
+\indexentry{parsing.c@{parsing.c}!parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}|hyperpage}{45}
+\indexentry{parsing\_\discretionary {-}{}{}algoType@{parsing\_\discretionary {-}{}{}algoType}!parsing.c@{parsing.c}|hyperpage}{45}
+\indexentry{parsing.c@{parsing.c}!parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}|hyperpage}{46}
+\indexentry{parsing\_\discretionary {-}{}{}parseFileName@{parsing\_\discretionary {-}{}{}parseFileName}!parsing.c@{parsing.c}|hyperpage}{46}
+\indexentry{parsing.c@{parsing.c}!parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}|hyperpage}{46}
+\indexentry{parsing\_\discretionary {-}{}{}parseVerboseMode@{parsing\_\discretionary {-}{}{}parseVerboseMode}!parsing.c@{parsing.c}|hyperpage}{46}
+\indexentry{src/path.c@{src/path.c}|hyperpage}{46}
+\indexentry{path.c@{path.c}!path\_\discretionary {-}{}{}addNearNeighbor@{path\_\discretionary {-}{}{}addNearNeighbor}|hyperpage}{47}
+\indexentry{path\_\discretionary {-}{}{}addNearNeighbor@{path\_\discretionary {-}{}{}addNearNeighbor}!path.c@{path.c}|hyperpage}{47}
+\indexentry{path.c@{path.c}!path\_\discretionary {-}{}{}display@{path\_\discretionary {-}{}{}display}|hyperpage}{47}
+\indexentry{path\_\discretionary {-}{}{}display@{path\_\discretionary {-}{}{}display}!path.c@{path.c}|hyperpage}{47}
+\indexentry{path.c@{path.c}!path\_\discretionary {-}{}{}new@{path\_\discretionary {-}{}{}new}|hyperpage}{47}
+\indexentry{path\_\discretionary {-}{}{}new@{path\_\discretionary {-}{}{}new}!path.c@{path.c}|hyperpage}{47}
+\indexentry{src/tour.c@{src/tour.c}|hyperpage}{48}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}|hyperpage}{49}
+\indexentry{tour\_\discretionary {-}{}{}2opt@{tour\_\discretionary {-}{}{}2opt}!tour.c@{tour.c}|hyperpage}{49}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}addSeveralTowns@{tour\_\discretionary {-}{}{}addSeveralTowns}|hyperpage}{49}
+\indexentry{tour\_\discretionary {-}{}{}addSeveralTowns@{tour\_\discretionary {-}{}{}addSeveralTowns}!tour.c@{tour.c}|hyperpage}{49}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}addTown@{tour\_\discretionary {-}{}{}addTown}|hyperpage}{49}
+\indexentry{tour\_\discretionary {-}{}{}addTown@{tour\_\discretionary {-}{}{}addTown}!tour.c@{tour.c}|hyperpage}{49}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}|hyperpage}{49}
+\indexentry{tour\_\discretionary {-}{}{}calculLength@{tour\_\discretionary {-}{}{}calculLength}!tour.c@{tour.c}|hyperpage}{49}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}|hyperpage}{49}
+\indexentry{tour\_\discretionary {-}{}{}display@{tour\_\discretionary {-}{}{}display}!tour.c@{tour.c}|hyperpage}{49}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}|hyperpage}{50}
+\indexentry{tour\_\discretionary {-}{}{}new@{tour\_\discretionary {-}{}{}new}!tour.c@{tour.c}|hyperpage}{50}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}|hyperpage}{50}
+\indexentry{tour\_\discretionary {-}{}{}nextPermutation@{tour\_\discretionary {-}{}{}nextPermutation}!tour.c@{tour.c}|hyperpage}{50}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}|hyperpage}{50}
+\indexentry{tour\_\discretionary {-}{}{}randomWalk@{tour\_\discretionary {-}{}{}randomWalk}!tour.c@{tour.c}|hyperpage}{50}
+\indexentry{tour.c@{tour.c}!tour\_\discretionary {-}{}{}replaceTheWorstTour@{tour\_\discretionary {-}{}{}replaceTheWorstTour}|hyperpage}{50}
+\indexentry{tour\_\discretionary {-}{}{}replaceTheWorstTour@{tour\_\discretionary {-}{}{}replaceTheWorstTour}!tour.c@{tour.c}|hyperpage}{50}
+\indexentry{src/town.c@{src/town.c}|hyperpage}{51}
+\indexentry{town.c@{town.c}!town\_\discretionary {-}{}{}display@{town\_\discretionary {-}{}{}display}|hyperpage}{51}
+\indexentry{town\_\discretionary {-}{}{}display@{town\_\discretionary {-}{}{}display}!town.c@{town.c}|hyperpage}{51}
+\indexentry{town.c@{town.c}!town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}|hyperpage}{51}
+\indexentry{town\_\discretionary {-}{}{}new@{town\_\discretionary {-}{}{}new}!town.c@{town.c}|hyperpage}{51}
+\indexentry{src/util.c@{src/util.c}|hyperpage}{52}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}deleteArrayValue@{util\_\discretionary {-}{}{}deleteArrayValue}|hyperpage}{53}
+\indexentry{util\_\discretionary {-}{}{}deleteArrayValue@{util\_\discretionary {-}{}{}deleteArrayValue}!util.c@{util.c}|hyperpage}{53}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}|hyperpage}{53}
+\indexentry{util\_\discretionary {-}{}{}displayArray@{util\_\discretionary {-}{}{}displayArray}!util.c@{util.c}|hyperpage}{53}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}|hyperpage}{53}
+\indexentry{util\_\discretionary {-}{}{}rand@{util\_\discretionary {-}{}{}rand}!util.c@{util.c}|hyperpage}{53}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}|hyperpage}{53}
+\indexentry{util\_\discretionary {-}{}{}reverseArray@{util\_\discretionary {-}{}{}reverseArray}!util.c@{util.c}|hyperpage}{53}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}|hyperpage}{53}
+\indexentry{util\_\discretionary {-}{}{}searchFirstOccurenceInArray@{util\_\discretionary {-}{}{}searchFirstOccurenceInArray}!util.c@{util.c}|hyperpage}{53}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}|hyperpage}{54}
+\indexentry{util\_\discretionary {-}{}{}sousTabExist@{util\_\discretionary {-}{}{}sousTabExist}!util.c@{util.c}|hyperpage}{54}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}|hyperpage}{54}
+\indexentry{util\_\discretionary {-}{}{}sum@{util\_\discretionary {-}{}{}sum}!util.c@{util.c}|hyperpage}{54}
+\indexentry{util.c@{util.c}!util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}|hyperpage}{54}
+\indexentry{util\_\discretionary {-}{}{}swap@{util\_\discretionary {-}{}{}swap}!util.c@{util.c}|hyperpage}{54}

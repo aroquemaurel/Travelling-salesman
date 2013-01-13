@@ -103,12 +103,4 @@ if(p == N-1) {
  * (($\exists$ p : 0 $\leq$ < N $\wedge$ T[p] = R) $\wedge$ $\forall$ J : 0 $\leq$ J < p $\rightarrow$ T[J] $\neq$ R)
  */
 \end{lstlisting}
-
-\subsection{Preuve de programme}
-\subsubsection{Initialisation}
-\begin{eqnarray*}
-	N > 0 &\rightarrow& \pfp ("p=0", \forall J : 0 \leq J < p \rightarrow T[J] \neq R)\\
-	N > 0 &\rightarrow& \underbrace{\forall J : 0 \leq J < 0}_{\perp} \rightarrow T[J] \neq R)
-\end{eqnarray*}
-L'initialisation est donc correct.
 \end{document}

@@ -21,13 +21,14 @@ Tour bruteForce_bestPath(Instance pInstance) {
 		tour_calculLength(&buffTour);
 		if(buffTour.length < bestTour.length) {
 			bestTour = buffTour;
+            if(gVerboseMode) {
+                printf("Tour : ");
+                tour_display(buffTour);
+                printf("\n\n");
+            }
 		}
         
-        if(gVerboseMode) {
-            printf("Tour : ");
-            tour_display(buffTour);
-            printf("\n\n");
-        }
+
 	}while(tour_nextPermutation(&buffTour));
 
 	return (bestTour);

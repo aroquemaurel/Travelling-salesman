@@ -38,8 +38,6 @@ typedef struct {
 	int nbTowns;
     /// Nom de l' Instance
 	char* name; 
-    /// Type de l' Instance
-	char* type; 
 } Instance;
 
 /**
@@ -82,13 +80,13 @@ void instance_initializeDistancesMatrix(Instance* pInstance);
  * @param pInstance L'instance à afficher
  * @see Distance
  */
-void instance_displayLinearVector(Instance pInstance);
+void instance_displayLinearVector(const Instance pInstance);
 
 /**
  * Affiche la matrice des distances sous forme de matrice symétrique
  * @param pInstance L'instance à afficher
  * @see Distance
  */
-void instance_displayMatrix(Instance pInstance);
+void instance_displayMatrix(const Instance pInstance);
 #endif
 

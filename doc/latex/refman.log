@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  10 JAN 2013 11:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.7)  13 JAN 2013 16:48
 entering extended mode
  %&-line parsing enabled.
 **refman.tex
@@ -844,7 +844,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4])
+[4]
+Underfull \vbox (badness 1389) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.96997pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
@@ -855,9 +865,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] [6
-
-]
+[6]
 Package hyperref Info: Option `pageanchor' set `true' on input line 54.
 
 Chapitre 1.
@@ -865,22 +873,19 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
 (./main.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
-) [1
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 7.
+ [1
 
-] [2
 
-]
+]) [2]
 Chapitre 2.
-(./annotated.tex) [3] [4
+(./annotated.tex) [3
+
+] [4
 
 ]
 Chapitre 3.
-(./files.tex
-
-LaTeX Warning: Reference `genetic_8h' on page 5 undefined on input line 6.
-
-) [5] [6
+(./files.tex) [5] [6
 
 ]
 Chapitre 4.
@@ -893,7 +898,8 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 )
 (./structDistance.tex [7]) (./structErrors.tex [8]) (./structInstance.tex
-[9]) (./structTour.tex) (./structTown.tex [10]) [11] [12
+[9]) (./structPath.tex) (./structTour.tex [10]) (./structTown.tex) [11]
+[12
 
 ]
 Chapitre 5.
@@ -901,42 +907,37 @@ Chapitre 5.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 37.
  [13]) (./distance_8h.tex [14]) (./errors_8h.tex [15]
-Underfull \vbox (badness 3088) has occurred while \output is active []
+[16] [17]) (./genetic_8h.tex [18] [19]) (./instance_8h.tex [20] [21])
+(./localSearch_8h.tex [22]) (./parsing_8h.tex [23] [24]) (./path_8h.tex
+[25] [26]) (./tour_8h.tex [27] [28] [29]) (./town_8h.tex [30]) (./util_8h.tex
+[31] [32] [33]) (./bruteForce_8c.tex [34]) (./distance_8c.tex [35] [36])
+(./errors_8c.tex [37] [38]) (./genetic_8c.tex [39] [40]) (./instance_8c.tex
+[41] [42]) (./localSearch_8c.tex [43]) (./main_8c.tex [44]) (./parsing_8c.tex
+[45]) (./path_8c.tex [46] [47]) (./tour_8c.tex [48] [49] [50]) (./town_8c.tex
+[51]) (./util_8c.tex [52] [53]) (./refman.ind [54] [55
 
- [16]
-[17]) (./instance_8h.tex [18] [19]) (./localSearch_8h.tex [20])
-(./parsing_8h.tex [21] [22]) (./tour_8h.tex [23] [24]) (./town_8h.tex [25])
-(./util_8h.tex [26] [27] [28]) (./bruteForce_8c.tex [29]) (./distance_8c.tex
-[30]) (./genetic_8c.tex [31]) (./instance_8c.tex [32] [33])
-(./localSearch_8c.tex) (./main_8c.tex [34]) (./parsing_8c.tex [35] [36])
-(./tour_8c.tex [37] [38]) (./town_8c.tex) (./util_8c.tex [39] [40] [41])
-(./refman.ind [42] [43
+] [56] [57] [58
 
-] [44] [45
-
-]) (./refman.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+])
+(./refman.aux) ) 
 Here is how much of TeX's memory you used:
- 9553 strings out of 495061
- 138866 string characters out of 1182622
- 228126 words of memory out of 3000000
- 12145 multiletter control sequences out of 15000+50000
+ 9764 strings out of 495061
+ 144298 string characters out of 1182622
+ 229126 words of memory out of 3000000
+ 12235 multiletter control sequences out of 15000+50000
  41634 words of font info for 43 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,12n,58p,697b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/cou
-rier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></us
-r/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texli
-ve/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on refman.pdf (53 pages, 388947 bytes).
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
+/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
+tmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
+re/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on refman.pdf (66 pages, 499146 bytes).
 PDF statistics:
- 1698 PDF objects out of 1728 (max. 8388607)
- 364 named destinations out of 1000 (max. 500000)
- 1161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2303 PDF objects out of 2487 (max. 8388607)
+ 475 named destinations out of 1000 (max. 500000)
+ 1585 words of extra memory for PDF output out of 10000 (max. 10000000)
 

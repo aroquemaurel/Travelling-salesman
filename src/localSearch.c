@@ -30,7 +30,7 @@ Tour localSearch_randomBestPath(Instance pInstance, int pTryNb) {
             second2opt = util_rand(1, pInstance.nbTowns);
 		} while(first2opt == second2opt || 
 				(first2opt == second2opt-1 || second2opt == first2opt-1));
-		tour_2opt(&buffTour, first2opt, second2opt);  //TODO FIXME SEGFAULT
+		tour_2opt(&buffTour, first2opt, second2opt); 
 
 		if(buffTour.length < ret.length) { 
 			ret = buffTour;
@@ -46,15 +46,6 @@ Tour localSearch_randomBestPath(Instance pInstance, int pTryNb) {
 	return ret;
 }
 
-// random walk
-// POUR i:=42
-	// POUR CHAQUE ville
-		// POUR CHAQUE villes non adjacentes
-			// 2opt
-		// FIN POUR CHAQUE
-	// FIN POUR CHAQUE
-// FIN POUR
-
 Tour localSearch_systematicBestPath(Instance pInstance, int pTryNb) {
 	Tour ret, buffTour;
 	int first2opt, second2opt;
@@ -67,6 +58,12 @@ Tour localSearch_systematicBestPath(Instance pInstance, int pTryNb) {
                 tour_2opt(&buffTour, first2opt, second2opt);
                 if(buffTour.length < ret.length) {
                     ret = buffTour;
+                    if(gVerboseMode) {
+                        printf("\nMeilleur tour\n", i+1);  
+                        tour_display(ret);
+                        printf("\n");
+                    }
+
                 }
             }
 		}

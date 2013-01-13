@@ -1,5 +1,5 @@
 /**
- * \file bruteForce.c
+ * \file errors.c
  * \brief Fonctions sur les erreurs.
  * \author Antoine de Roquemaurel
  * \date 21/11/2012 17:42:31

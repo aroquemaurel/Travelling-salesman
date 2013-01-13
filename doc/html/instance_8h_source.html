@@ -82,27 +82,26 @@ function toggleVisibility(linkObj) {
 <a name="l00036"></a><a class="code" href="structInstance.html#a0712ff0f53a32bf39d8c6b46973892f7">00036</a>     <a class="code" href="structDistance.html" title="Objet des distances.">Distance</a>* distances; 
 <a name="l00038"></a><a class="code" href="structInstance.html#aef5e944d6f236c31f03a4a9886e8ab99">00038</a>     <span class="keywordtype">int</span> nbTowns;
 <a name="l00040"></a><a class="code" href="structInstance.html#a7822b9a12232dac563bd744f399cae76">00040</a>     <span class="keywordtype">char</span>* name; 
-<a name="l00042"></a><a class="code" href="structInstance.html#ab4e774f10f1088a089d356fda448f6d1">00042</a>     <span class="keywordtype">char</span>* type; 
-<a name="l00043"></a>00043 } <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a>;
-<a name="l00044"></a>00044 
-<a name="l00050"></a>00050 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#a1058dfaf55684061f53d50b1f9f7821c" title="Affiche une Instance.">instance_display</a>(<span class="keyword">const</span> <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
-<a name="l00051"></a>00051 
-<a name="l00059"></a>00059 <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> <a class="code" href="instance_8h.html#a02a01978b8b8e2884b8aa0c288344280" title="Créer une nouvelle Instance à partir d&amp;#39;un fichier.">instance_new</a>(FILE* pFile);
-<a name="l00060"></a>00060 
-<a name="l00069"></a>00069 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#ac04153fd35ba82c91bdf29e938fdc2bc" title="Ajoute une nouvelle ville dans une Instance.">instance_push</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a>* pInstance, <span class="keyword">const</span> <a class="code" href="structTown.html" title="Objet des ville.">Town</a> pTown);
-<a name="l00070"></a>00070 
-<a name="l00076"></a>00076 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#a1e3ecd1b3c78bf2ab80600ece180be0d" title="Initialise la matrice des distances.">instance_initializeDistancesMatrix</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a>* pInstance);
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078 
-<a name="l00079"></a>00079 <span class="comment">/**********************************/</span>
-<a name="l00085"></a>00085 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#a5aab04532a16d1df8a705abec79169d4" title="Affiche la matrice des distances sous forme linéaire.">instance_displayLinearVector</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
-<a name="l00086"></a>00086 
-<a name="l00092"></a>00092 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#abdf1b6f1323491c529e337e6ae585f27" title="Affiche la matrice des distances sous forme de matrice symétrique.">instance_displayMatrix</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
-<a name="l00093"></a>00093 <span class="preprocessor">#endif</span>
-<a name="l00094"></a>00094 <span class="preprocessor"></span>
+<a name="l00041"></a>00041 } <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a>;
+<a name="l00042"></a>00042 
+<a name="l00048"></a>00048 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#a1058dfaf55684061f53d50b1f9f7821c" title="Affiche une Instance.">instance_display</a>(<span class="keyword">const</span> <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00049"></a>00049 
+<a name="l00057"></a>00057 <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> <a class="code" href="instance_8h.html#a02a01978b8b8e2884b8aa0c288344280" title="Créer une nouvelle Instance à partir d&amp;#39;un fichier.">instance_new</a>(FILE* pFile);
+<a name="l00058"></a>00058 
+<a name="l00067"></a>00067 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#ac04153fd35ba82c91bdf29e938fdc2bc" title="Ajoute une nouvelle ville dans une Instance.">instance_push</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a>* pInstance, <span class="keyword">const</span> <a class="code" href="structTown.html" title="Objet des ville.">Town</a> pTown);
+<a name="l00068"></a>00068 
+<a name="l00074"></a>00074 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#a1e3ecd1b3c78bf2ab80600ece180be0d" title="Initialise la matrice des distances.">instance_initializeDistancesMatrix</a>(<a class="code" href="structInstance.html" title="Objet des instances.">Instance</a>* pInstance);
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 <span class="comment">/**********************************/</span>
+<a name="l00083"></a>00083 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#aea66943af36e7996046ffd9298284264" title="Affiche la matrice des distances sous forme linéaire.">instance_displayLinearVector</a>(<span class="keyword">const</span> <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00084"></a>00084 
+<a name="l00090"></a>00090 <span class="keywordtype">void</span> <a class="code" href="instance_8h.html#a01afd2fe19295c209087670a92f82bc3" title="Affiche la matrice des distances sous forme de matrice symétrique.">instance_displayMatrix</a>(<span class="keyword">const</span> <a class="code" href="structInstance.html" title="Objet des instances.">Instance</a> pInstance);
+<a name="l00091"></a>00091 <span class="preprocessor">#endif</span>
+<a name="l00092"></a>00092 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Généré le Sun Jan 13 2013 15:15:37 pour Le voyageur de commerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Sun Jan 13 2013 16:47:43 pour Le voyageur de commerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
