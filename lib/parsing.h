@@ -39,6 +39,8 @@ typedef enum {
  * \brief Enumération d'un algorithme
  *
  * Énumération d'un algorithme, contient le type de l'algorithme avec les eventuels paramètres
+ * 
+ * @see AlgoType
  */
 typedef struct {
     /// Le type de l'algorithme
@@ -65,7 +67,7 @@ bool parsing_parseVerboseMode(char** pTab, const int pSize);
  * @param pSize Le nombre des arguments
  * @param pErrors L'objet des erreurs, il est modifié si des erreurs interviennent
  * @return Le nom du fichier
- * @see Instance
+ * @see Errors, Instance
  */
 char* parsing_parseFileName(char** pTab, const int pSize, Errors* pErrors);
 
@@ -76,7 +78,7 @@ char* parsing_parseFileName(char** pTab, const int pSize, Errors* pErrors);
  * @param pErrors L'objet des erreurs, il est modifié si des erreurs interviennent
  * @param algos Tableau d'algorithmes, ceci au cas ou l'utilisateur entre plusieurs algorithmes. 
  *      La fin du tableau est marqué par END
- * @see Algo
+ * @see Algo, Errors
  */
 void parsing_algoType(char** pTab, const int pSize, Errors* pErrors, Algo* algos);
 #endif

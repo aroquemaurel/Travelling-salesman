@@ -22,6 +22,8 @@
  * 
  * @param pInstance L'instance pour laquelle on doit calculer le plus court chemin
  * @return La meilleur tournée.
+ * 
+ * @see Instance
  */
 Tour bruteForce_bestPath(Instance pInstance);
 

@@ -63,7 +63,7 @@ void util_swap(Town* a, Town* b);
  * Calcul une valeur aléatoire entre pMin et pMax
  * @param pMin Minimum 
  * @param pMax Maximum
- * @return 
+ * @return la valeur aléatoire
  */
 int util_rand(const int pMin, const int pMax);
 

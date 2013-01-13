@@ -15,15 +15,15 @@ Fonctions des trajets.
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{structPath}{Path}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Objet d'un trajet. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{path_8h_a0240ac851181b84ac374872dc5434ee4}{
-\#define {\bfseries N}~1024}
+\#define \hyperlink{path_8h_a0240ac851181b84ac374872dc5434ee4}{N}~1024}
 \label{path_8h_a0240ac851181b84ac374872dc5434ee4}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Taille maximale du tableau de ville. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions}
 \begin{DoxyCompactItemize}
 \item 
@@ -62,7 +62,10 @@ Ajoute le trajet le plus proche à la suite de pTour.
 
 
 \begin{DoxyParams}{Paramètres}
-\item[{\em pTour}]Le tour à completer \item[{\em pPathsList}]La liste des trajets possibles \item[{\em pNbPathsList}]Le nombre de trajets possibles \end{DoxyParams}
+\item[{\em pTour}]Le tour à completer \item[{\em pPathsList}]La liste des trajets possibles \item[{\em pNbPathsList}]Le nombre de trajets possibles\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{structTour}{Tour} 
+\end{DoxySeeAlso}
 \hypertarget{path_8h_a50bfcd23c9ff1018942201379d01ed47}{
 \index{path.h@{path.h}!path\_\-display@{path\_\-display}}
 \index{path\_\-display@{path\_\-display}!path.h@{path.h}}
@@ -79,9 +82,6 @@ Afficher un trajet.
 
 \begin{DoxyParams}{Paramètres}
 \item[{\em pPath}]Le trajet à afficher \end{DoxyParams}
-\begin{DoxyReturn}{Renvoie}
-
-\end{DoxyReturn}
 \hypertarget{path_8h_a9caf83371b6d3ebe386357bec737aa15}{
 \index{path.h@{path.h}!path\_\-new@{path\_\-new}}
 \index{path\_\-new@{path\_\-new}!path.h@{path.h}}
@@ -101,5 +101,8 @@ Créer un nouveau trajet.
 \begin{DoxyParams}{Paramètres}
 \item[{\em pTour}]La tournée dans laquelle on doit prendre le trajet \item[{\em pBegin}]Le début du trajet \item[{\em pEnd}]La fin du trajet \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-Le nouveau trajet 
+Le nouveau trajet
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{structTour}{Tour} 
+\end{DoxySeeAlso}

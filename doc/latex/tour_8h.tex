@@ -33,21 +33,12 @@ void \hyperlink{tour_8h_af35a3d1a665069d93f813c1f9a964cb4}{tour\_\-display} (con
 \begin{DoxyCompactList}\small\item\em Génère une tournée aléatoire. \item\end{DoxyCompactList}\item 
 void \hyperlink{tour_8h_a6e0808318993beda445cc1b7138b1c0c}{tour\_\-2opt} (\hyperlink{structTour}{Tour} $\ast$pTour, int pFirst, int pSecond)
 \begin{DoxyCompactList}\small\item\em Fait une 2opt. \item\end{DoxyCompactList}\item 
-\hypertarget{tour_8h_abf88a6f6540e5964000d96c31d721c0c}{
-void {\bfseries tour\_\-addTown} (\hyperlink{structTour}{Tour} $\ast$pTour, \hyperlink{structTown}{Town} pTown)}
-\label{tour_8h_abf88a6f6540e5964000d96c31d721c0c}
-
-\item 
-\hypertarget{tour_8h_a2375ec4ba1d165799a77326c59145703}{
-void {\bfseries tour\_\-addPath} (\hyperlink{structTour}{Tour} $\ast$pTour, \hyperlink{structTown}{Town} $\ast$pTowns, const int pNbTowns)}
-\label{tour_8h_a2375ec4ba1d165799a77326c59145703}
-
-\item 
-\hypertarget{tour_8h_a0329a1e7184f8ebf35e6fe5e5dc4aed1}{
-void {\bfseries tour\_\-addSeveralTowns} (\hyperlink{structTour}{Tour} $\ast$pTour, \hyperlink{structTown}{Town} $\ast$pTowns, const int pNbTowns)}
-\label{tour_8h_a0329a1e7184f8ebf35e6fe5e5dc4aed1}
-
-\end{DoxyCompactItemize}
+void \hyperlink{tour_8h_abf88a6f6540e5964000d96c31d721c0c}{tour\_\-addTown} (\hyperlink{structTour}{Tour} $\ast$pTour, \hyperlink{structTown}{Town} pTown)
+\begin{DoxyCompactList}\small\item\em Ajoute une ville à la fin de la tournée pTour. \item\end{DoxyCompactList}\item 
+void \hyperlink{tour_8h_a0329a1e7184f8ebf35e6fe5e5dc4aed1}{tour\_\-addSeveralTowns} (\hyperlink{structTour}{Tour} $\ast$pTour, \hyperlink{structTown}{Town} $\ast$pTowns, const int pNbTowns)
+\begin{DoxyCompactList}\small\item\em Ajoute un tableau de ville à la fin de la tournée pTour. \item\end{DoxyCompactList}\item 
+void \hyperlink{tour_8h_aad1208887707fcb759a72acdb80a7802}{tour\_\-replaceTheWorstTour} (\hyperlink{structTour}{Tour} $\ast$pTours, const int pSize, \hyperlink{structTour}{Tour} pTour)
+\begin{DoxyCompactList}\small\item\em Remplace la pire tournée d'un tableau de tournée par la tournée pTour. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
@@ -78,6 +69,47 @@ Fait une 2opt.
 
 \begin{DoxyParams}{Paramètres}
 \item[{\em pTour}]Le tour pourlaquelle on veut faire une 2opt \item[{\em pFirst}]L'id du début du premier trajet \item[{\em pSecond}]L'id du début du second trajet \end{DoxyParams}
+\hypertarget{tour_8h_a0329a1e7184f8ebf35e6fe5e5dc4aed1}{
+\index{tour.h@{tour.h}!tour\_\-addSeveralTowns@{tour\_\-addSeveralTowns}}
+\index{tour\_\-addSeveralTowns@{tour\_\-addSeveralTowns}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-addSeveralTowns}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-addSeveralTowns (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour} $\ast$}]{ pTour, }
+\item[{{\bf Town} $\ast$}]{ pTowns, }
+\item[{const int}]{ pNbTowns}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_a0329a1e7184f8ebf35e6fe5e5dc4aed1}
+
+
+Ajoute un tableau de ville à la fin de la tournée pTour. 
+
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTour}]La tournée à compléter \item[{\em pTowns}]Le tableau de villes à ajouter \item[{\em pNbTowns}]Le nombre de villes à ajouter\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{structTown}{Town} 
+\end{DoxySeeAlso}
+\hypertarget{tour_8h_abf88a6f6540e5964000d96c31d721c0c}{
+\index{tour.h@{tour.h}!tour\_\-addTown@{tour\_\-addTown}}
+\index{tour\_\-addTown@{tour\_\-addTown}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-addTown}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-addTown (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour} $\ast$}]{ pTour, }
+\item[{{\bf Town}}]{ pTown}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_abf88a6f6540e5964000d96c31d721c0c}
+
+
+Ajoute une ville à la fin de la tournée pTour. 
+
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTour}]La tournée à compléter \item[{\em pTown}]La ville à ajouter\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{structTown}{Town} 
+\end{DoxySeeAlso}
 \hypertarget{tour_8h_a64a4d80ac01c7f79ce9a848bab526591}{
 \index{tour.h@{tour.h}!tour\_\-calculLength@{tour\_\-calculLength}}
 \index{tour\_\-calculLength@{tour\_\-calculLength}!tour.h@{tour.h}}
@@ -127,8 +159,11 @@ Créer une nouvelle tournée initialisée avec les données d'une instance.
 \begin{DoxyParams}{Paramètres}
 \item[{\em pInstance}]\hyperlink{structInstance}{Instance} servant à initialisée la tournée \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-la nouvelle tournée 
+la nouvelle tournée
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{structInstance}{Instance} 
+\end{DoxySeeAlso}
 \hypertarget{tour_8h_a14eee1524a119e2590e9ba3995a90082}{
 \index{tour.h@{tour.h}!tour\_\-nextPermutation@{tour\_\-nextPermutation}}
 \index{tour\_\-nextPermutation@{tour\_\-nextPermutation}!tour.h@{tour.h}}
@@ -163,7 +198,28 @@ Génère une tournée aléatoire.
 
 
 \begin{DoxyParams}{Paramètres}
-\item[{\em pInstance}]L'instance pour laquelle générer un random walk\end{DoxyParams}
+\item[{\em pInstance}]L'instance pour laquelle générer un random walk \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-La tournée aléatoire 
+La tournée aléatoire
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{structInstance}{Instance} 
+\end{DoxySeeAlso}
+\hypertarget{tour_8h_aad1208887707fcb759a72acdb80a7802}{
+\index{tour.h@{tour.h}!tour\_\-replaceTheWorstTour@{tour\_\-replaceTheWorstTour}}
+\index{tour\_\-replaceTheWorstTour@{tour\_\-replaceTheWorstTour}!tour.h@{tour.h}}
+\subsubsection[{tour\_\-replaceTheWorstTour}]{\setlength{\rightskip}{0pt plus 5cm}void tour\_\-replaceTheWorstTour (
+\begin{DoxyParamCaption}
+\item[{{\bf Tour} $\ast$}]{ pTours, }
+\item[{const int}]{ pSize, }
+\item[{{\bf Tour}}]{ pTour}
+\end{DoxyParamCaption}
+)}}
+\label{tour_8h_aad1208887707fcb759a72acdb80a7802}
+
+
+Remplace la pire tournée d'un tableau de tournée par la tournée pTour. 
+
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pTours}]Le tableau de tournées \item[{\em pSize}]La taille du tableau de tournées \item[{\em pTour}]Le tour à ajouter \end{DoxyParams}

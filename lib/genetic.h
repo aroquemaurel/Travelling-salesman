@@ -21,6 +21,8 @@
  * @param pParent1 La première tournée parent
  * @param pParent2 La seconde tournée parent
  * @return La fille créée à l'aide d'un croisement DPX
+ * 
+ * @see Tour
  */
 Tour genetic_DPX(Tour pParent1, Tour pParent2);
 
@@ -31,6 +33,8 @@ Tour genetic_DPX(Tour pParent1, Tour pParent2);
  * @param pNbGeneration Le nombre de génération que l'on veut faire avant de s'arrêter
  * @param pProba La probabilité que la fille mute
  * @return La meilleure tournée
+ * 
+ * @see Instance
  */
 Tour genetic_getBestPath(Instance pInstance, const int pNbTour, const int pNbGeneration, const float pProba);
 #endif	

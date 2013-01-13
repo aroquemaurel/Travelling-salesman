@@ -72,6 +72,7 @@ function toggleVisibility(linkObj) {
 <a href="#_details">Plus de détails...</a></p>
 <code>#include &quot;<a class="el" href="tour_8h_source.html">tour.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="path_8h_source.html">path.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Fonctions</h2></td></tr>
@@ -87,10 +88,12 @@ Fonctions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Génère une tournée aléatoire.  <a href="#a92eb68608de57ebe513f9855df6c32d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#a6e0808318993beda445cc1b7138b1c0c">tour_2opt</a> (<a class="el" href="structTour.html">Tour</a> *pTour, int pFirst, int pSecond)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Fait une 2opt.  <a href="#a6e0808318993beda445cc1b7138b1c0c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf88a6f6540e5964000d96c31d721c0c"></a><!-- doxytag: member="tour.c::tour_addTown" ref="abf88a6f6540e5964000d96c31d721c0c" args="(Tour *pTour, Town pTown)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>tour_addTown</b> (<a class="el" href="structTour.html">Tour</a> *pTour, <a class="el" href="structTown.html">Town</a> pTown)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0329a1e7184f8ebf35e6fe5e5dc4aed1"></a><!-- doxytag: member="tour.c::tour_addSeveralTowns" ref="a0329a1e7184f8ebf35e6fe5e5dc4aed1" args="(Tour *pTour, Town *pTowns, const int pNbTowns)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><b>tour_addSeveralTowns</b> (<a class="el" href="structTour.html">Tour</a> *pTour, <a class="el" href="structTown.html">Town</a> *pTowns, const int pNbTowns)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#abf88a6f6540e5964000d96c31d721c0c">tour_addTown</a> (<a class="el" href="structTour.html">Tour</a> *pTour, <a class="el" href="structTown.html">Town</a> pTown)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute une ville à la fin de la tournée pTour.  <a href="#abf88a6f6540e5964000d96c31d721c0c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#a0329a1e7184f8ebf35e6fe5e5dc4aed1">tour_addSeveralTowns</a> (<a class="el" href="structTour.html">Tour</a> *pTour, <a class="el" href="structTown.html">Town</a> *pTowns, const int pNbTowns)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute un tableau de ville à la fin de la tournée pTour.  <a href="#a0329a1e7184f8ebf35e6fe5e5dc4aed1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="tour_8c.html#aad1208887707fcb759a72acdb80a7802">tour_replaceTheWorstTour</a> (<a class="el" href="structTour.html">Tour</a> *pTours, const int pSize, <a class="el" href="structTour.html">Tour</a> pTour)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Remplace la pire tournée d'un tableau de tournée par la tournée pTour.  <a href="#aad1208887707fcb759a72acdb80a7802"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Fonctions des tournées. </p>
@@ -138,6 +141,87 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>tour_addSeveralTowns<
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a0329a1e7184f8ebf35e6fe5e5dc4aed1"></a><!-- doxytag: member="tour.c::tour_addSeveralTowns" ref="a0329a1e7184f8ebf35e6fe5e5dc4aed1" args="(Tour *pTour, Town *pTowns, const int pNbTowns)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tour_addSeveralTowns </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTour.html">Tour</a> *&nbsp;</td>
+          <td class="paramname"> <em>pTour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structTown.html">Town</a> *&nbsp;</td>
+          <td class="paramname"> <em>pTowns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>pNbTowns</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ajoute un tableau de ville à la fin de la tournée pTour. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pTour</em>&nbsp;</td><td>La tournée à compléter </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pTowns</em>&nbsp;</td><td>Le tableau de villes à ajouter </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pNbTowns</em>&nbsp;</td><td>Le nombre de villes à ajouter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="structTown.html" title="Objet des ville.">Town</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abf88a6f6540e5964000d96c31d721c0c"></a><!-- doxytag: member="tour.c::tour_addTown" ref="abf88a6f6540e5964000d96c31d721c0c" args="(Tour *pTour, Town pTown)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tour_addTown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTour.html">Tour</a> *&nbsp;</td>
+          <td class="paramname"> <em>pTour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structTown.html">Town</a>&nbsp;</td>
+          <td class="paramname"> <em>pTown</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ajoute une ville à la fin de la tournée pTour. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pTour</em>&nbsp;</td><td>La tournée à compléter </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pTown</em>&nbsp;</td><td>La ville à ajouter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="structTown.html" title="Objet des ville.">Town</a> </dd></dl>
 
 </div>
 </div>
@@ -216,7 +300,8 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>tour_addSeveralTowns<
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>la nouvelle tournée </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>la nouvelle tournée</dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="structInstance.html" title="Objet des instances.">Instance</a> </dd></dl>
 
 </div>
 </div>
@@ -266,16 +351,60 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><b>tour_addSeveralTowns<
 <p>Génère une tournée aléatoire. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>pInstance</em>&nbsp;</td><td>L'instance pour laquelle générer un random walk</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pInstance</em>&nbsp;</td><td>L'instance pour laquelle générer un random walk </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>La tournée aléatoire </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La tournée aléatoire</dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="structInstance.html" title="Objet des instances.">Instance</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aad1208887707fcb759a72acdb80a7802"></a><!-- doxytag: member="tour.c::tour_replaceTheWorstTour" ref="aad1208887707fcb759a72acdb80a7802" args="(Tour *pTours, const int pSize, Tour pTour)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tour_replaceTheWorstTour </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTour.html">Tour</a> *&nbsp;</td>
+          <td class="paramname"> <em>pTours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>pSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structTour.html">Tour</a>&nbsp;</td>
+          <td class="paramname"> <em>pTour</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Remplace la pire tournée d'un tableau de tournée par la tournée pTour. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pTours</em>&nbsp;</td><td>Le tableau de tournées </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pSize</em>&nbsp;</td><td>La taille du tableau de tournées </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pTour</em>&nbsp;</td><td>Le tour à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Généré le Sat Jan 12 2013 03:46:33 pour Le voyageur de commerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Sun Jan 13 2013 15:15:37 pour Le voyageur de commerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

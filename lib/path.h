@@ -10,6 +10,7 @@
 #ifndef __TRAJET
 #define __TRAJET
 
+ /// Taille maximale du tableau de ville
 #define N 1024
 
 #include <stdlib.h>
@@ -18,10 +19,12 @@
 
 #include "tour.h"
 /**
- * \struct Trajet trajet.h
+ * \struct Path path.h
  * \brief Objet d'un trajet
  *
  * Informations concernant un trajet.
+ * 
+ * @see Town
  */
 typedef struct {
     /// Tableau de ville. Les villes sont triés dans l'ordre du trajet
@@ -36,6 +39,8 @@ typedef struct {
  * @param pBegin Le début du trajet
  * @param pEnd La fin du trajet
  * @return Le nouveau trajet
+ * 
+ * @see Tour
  */
 Path path_new(Tour pTour, int pBegin, int pEnd);
 
@@ -44,13 +49,14 @@ Path path_new(Tour pTour, int pBegin, int pEnd);
  * @param pTour Le tour à completer
  * @param pPathsList La liste des trajets possibles
  * @param pNbPathsList Le nombre de trajets possibles
+ * 
+ * @see Tour
  */
 void path_addNearNeighbor(Tour* pTour, Path* pPathsList, int* pNbPathsList);
 
 /**
  * Afficher un trajet
  * @param pPath Le trajet à afficher
- * @return 
  */
 void path_display(const Path pPath);
 #endif

@@ -36,6 +36,11 @@ typedef struct {
  * @param pY Ordonnée
  */
 Town town_new(const int pId, const float pX, const float pY);
+
+/**
+ * Affiche une ville
+ * @param pTown La ville à afficher
+ */
 void town_display(const Town pTown);
 #endif
 

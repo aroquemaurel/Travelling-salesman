@@ -20,7 +20,8 @@
 /**
  * \struct Tour tour.h
  * \brief Objet d'une tournée
- *
+ * \see Town, Distance
+ * 
  * Informations concernant une tournée. 
  */
 typedef struct {
@@ -39,6 +40,8 @@ typedef struct {
  *
  * @param pInstance Instance servant à initialisée la tournée
  * @return la nouvelle tournée
+ * 
+ * @see Instance
  */
 Tour tour_new(Instance pInstance);
 
@@ -65,8 +68,9 @@ void tour_display(const Tour pTour);
 /**
  * Génère une tournée aléatoire
  * @param pInstance L'instance pour laquelle générer un random walk
- * 
  * @return La tournée aléatoire
+ * 
+ * @see Instance
  */
 Tour tour_randomWalk(const Instance pInstance);
 
@@ -77,9 +81,32 @@ Tour tour_randomWalk(const Instance pInstance);
  * @param pSecond L'id du début du second trajet
  */
 void tour_2opt(Tour* pTour, int pFirst, int pSecond);
+
+/**
+ * Ajoute une ville à la fin de la tournée pTour
+ * @param pTour La tournée à compléter
+ * @param pTown La ville à ajouter
+ * 
+ * @see Town
+ */
 void tour_addTown(Tour* pTour, Town pTown);
-void tour_addPath(Tour* pTour, Town* pTowns, const int pNbTowns);
+
+/**
+ * Ajoute un tableau de ville à la fin de la tournée pTour
+ * @param pTour La tournée à compléter
+ * @param pTowns Le tableau de villes à ajouter
+ * @param pNbTowns Le nombre de villes à ajouter
+ * 
+ * @see Town
+ */
 void tour_addSeveralTowns(Tour* pTour, Town* pTowns, const int pNbTowns);
+
+/**
+ * Remplace la pire tournée d'un tableau de tournée par la tournée pTour
+ * @param pTours Le tableau de tournées
+ * @param pSize La taille du tableau de tournées
+ * @param pTour Le tour à ajouter
+ */
 void tour_replaceTheWorstTour(Tour* pTours, const int pSize, Tour pTour);
 #endif
 

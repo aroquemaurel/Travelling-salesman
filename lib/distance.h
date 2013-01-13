@@ -35,6 +35,8 @@ typedef struct {
  * @param pFirstTown Première ville
  * @param pSecondTown Seconde ville
  * @return Distance entre les deux villes
+ * 
+ * @see Town
  */
 Distance distance_new(Town pFirstTown, Town pSecondTown);
 
@@ -43,6 +45,8 @@ Distance distance_new(Town pFirstTown, Town pSecondTown);
  * @param pTown1 Première ville
  * @param pTown2 Seconde ville
  * @return La distance
+ * 
+ * @see Town
  */
 double distance_calculDistance(const Town pTown1, const Town pTown2);
 
@@ -52,6 +56,8 @@ double distance_calculDistance(const Town pTown1, const Town pTown2);
  * @param i La première ville
  * @param j La seconde ville
  * @return La distance
+ * 
+ * @see Town
  */
 Distance distance_betweenTowns(Distance* pDistances, Town i, Town j) ;
 #endif

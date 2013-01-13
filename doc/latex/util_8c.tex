@@ -20,17 +20,14 @@ void \hyperlink{util_8c_ae25650a63e9f4f35334d474b5caf7c2b}{util\_\-displayArray}
 \begin{DoxyCompactList}\small\item\em Affiche le contenu d'un tableau d'entiers. \item\end{DoxyCompactList}\item 
 int \hyperlink{util_8c_a9ac9311a18d38fe6d5cb1f5b3244851b}{util\_\-sum} (const int pBegin, const int pEnd)
 \begin{DoxyCompactList}\small\item\em Calcul la somme des éléments allant de pBegin à pEnd. \item\end{DoxyCompactList}\item 
-void \hyperlink{util_8c_a5043148c524eadfdf98e0dc09dd59b0e}{util\_\-swap} (int $\ast$a, int $\ast$b)
+void \hyperlink{util_8c_aabf05057e5eab92dc5781b4fd7ee0bba}{util\_\-swap} (\hyperlink{structTown}{Town} $\ast$a, \hyperlink{structTown}{Town} $\ast$b)
 \begin{DoxyCompactList}\small\item\em Échange deux variables. \item\end{DoxyCompactList}\item 
 int \hyperlink{util_8c_a42ce7cb070434fa218e864d8444f29b5}{util\_\-rand} (const int pMin, const int pMax)
 \begin{DoxyCompactList}\small\item\em Calcul une valeur aléatoire entre pMin et pMax. \item\end{DoxyCompactList}\item 
 bool \hyperlink{util_8c_acecb389be3afc2e24df4862c5ffa91fa}{util\_\-sousTabExist} (\hyperlink{structTour}{Tour} pChild, const int pBegin, const int pEnd, \hyperlink{structTour}{Tour} pParent, bool pRecursvite)
 \begin{DoxyCompactList}\small\item\em Indique si un sous-\/tableau d'un tableau est présent dans un autre tableau. \item\end{DoxyCompactList}\item 
-\hypertarget{util_8c_a32c75397c58d94526c54073291a71e68}{
-void {\bfseries util\_\-deleteArrayValue} (\hyperlink{structPath}{Path} $\ast$pArray, int pSize, int pDeleteIndice)}
-\label{util_8c_a32c75397c58d94526c54073291a71e68}
-
-\end{DoxyCompactItemize}
+void \hyperlink{util_8c_a32c75397c58d94526c54073291a71e68}{util\_\-deleteArrayValue} (\hyperlink{structPath}{Path} $\ast$pArray, int pSize, int pDeleteIndice)
+\begin{DoxyCompactList}\small\item\em Supprime la valeur pDeleteIndice d'un tableau. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
@@ -43,6 +40,24 @@ Antoine de Roquemaurel
 Entêtes des fonctions pouvant être utiles dans tout le projet. Ce sont des fonctions simples, qui doivent être indépendantes du projet. 
 
 \subsection{Documentation des fonctions}
+\hypertarget{util_8c_a32c75397c58d94526c54073291a71e68}{
+\index{util.c@{util.c}!util\_\-deleteArrayValue@{util\_\-deleteArrayValue}}
+\index{util\_\-deleteArrayValue@{util\_\-deleteArrayValue}!util.c@{util.c}}
+\subsubsection[{util\_\-deleteArrayValue}]{\setlength{\rightskip}{0pt plus 5cm}void util\_\-deleteArrayValue (
+\begin{DoxyParamCaption}
+\item[{{\bf Path} $\ast$}]{ pArray, }
+\item[{int}]{ pSize, }
+\item[{int}]{ pDeleteIndice}
+\end{DoxyParamCaption}
+)}}
+\label{util_8c_a32c75397c58d94526c54073291a71e68}
+
+
+Supprime la valeur pDeleteIndice d'un tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+\item[{\em pArray}]Le tableau \item[{\em pSize}]La taille du tableau \item[{\em pDeleteIndice}]L'indice à supprimer \end{DoxyParams}
 \hypertarget{util_8c_ae25650a63e9f4f35334d474b5caf7c2b}{
 \index{util.c@{util.c}!util\_\-displayArray@{util\_\-displayArray}}
 \index{util\_\-displayArray@{util\_\-displayArray}!util.c@{util.c}}
@@ -78,7 +93,7 @@ Calcul une valeur aléatoire entre pMin et pMax.
 \begin{DoxyParams}{Paramètres}
 \item[{\em pMin}]Minimum \item[{\em pMax}]Maximum \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
-
+la valeur aléatoire 
 \end{DoxyReturn}
 \hypertarget{util_8c_ac878ff06d8fd6169a8ffe4eda7e170f9}{
 \index{util.c@{util.c}!util\_\-reverseArray@{util\_\-reverseArray}}
@@ -162,16 +177,16 @@ Calcul la somme des éléments allant de pBegin à pEnd.
 \begin{DoxyReturn}{Renvoie}
 La somme des éléments 
 \end{DoxyReturn}
-\hypertarget{util_8c_a5043148c524eadfdf98e0dc09dd59b0e}{
+\hypertarget{util_8c_aabf05057e5eab92dc5781b4fd7ee0bba}{
 \index{util.c@{util.c}!util\_\-swap@{util\_\-swap}}
 \index{util\_\-swap@{util\_\-swap}!util.c@{util.c}}
 \subsubsection[{util\_\-swap}]{\setlength{\rightskip}{0pt plus 5cm}void util\_\-swap (
 \begin{DoxyParamCaption}
-\item[{int $\ast$}]{ a, }
-\item[{int $\ast$}]{ b}
+\item[{{\bf Town} $\ast$}]{ a, }
+\item[{{\bf Town} $\ast$}]{ b}
 \end{DoxyParamCaption}
 )}}
-\label{util_8c_a5043148c524eadfdf98e0dc09dd59b0e}
+\label{util_8c_aabf05057e5eab92dc5781b4fd7ee0bba}
 
 
 Échange deux variables. 

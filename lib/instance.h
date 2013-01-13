@@ -63,6 +63,8 @@ Instance instance_new(FILE* pFile);
  * 
  * @param pInstance L'instance à modifier
  * @param pTown La ville à ajouter
+ * 
+ * @see Town
  */
 void instance_push(Instance* pInstance, const Town pTown);
 
@@ -73,6 +75,8 @@ void instance_push(Instance* pInstance, const Town pTown);
  */
 void instance_initializeDistancesMatrix(Instance* pInstance);
 
+
+/**********************************/
 /**
  * Affiche la matrice des distances sous forme linéaire
  * @param pInstance L'instance à afficher

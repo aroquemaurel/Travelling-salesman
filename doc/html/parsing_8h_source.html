@@ -80,22 +80,22 @@ function toggleVisibility(linkObj) {
 <a name="l00034"></a><a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74adc6f24fd6915a3f2786a1b7045406924">00034</a>     <a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74adc6f24fd6915a3f2786a1b7045406924" title="Correspond au marqueur de fin des algorithmes.">END</a>
 <a name="l00035"></a>00035 } AlgoType;
 <a name="l00036"></a>00036 
-<a name="l00043"></a><a class="code" href="structAlgo.html">00043</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
-<a name="l00045"></a><a class="code" href="structAlgo.html#ac238c59b48a6658c527f7ee987e0daac">00045</a>     <a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74" title="parsing.h">AlgoType</a> type;
-<a name="l00047"></a><a class="code" href="structAlgo.html#a715ddb57a67fbadc6771d167f20d1d2e">00047</a>     <span class="keywordtype">int</span> firstParameter;
-<a name="l00049"></a><a class="code" href="structAlgo.html#a73bb72b60e1d63c33843ace474b7d957">00049</a>     <span class="keywordtype">int</span> secondParameter;
-<a name="l00050"></a>00050 } <a class="code" href="structAlgo.html" title="Enumération d&amp;#39;un algorithme.">Algo</a>;
-<a name="l00051"></a>00051 
-<a name="l00059"></a>00059 <span class="keywordtype">bool</span> <a class="code" href="parsing_8h.html#a017908431f5412fb0a5d3441b4200415" title="Cherche si le mode verbeux à été spécifié ou non.">parsing_parseVerboseMode</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize);
-<a name="l00060"></a>00060 
-<a name="l00070"></a>00070 <span class="keywordtype">char</span>* <a class="code" href="parsing_8h.html#a8b91b593ba82d06c6ffbeeaf6e0825aa" title="Cherche le nom du fichier de l&amp;#39;Instance.">parsing_parseFileName</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
-<a name="l00071"></a>00071 
-<a name="l00081"></a>00081 <span class="keywordtype">void</span> <a class="code" href="parsing_8h.html#add899bfe309b1afa905f9adf4300246d">parsing_algoType</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors, <a class="code" href="structAlgo.html" title="Enumération d&amp;#39;un algorithme.">Algo</a>* algos);
-<a name="l00082"></a>00082 <span class="preprocessor">#endif</span>
-<a name="l00083"></a>00083 <span class="preprocessor"></span>
+<a name="l00045"></a><a class="code" href="structAlgo.html">00045</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00047"></a><a class="code" href="structAlgo.html#ac238c59b48a6658c527f7ee987e0daac">00047</a>     <a class="code" href="parsing_8h.html#aebdeb51354d2ee712846a9e02786cd74" title="parsing.h">AlgoType</a> type;
+<a name="l00049"></a><a class="code" href="structAlgo.html#a715ddb57a67fbadc6771d167f20d1d2e">00049</a>     <span class="keywordtype">int</span> firstParameter;
+<a name="l00051"></a><a class="code" href="structAlgo.html#a73bb72b60e1d63c33843ace474b7d957">00051</a>     <span class="keywordtype">int</span> secondParameter;
+<a name="l00052"></a>00052 } <a class="code" href="structAlgo.html" title="Enumération d&amp;#39;un algorithme.">Algo</a>;
+<a name="l00053"></a>00053 
+<a name="l00061"></a>00061 <span class="keywordtype">bool</span> <a class="code" href="parsing_8h.html#a017908431f5412fb0a5d3441b4200415" title="Cherche si le mode verbeux à été spécifié ou non.">parsing_parseVerboseMode</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize);
+<a name="l00062"></a>00062 
+<a name="l00072"></a>00072 <span class="keywordtype">char</span>* <a class="code" href="parsing_8h.html#a8b91b593ba82d06c6ffbeeaf6e0825aa" title="Cherche le nom du fichier de l&amp;#39;Instance.">parsing_parseFileName</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors);
+<a name="l00073"></a>00073 
+<a name="l00083"></a>00083 <span class="keywordtype">void</span> <a class="code" href="parsing_8h.html#add899bfe309b1afa905f9adf4300246d">parsing_algoType</a>(<span class="keywordtype">char</span>** pTab, <span class="keyword">const</span> <span class="keywordtype">int</span> pSize, <a class="code" href="structErrors.html" title="Objet des erreurs.">Errors</a>* pErrors, <a class="code" href="structAlgo.html" title="Enumération d&amp;#39;un algorithme.">Algo</a>* algos);
+<a name="l00084"></a>00084 <span class="preprocessor">#endif</span>
+<a name="l00085"></a>00085 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Généré le Sat Jan 12 2013 03:46:33 pour Le voyageur de commerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Sun Jan 13 2013 15:15:37 pour Le voyageur de commerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -79,10 +79,8 @@ Fonctions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Créer une nouvelle distance.  <a href="#ac714e60819a349c03b5960585136b856"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a3c0a5cae2a774b648d20447b23d81d84">distance_calculDistance</a> (const <a class="el" href="structTown.html">Town</a> pTown1, const <a class="el" href="structTown.html">Town</a> pTown2)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul la distance entre deux villes.  <a href="#a3c0a5cae2a774b648d20447b23d81d84"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDistance.html">Distance</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a1168dcc0722a41c0d43e627741d8d0b5">distance_searchDistance</a> (<a class="el" href="structDistance.html">Distance</a> *pDistances, const int pFirst, const int pSecond)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Recherche la distance entre deux villes dans le tableau de distance.  <a href="#a1168dcc0722a41c0d43e627741d8d0b5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a3181d7b4c6f5044b216c1a96a5a89854">distance_betweenTowns</a> (<a class="el" href="structDistance.html">Distance</a> *pDistances, int i, int j)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul la distance entre deux ID de villes.  <a href="#a3181d7b4c6f5044b216c1a96a5a89854"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDistance.html">Distance</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8c.html#a75f9d06738c4cde184c3ad7e5845ae20">distance_betweenTowns</a> (<a class="el" href="structDistance.html">Distance</a> *pDistances, <a class="el" href="structTown.html">Town</a> i, <a class="el" href="structTown.html">Town</a> j)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul la distance entre deux villes.  <a href="#a75f9d06738c4cde184c3ad7e5845ae20"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Fonctions des distances. </p>
@@ -90,12 +88,12 @@ Fonctions</h2></td></tr>
 <dl class="date"><dt><b>Date:</b></dt><dd>01/12/2012 20:33:39</dd></dl>
 <p>Entêtes des fonctions se rapportant aux distances </p>
 <hr/><h2>Documentation des fonctions</h2>
-<a class="anchor" id="a3181d7b4c6f5044b216c1a96a5a89854"></a><!-- doxytag: member="distance.c::distance_betweenTowns" ref="a3181d7b4c6f5044b216c1a96a5a89854" args="(Distance *pDistances, int i, int j)" -->
+<a class="anchor" id="a75f9d06738c4cde184c3ad7e5845ae20"></a><!-- doxytag: member="distance.c::distance_betweenTowns" ref="a75f9d06738c4cde184c3ad7e5845ae20" args="(Distance *pDistances, Town i, Town j)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double distance_betweenTowns </td>
+          <td class="memname"><a class="el" href="structDistance.html">Distance</a> distance_betweenTowns </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDistance.html">Distance</a> *&nbsp;</td>
           <td class="paramname"> <em>pDistances</em>, </td>
@@ -103,13 +101,13 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&nbsp;</td>
+          <td class="paramtype"><a class="el" href="structTown.html">Town</a>&nbsp;</td>
           <td class="paramname"> <em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&nbsp;</td>
+          <td class="paramtype"><a class="el" href="structTown.html">Town</a>&nbsp;</td>
           <td class="paramname"> <em>j</em></td><td>&nbsp;</td>
         </tr>
         <tr>
@@ -121,7 +119,7 @@ Fonctions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Calcul la distance entre deux ID de villes. </p>
+<p>Calcul la distance entre deux villes. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>pDistances</em>&nbsp;</td><td>La matrice de distances </td></tr>
@@ -130,7 +128,8 @@ Fonctions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance</dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="structTown.html" title="Objet des ville.">Town</a> </dd></dl>
 
 </div>
 </div>
@@ -167,7 +166,8 @@ Fonctions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance</dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="structTown.html" title="Objet des ville.">Town</a> </dd></dl>
 
 </div>
 </div>
@@ -204,56 +204,13 @@ Fonctions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd><a class="el" href="structDistance.html" title="Objet des distances.">Distance</a> entre les deux villes </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1168dcc0722a41c0d43e627741d8d0b5"></a><!-- doxytag: member="distance.c::distance_searchDistance" ref="a1168dcc0722a41c0d43e627741d8d0b5" args="(Distance *pDistances, const int pFirst, const int pSecond)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structDistance.html">Distance</a> distance_searchDistance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structDistance.html">Distance</a> *&nbsp;</td>
-          <td class="paramname"> <em>pDistances</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&nbsp;</td>
-          <td class="paramname"> <em>pFirst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&nbsp;</td>
-          <td class="paramname"> <em>pSecond</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Recherche la distance entre deux villes dans le tableau de distance. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>pDistances</em>&nbsp;</td><td>La matrice de distance </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>pFirst</em>&nbsp;</td><td>La première ville </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>pSecond</em>&nbsp;</td><td>la seconde ville</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd><a class="el" href="structDistance.html" title="Objet des distances.">Distance</a> entre les deux villes</dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="structTown.html" title="Objet des ville.">Town</a> </dd></dl>
 
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Généré le Sat Jan 12 2013 03:46:33 pour Le voyageur de commerce par&nbsp;
+<hr class="footer"/><address class="footer"><small>Généré le Sun Jan 13 2013 15:15:37 pour Le voyageur de commerce par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
